@@ -201,7 +201,7 @@
     <Content Include="Resources\Delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BqBusTester\MyProtocols\MyProtocols.vbproj">
+    <ProjectReference Include="..\MyProtocols\MyProtocols.vbproj">
       <Project>{35a85778-ab6a-4b5d-8dc0-92970da98604}</Project>
       <Name>MyProtocols</Name>
     </ProjectReference>

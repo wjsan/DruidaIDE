@@ -114,9 +114,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common">
-      <HintPath>..\..\Recursos\Common\bin\Debug\Common.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -131,11 +128,11 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Tulpep.NotificationWindow">
-      <HintPath>..\..\Recursos\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
     </Reference>
     <Reference Include="VisualStudioTabControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Recursos\VisualStudioTabControl\VisualStudioTabControl\bin\Debug\VisualStudioTabControl.dll</HintPath>
+      <HintPath>..\VisualStudioTabControl\VisualStudioTabControl\bin\Debug\VisualStudioTabControl.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -876,24 +873,6 @@
     <Content Include="Resources\ShoppingIcons\siteIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BqBusTester\MyProtocols\MyProtocols.vbproj">
-      <Project>{35a85778-ab6a-4b5d-8dc0-92970da98604}</Project>
-      <Name>MyProtocols</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Code Editor For Arduino\Code Editor For Arduino\Code Editor For Arduino.vbproj">
-      <Project>{d6d6434c-e64a-4746-8c7b-81997e2ff5a0}</Project>
-      <Name>Code Editor For Arduino</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Recursos\FastColoredTextBox-master\FastColoredTextBox\FastColoredTextBox.csproj">
-      <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
-      <Name>FastColoredTextBox</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DruidaIDEAuxiliarControls\DruidaIDEAuxiliarControls.vbproj">
-      <Project>{f38ffedb-9564-434c-ab2b-78095da16a78}</Project>
-      <Name>DruidaIDEAuxiliarControls</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
@@ -907,6 +886,28 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Code Editor For Arduino\Code Editor For Arduino.vbproj">
+      <Project>{d6d6434c-e64a-4746-8c7b-81997e2ff5a0}</Project>
+      <Name>Code Editor For Arduino</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{82c60a7e-0a87-43f0-96b2-2ee56bccf74a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DruidaIDEAuxiliarControls\DruidaIDEAuxiliarControls.vbproj">
+      <Project>{f38ffedb-9564-434c-ab2b-78095da16a78}</Project>
+      <Name>DruidaIDEAuxiliarControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
+      <Name>FastColoredTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyProtocols\MyProtocols.vbproj">
+      <Project>{35a85778-ab6a-4b5d-8dc0-92970da98604}</Project>
+      <Name>MyProtocols</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
