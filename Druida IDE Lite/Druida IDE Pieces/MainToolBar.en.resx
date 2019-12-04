@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Board:</value>
+  </data>
+  <data name="tsbNewProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbNewProject.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="tsbNewProject.ToolTipText" xml:space="preserve">
+    <value>Create a new project</value>
+  </data>
+  <data name="tsbOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 51</value>
+  </data>
+  <data name="tsbOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="tsbOpen.ToolTipText" xml:space="preserve">
+    <value>Open a project</value>
+  </data>
+  <data name="tsbSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tsbSave.ToolTipText" xml:space="preserve">
+    <value>Save all files</value>
+  </data>
+  <data name="tsbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 51</value>
+  </data>
+  <data name="tsbSaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="tsbSaveAs.ToolTipText" xml:space="preserve">
+    <value>Save a copy of current project</value>
+  </data>
+  <data name="tsbtExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 51</value>
+  </data>
+  <data name="tsbtExit.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="tsbtExit.ToolTipText" xml:space="preserve">
+    <value>Close current project, and return to start screen</value>
+  </data>
+  <data name="tsbHardware.ToolTipText" xml:space="preserve">
+    <value>Open hardware configuration of current project</value>
+  </data>
+  <data name="tsbCompile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 51</value>
+  </data>
+  <data name="tsbCompile.Text" xml:space="preserve">
+    <value>Compile</value>
+  </data>
+  <data name="tsbCompile.ToolTipText" xml:space="preserve">
+    <value>Compile current project</value>
+  </data>
+  <data name="tsbUpload.ToolTipText" xml:space="preserve">
+    <value>Upload current project</value>
+  </data>
+  <data name="tsbtDebugger.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbtDebugger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 51</value>
+  </data>
+  <data name="tsbtDebugger.Text" xml:space="preserve">
+    <value>Debugger</value>
+  </data>
+  <data name="tsbtDebugger.ToolTipText" xml:space="preserve">
+    <value>Upload current project, with hardware debugger</value>
+  </data>
+  <data name="tsbSerialMonitor.Text" xml:space="preserve">
+    <value>Serial Monitor</value>
+  </data>
+  <data name="tsbSerialMonitor.ToolTipText" xml:space="preserve">
+    <value>Open Serial Monitor</value>
+  </data>
+  <data name="tpProject.Text" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="tsbNewFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbNewFile.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="tsbNewFile.ToolTipText" xml:space="preserve">
+    <value>Create a new file</value>
+  </data>
+  <data name="tsbOpenFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 51</value>
+  </data>
+  <data name="tsbOpenFile.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="tsbOpenFile.ToolTipText" xml:space="preserve">
+    <value>Open a external code file</value>
+  </data>
+  <data name="tsbtSaveFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbtSaveFile.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tsbtSaveFile.ToolTipText" xml:space="preserve">
+    <value>Save current file</value>
+  </data>
+  <data name="tsbtSaveFileAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 51</value>
+  </data>
+  <data name="tsbtSaveFileAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="tsbtSaveFileAs.ToolTipText" xml:space="preserve">
+    <value>Create a copy of current file</value>
+  </data>
+  <data name="tsbImportFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 51</value>
+  </data>
+  <data name="tsbImportFile.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="tsbImportFile.ToolTipText" xml:space="preserve">
+    <value>Import a external file, creating a copy in current project</value>
+  </data>
+  <data name="tsbDirectories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 51</value>
+  </data>
+  <data name="tsbDirectories.Text" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="tsbDirectories.ToolTipText" xml:space="preserve">
+    <value>Open directories configuration window</value>
+  </data>
+  <data name="tsbExportAsHtml.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 51</value>
+  </data>
+  <data name="tsbExportAsHtml.Text" xml:space="preserve">
+    <value>Export HTML</value>
+  </data>
+  <data name="tsbExportAsHtml.ToolTipText" xml:space="preserve">
+    <value>Export current file to HTML</value>
+  </data>
+  <data name="tsbOpenIDE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <data name="tsbOpenIDE.Text" xml:space="preserve">
+    <value>Open IDE</value>
+  </data>
+  <data name="tsbOpenIDE.ToolTipText" xml:space="preserve">
+    <value>Open current project in Arduino IDE</value>
+  </data>
+  <data name="tsbExamples.Text" xml:space="preserve">
+    <value>Examples</value>
+  </data>
+  <data name="tsbExamples.ToolTipText" xml:space="preserve">
+    <value>Show examples</value>
+  </data>
+  <data name="tsbLibraries.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 51</value>
+  </data>
+  <data name="tsbLibraries.Text" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="tsbLibraries.ToolTipText" xml:space="preserve">
+    <value>Show libraries</value>
+  </data>
+  <data name="tpFile.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="tsbGoTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 51</value>
+  </data>
+  <data name="tsbGoTo.Text" xml:space="preserve">
+    <value>Go To</value>
+  </data>
+  <data name="tsbGoTo.ToolTipText" xml:space="preserve">
+    <value>Go to a specific line of current code</value>
+  </data>
+  <data name="tsbFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbFind.Text" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="tsbFind.ToolTipText" xml:space="preserve">
+    <value>Find a text</value>
+  </data>
+  <data name="tsbFindAndReplace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 51</value>
+  </data>
+  <data name="tsbFindAndReplace.Text" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="tsbFindAndReplace.ToolTipText" xml:space="preserve">
+    <value>Find and Replace a Text</value>
+  </data>
+  <data name="tsbUndo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 51</value>
+  </data>
+  <data name="tsbUndo.Text" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="tsbUndo.ToolTipText" xml:space="preserve">
+    <value>Undo last action</value>
+  </data>
+  <data name="tsbRedo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 51</value>
+  </data>
+  <data name="tsbRedo.Text" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="tsbRedo.ToolTipText" xml:space="preserve">
+    <value>Redo last action</value>
+  </data>
+  <data name="tsbCut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbCut.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="tsbCut.ToolTipText" xml:space="preserve">
+    <value>Cut selected text</value>
+  </data>
+  <data name="tsbCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 51</value>
+  </data>
+  <data name="tsbCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="tsbCopy.ToolTipText" xml:space="preserve">
+    <value>Copy selected text</value>
+  </data>
+  <data name="tsbPaste.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="tsbPaste.ToolTipText" xml:space="preserve">
+    <value>Paste text from clipboard</value>
+  </data>
+  <data name="tsbIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 51</value>
+  </data>
+  <data name="tsbIdent.Text" xml:space="preserve">
+    <value>Ident</value>
+  </data>
+  <data name="tsbIdent.ToolTipText" xml:space="preserve">
+    <value>Ident selected lines</value>
+  </data>
+  <data name="tsbCommentSelected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 51</value>
+  </data>
+  <data name="tsbCommentSelected.Text" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="tsbCommentSelected.ToolTipText" xml:space="preserve">
+    <value>Comment/Uncomment selected lines</value>
+  </data>
+  <data name="tsbtFold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 51</value>
+  </data>
+  <data name="tsbtFold.Text" xml:space="preserve">
+    <value>Fold All</value>
+  </data>
+  <data name="tsbtFold.ToolTipText" xml:space="preserve">
+    <value>Fold all blocks</value>
+  </data>
+  <data name="tsbtUnfold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 51</value>
+  </data>
+  <data name="tsbtUnfold.Text" xml:space="preserve">
+    <value>Unfold</value>
+  </data>
+  <data name="tsbtUnfold.ToolTipText" xml:space="preserve">
+    <value>Unfold all blocks</value>
+  </data>
+  <data name="tpEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="tsbtFullScreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 51</value>
+  </data>
+  <data name="tsbtFullScreen.Text" xml:space="preserve">
+    <value>Full Screen</value>
+  </data>
+  <data name="tsbtFullScreen.ToolTipText" xml:space="preserve">
+    <value>Go to full-screen mode</value>
+  </data>
+  <data name="tsbtFileList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 51</value>
+  </data>
+  <data name="tsbtFileList.ToolTipText" xml:space="preserve">
+    <value>Show explorer window</value>
+  </data>
+  <data name="tsbtObjects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 51</value>
+  </data>
+  <data name="tsbtObjects.Text" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="tsbtObjects.ToolTipText" xml:space="preserve">
+    <value>Show objects window</value>
+  </data>
+  <data name="tsbtConsole.ToolTipText" xml:space="preserve">
+    <value>Show or Hide console</value>
+  </data>
+  <data name="tsbtDocumentMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbtDocumentMap.Text" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="tsbtDocumentMap.ToolTipText" xml:space="preserve">
+    <value>Show or Hide map of text</value>
+  </data>
+  <data name="tsbtShowOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 51</value>
+  </data>
+  <data name="tsbtShowOutput.Text" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="tsbtShowOutput.ToolTipText" xml:space="preserve">
+    <value>Show output tab</value>
+  </data>
+  <data name="tsbtShowErrors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 51</value>
+  </data>
+  <data name="tsbtShowErrors.Text" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="tsbtShowErrors.ToolTipText" xml:space="preserve">
+    <value>Show errors tab</value>
+  </data>
+  <data name="tsbtShowSerialMonitor.ToolTipText" xml:space="preserve">
+    <value>Show serial monitor tab</value>
+  </data>
+  <data name="tsbtShowHardwareMonitor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 51</value>
+  </data>
+  <data name="tsbtShowHardwareMonitor.Text" xml:space="preserve">
+    <value>Debugger</value>
+  </data>
+  <data name="tsbtShowHardwareMonitor.ToolTipText" xml:space="preserve">
+    <value>Show debugger tab</value>
+  </data>
+  <data name="tpView.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="tsbVarMonitor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 51</value>
+  </data>
+  <data name="tsbVarMonitor.Text" xml:space="preserve">
+    <value>Variables</value>
+  </data>
+  <data name="tsbVarMonitor.ToolTipText" xml:space="preserve">
+    <value>Show variables monitor tab</value>
+  </data>
+  <data name="tsbClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 51</value>
+  </data>
+  <data name="tsbClear.Text" xml:space="preserve">
+    <value>Clear Errors</value>
+  </data>
+  <data name="tsbClear.ToolTipText" xml:space="preserve">
+    <value>Clear errors in current file</value>
+  </data>
+  <data name="tsbInterrupt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 51</value>
+  </data>
+  <data name="tsbInterrupt.Text" xml:space="preserve">
+    <value>Interrupts</value>
+  </data>
+  <data name="tsbInterrupt.ToolTipText" xml:space="preserve">
+    <value>Create a breakpoint in current line</value>
+  </data>
+  <data name="tsbtHardwareDebugger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 51</value>
+  </data>
+  <data name="tsbtHardwareDebugger.Text" xml:space="preserve">
+    <value>Debugger</value>
+  </data>
+  <data name="tsbtHardwareDebugger.ToolTipText" xml:space="preserve">
+    <value>Open debugger window</value>
+  </data>
+  <data name="tsbVerifySyntax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 51</value>
+  </data>
+  <data name="tsbVerifySyntax.Text" xml:space="preserve">
+    <value>Recheck Syntax</value>
+  </data>
+  <data name="tsbVerifySyntax.ToolTipText" xml:space="preserve">
+    <value>Recheck Syntax Highlighter</value>
+  </data>
+  <data name="tsbCodeSnnipetsManager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 51</value>
+  </data>
+  <data name="tsbCodeSnnipetsManager.Text" xml:space="preserve">
+    <value>Code Snnipets</value>
+  </data>
+  <data name="tsbCodeSnnipetsManager.ToolTipText" xml:space="preserve">
+    <value>Open code snnipets manager</value>
+  </data>
+  <data name="tsbOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 51</value>
+  </data>
+  <data name="tsbOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="tsbOptions.ToolTipText" xml:space="preserve">
+    <value>Show settings window</value>
+  </data>
+  <data name="tpTools.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="tsbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="tsbHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="tsbHelp.ToolTipText" xml:space="preserve">
+    <value>Go to help web page</value>
+  </data>
+  <data name="tsbOnlineDocuments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 51</value>
+  </data>
+  <data name="tsbOnlineDocuments.Text" xml:space="preserve">
+    <value>On-Line Help</value>
+  </data>
+  <data name="tsbTutorial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 51</value>
+  </data>
+  <data name="tsbTutorial.Text" xml:space="preserve">
+    <value>Tutorials</value>
+  </data>
+  <data name="tsbTutorial.ToolTipText" xml:space="preserve">
+    <value>Go to tutorials web page</value>
+  </data>
+  <data name="tsbOnlineSupport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 51</value>
+  </data>
+  <data name="tsbOnlineSupport.Text" xml:space="preserve">
+    <value>On-Line Support</value>
+  </data>
+  <data name="tsbOnlineSupport.ToolTipText" xml:space="preserve">
+    <value>Go to on-line support service</value>
+  </data>
+  <data name="tsbtBugReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 51</value>
+  </data>
+  <data name="tsbtBugReport.Text" xml:space="preserve">
+    <value>Report Bug</value>
+  </data>
+  <data name="tsbtBugReport.ToolTipText" xml:space="preserve">
+    <value>Go to bug report web page</value>
+  </data>
+  <data name="tsbSuggestion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 51</value>
+  </data>
+  <data name="tsbSuggestion.Text" xml:space="preserve">
+    <value>Suggestion</value>
+  </data>
+  <data name="tsbSuggestion.ToolTipText" xml:space="preserve">
+    <value>Go to suggestions web page</value>
+  </data>
+  <data name="tpHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="tsmiGoTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiGoTo.Text" xml:space="preserve">
+    <value>Go To</value>
+  </data>
+  <data name="tsmiFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiFind.Text" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="tsmiReplace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiReplace.Text" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="ToolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 6</value>
+  </data>
+  <data name="tsmiUndo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiUndo.Text" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="tsmiRedo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiRedo.Text" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="ToolStripSeparator8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 6</value>
+  </data>
+  <data name="tsmiCut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiCut.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="tsmiCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="tsmiPast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiPast.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="ToolStripSeparator9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 6</value>
+  </data>
+  <data name="tsmiIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiIdent.Text" xml:space="preserve">
+    <value>Ident Selected Lines</value>
+  </data>
+  <data name="tsmiComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="tsmiComment.Text" xml:space="preserve">
+    <value>Comment/Uncomment Selected Lines</value>
+  </data>
+  <data name="ToolStripSeparator10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 6</value>
+  </data>
+  <data name="tsmiFold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="tsmiFold.Text" xml:space="preserve">
+    <value>Fold All</value>
+  </data>
+  <data name="tsmiUnfold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="tsmiUnfold.Text" xml:space="preserve">
+    <value>Unfold All</value>
+  </data>
+  <data name="DobramentoDeCódigoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="DobramentoDeCódigoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Code Folding</value>
+  </data>
+  <data name="CloseTabToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 22</value>
+  </data>
+  <data name="CloseTabToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close Tab</value>
+  </data>
+  <data name="cmsCodeEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 292</value>
+  </data>
+</root>

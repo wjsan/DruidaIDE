@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{100C9073-9E73-4A8E-9575-9561542AF575}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Druida_IDE_Lite.My.MyApplication</StartupObject>
+    <RootNamespace>Druida_IDE_Lite</RootNamespace>
+    <AssemblyName>Druida IDE Lite</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Druida IDE Lite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Druida IDE Lite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_t9j_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Druida IDE Lite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Druida IDE Lite.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Druida IDE Lite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Druida IDE Lite.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>..\..\Recursos\Common\bin\Debug\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Tulpep.NotificationWindow">
+      <HintPath>..\..\Recursos\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualStudioTabControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Recursos\VisualStudioTabControl\VisualStudioTabControl\bin\Debug\VisualStudioTabControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\CodeManagement\CodeDataBase.vb" />
+    <Compile Include="Classes\CodeManagement\CodeElementIndetfier.vb" />
+    <Compile Include="Classes\CodeManagement\CodeObjects.vb" />
+    <Compile Include="Classes\CodeManagement\GlobalCodeEscope.vb" />
+    <Compile Include="Classes\Graphics\ImagesManipulation.vb" />
+    <Compile Include="Classes\Graphics\Notify.vb" />
+    <Compile Include="Classes\Information\ErrorsTranslate.vb" />
+    <Compile Include="Classes\Interfaces\DruidaInterface.vb" />
+    <Compile Include="Classes\Management\CultureManager.vb" />
+    <Compile Include="Classes\Management\InitialClasses.vb" />
+    <Compile Include="Classes\Management\AppActions.vb" />
+    <Compile Include="Classes\Management\AutocompleteMenuData.vb" />
+    <Compile Include="Classes\Management\ErrorsManager.vb" />
+    <Compile Include="Classes\CodeManagement\GeneralCodeManager.vb" />
+    <Compile Include="Classes\Information\AppInfo.vb" />
+    <Compile Include="Classes\Information\CodeInfo.vb" />
+    <Compile Include="Classes\Information\CurrentProjectInfo.vb" />
+    <Compile Include="Classes\Management\Objects.vb" />
+    <Compile Include="Classes\NonVolatileData\ExternalInterfaces.vb" />
+    <Compile Include="Classes\System\ArduinoCompiler.vb" />
+    <Compile Include="Classes\System\FileOperations.vb" />
+    <Compile Include="Classes\System\SystemOperations.vb" />
+    <Compile Include="Classes\Management\MessagesManager.vb" />
+    <Compile Include="Classes\NonVolatileData\BoardsData.vb" />
+    <Compile Include="Classes\NonVolatileData\CurrentProjectCfgs.vb" />
+    <Compile Include="Classes\NonVolatileData\IDEcfgs.vb" />
+    <Compile Include="Classes\Graphics\FormBackgroundGradient.vb" />
+    <Compile Include="Classes\Management\ProjectActions.vb" />
+    <Compile Include="Classes\Management\TextTreatment.vb" />
+    <Compile Include="Classes\Verifications\CheckForUpdates.vb" />
+    <Compile Include="Druida IDE Pieces\CodeExplorer.Designer.vb">
+      <DependentUpon>CodeExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\CodeExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\ErrorsList.Designer.vb">
+      <DependentUpon>ErrorsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\ErrorsList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\HardwareMonitor.Designer.vb">
+      <DependentUpon>HardwareMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\HardwareMonitor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\Output.Designer.vb">
+      <DependentUpon>Output.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\Output.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\SerialMonitor.Designer.vb">
+      <DependentUpon>SerialMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console Items\SerialMonitor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\DruidaIDEglobalComponents.vb" />
+    <Compile Include="Druida IDE Pieces\GeneralEditor.Designer.vb">
+      <DependentUpon>GeneralEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\GeneralEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\HomePage.Designer.vb">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\HomePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\ImageViewer.Designer.vb">
+      <DependentUpon>ImageViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\ImageViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Managers\ExamplesManager.Designer.vb">
+      <DependentUpon>ExamplesManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\ExamplesManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\LibrariesManager.Designer.vb">
+      <DependentUpon>LibrariesManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\LibrariesManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\CodeSnippets.Designer.vb">
+      <DependentUpon>CodeSnippets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\CodeSnippets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\ExportProject.Designer.vb">
+      <DependentUpon>ExportProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\ExportProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\GraphViewer.Designer.vb">
+      <DependentUpon>GraphViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\GraphViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\MoveOrCopy.Designer.vb">
+      <DependentUpon>MoveOrCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\MoveOrCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\NewElement.Designer.vb">
+      <DependentUpon>NewElement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\NewElement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\NewFile.Designer.vb">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\NewFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\SaveFileAs.Designer.vb">
+      <DependentUpon>SaveFileAs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\SaveFileAs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoupUps\Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsAutocomplete.Designer.vb">
+      <DependentUpon>SettingsAutocomplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsAutocomplete.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsDirectories.Designer.vb">
+      <DependentUpon>SettingsDirectories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsDirectories.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsFontColor.Designer.vb">
+      <DependentUpon>SettingsFontColor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsFontColor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsInicialization.Designer.vb">
+      <DependentUpon>SettingsInicialization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsInicialization.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsSerialMonitor.Designer.vb">
+      <DependentUpon>SettingsSerialMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsSerialMonitor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsWorkspace.Designer.vb">
+      <DependentUpon>SettingsWorkspace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsWorkspace.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Project\CFGsHardware.Designer.vb">
+      <DependentUpon>CFGsHardware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Project\CFGsHardware.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Project\CFGsPinout.Designer.vb">
+      <DependentUpon>CFGsPinout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Project\CFGsPinout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Project\CFGsProject.Designer.vb">
+      <DependentUpon>CFGsProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Project\CFGsProject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Project\Pinout.Designer.vb">
+      <DependentUpon>Pinout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Project\Pinout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Project\ProjectCFGsExplorer.Designer.vb">
+      <DependentUpon>ProjectCFGsExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Project\ProjectCFGsExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PoupUps\CreateNewProject.Designer.vb">
+      <DependentUpon>CreateNewProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoupUps\CreateNewProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Druida IDE.Designer.vb">
+      <DependentUpon>Druida IDE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Druida IDE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\MainToolBar.Designer.vb">
+      <DependentUpon>MainToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\MainToolBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console.Designer.vb">
+      <DependentUpon>Console.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\Console.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\FilesExplorer.Designer.vb">
+      <DependentUpon>FilesExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\FilesExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\NonVolatileData\CfgManager.vb" />
+    <Compile Include="Druida IDE Pieces\ObjectsExplorer.Designer.vb">
+      <DependentUpon>ObjectsExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Druida IDE Pieces\ObjectsExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsMainForm.Designer.vb">
+      <DependentUpon>SettingsMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\IDE\SettingsMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\NonVolatileData\FileVarSystem.vb" />
+    <Compile Include="Tools\SerialMonitorTool.Designer.vb">
+      <DependentUpon>SerialMonitorTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SerialMonitorTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Druida IDE Pieces\CodeExplorer.en.resx">
+      <DependentUpon>CodeExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\CodeExplorer.pt-BR.resx">
+      <DependentUpon>CodeExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\CodeExplorer.pt.resx">
+      <DependentUpon>CodeExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\CodeExplorer.resx">
+      <DependentUpon>CodeExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\ErrorsList.en.resx">
+      <DependentUpon>ErrorsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\ErrorsList.pt.resx">
+      <DependentUpon>ErrorsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\ErrorsList.resx">
+      <DependentUpon>ErrorsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\HardwareMonitor.en.resx">
+      <DependentUpon>HardwareMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\HardwareMonitor.resx">
+      <DependentUpon>HardwareMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\Output.en.resx">
+      <DependentUpon>Output.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\Output.resx">
+      <DependentUpon>Output.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\SerialMonitor.en.resx">
+      <DependentUpon>SerialMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console Items\SerialMonitor.resx">
+      <DependentUpon>SerialMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console.byn.resx">
+      <DependentUpon>Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console.en-ZA.resx">
+      <DependentUpon>Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console.en.resx">
+      <DependentUpon>Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console.pt.resx">
+      <DependentUpon>Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.en.resx">
+      <DependentUpon>FilesExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.pt-BR.resx">
+      <DependentUpon>FilesExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.pt.resx">
+      <DependentUpon>FilesExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\GeneralEditor.resx">
+      <DependentUpon>GeneralEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\HomePage.en.resx">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\HomePage.resx">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\ImageViewer.resx">
+      <DependentUpon>ImageViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\ObjectsExplorer.en.resx">
+      <DependentUpon>ObjectsExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\ObjectsExplorer.pt-BR.resx">
+      <DependentUpon>ObjectsExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\ObjectsExplorer.pt.resx">
+      <DependentUpon>ObjectsExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\CodeSnippets.aa.resx">
+      <DependentUpon>CodeSnippets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\CodeSnippets.en.resx">
+      <DependentUpon>CodeSnippets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\CodeSnippets.pt.resx">
+      <DependentUpon>CodeSnippets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\ExamplesManager.en-ZA.resx">
+      <DependentUpon>ExamplesManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\ExamplesManager.en.resx">
+      <DependentUpon>ExamplesManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\ExamplesManager.resx">
+      <DependentUpon>ExamplesManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\LibrariesManager.en.resx">
+      <DependentUpon>LibrariesManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\LibrariesManager.pt.resx">
+      <DependentUpon>LibrariesManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\LibrariesManager.resx">
+      <DependentUpon>LibrariesManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\CodeSnippets.resx">
+      <DependentUpon>CodeSnippets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\CreateNewProject.en.resx">
+      <DependentUpon>CreateNewProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\CreateNewProject.pt.resx">
+      <DependentUpon>CreateNewProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\ExportProject.en.resx">
+      <DependentUpon>ExportProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\ExportProject.resx">
+      <DependentUpon>ExportProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\GraphViewer.resx">
+      <DependentUpon>GraphViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\MoveOrCopy.en.resx">
+      <DependentUpon>MoveOrCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\MoveOrCopy.resx">
+      <DependentUpon>MoveOrCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\NewElement.en.resx">
+      <DependentUpon>NewElement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\NewElement.resx">
+      <DependentUpon>NewElement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\NewFile.en.resx">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\NewFile.pt.resx">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\NewFile.resx">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\SaveFileAs.en.resx">
+      <DependentUpon>SaveFileAs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\SaveFileAs.resx">
+      <DependentUpon>SaveFileAs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\Welcome.en.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsAutocomplete.en.resx">
+      <DependentUpon>SettingsAutocomplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsAutocomplete.resx">
+      <DependentUpon>SettingsAutocomplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsDirectories.en.resx">
+      <DependentUpon>SettingsDirectories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsDirectories.resx">
+      <DependentUpon>SettingsDirectories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsFontColor.en.resx">
+      <DependentUpon>SettingsFontColor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsFontColor.resx">
+      <DependentUpon>SettingsFontColor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsInicialization.en.resx">
+      <DependentUpon>SettingsInicialization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsInicialization.resx">
+      <DependentUpon>SettingsInicialization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsMainForm.en.resx">
+      <DependentUpon>SettingsMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsSerialMonitor.en.resx">
+      <DependentUpon>SettingsSerialMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsSerialMonitor.resx">
+      <DependentUpon>SettingsSerialMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsWorkspace.en.resx">
+      <DependentUpon>SettingsWorkspace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsWorkspace.resx">
+      <DependentUpon>SettingsWorkspace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\CFGsHardware.en.resx">
+      <DependentUpon>CFGsHardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\CFGsHardware.resx">
+      <DependentUpon>CFGsHardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\CFGsPinout.en.resx">
+      <DependentUpon>CFGsPinout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\CFGsPinout.resx">
+      <DependentUpon>CFGsPinout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\CFGsProject.en.resx">
+      <DependentUpon>CFGsProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\CFGsProject.resx">
+      <DependentUpon>CFGsProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\Pinout.resx">
+      <DependentUpon>Pinout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\ProjectCFGsExplorer.en.resx">
+      <DependentUpon>ProjectCFGsExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Project\ProjectCFGsExplorer.resx">
+      <DependentUpon>ProjectCFGsExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoupUps\CreateNewProject.resx">
+      <DependentUpon>CreateNewProject.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Druida IDE.resx">
+      <DependentUpon>Druida IDE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\MainToolBar.en-US.resx">
+      <DependentUpon>MainToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\MainToolBar.en.resx">
+      <DependentUpon>MainToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\MainToolBar.pt.resx">
+      <DependentUpon>MainToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\MainToolBar.resx">
+      <DependentUpon>MainToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\Console.resx">
+      <DependentUpon>Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.resx">
+      <DependentUpon>FilesExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\ObjectsExplorer.resx">
+      <DependentUpon>ObjectsExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\IDE\SettingsMainForm.resx">
+      <DependentUpon>SettingsMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.en.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SerialMonitorTool.pt.resx">
+      <DependentUpon>SerialMonitorTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SerialMonitorTool.resx">
+      <DependentUpon>SerialMonitorTool.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Resources\Custom Fonts\Anonymous Pro B.ttf" />
+    <None Include="Resources\Custom Fonts\Anonymous Pro BI.ttf" />
+    <None Include="Resources\Custom Fonts\Anonymous Pro I.ttf" />
+    <None Include="Resources\Custom Fonts\Anonymous Pro.ttf" />
+    <None Include="Resources\General\FavoriteBoards.cfg" />
+    <None Include="Resources\Hardware Debugger\TesteDepurador\TesteDepurador.cfg" />
+    <None Include="Resources\Hardware Debugger\TesteDepurador\TesteDepurador.ino" />
+    <None Include="Resources\Proteus Files\Novo Projeto.pdsprj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="icon_t9j_icon.ico" />
+    <None Include="Resources\Arduino Dark Theme.png" />
+    <None Include="Resources\Arduino Light Theme.png" />
+    <Content Include="Resources\ArduinoTool%27s\Upload.png" />
+    <Content Include="Resources\ArduinoTool%27s\NewFileArduin.png" />
+    <Content Include="Resources\ArduinoTool%27s\OpenFileArduino.png" />
+    <Content Include="Resources\ArduinoTool%27s\SaveFileArduino.png" />
+    <Content Include="Resources\ArduinoTool%27s\Verify.png" />
+    <Content Include="Resources\Binary\Atualizador.exe" />
+    <Content Include="Resources\Binary\Atualizadorx64.exe" />
+    <Content Include="Resources\Binary\Atualizadorx86.exe" />
+    <Content Include="Resources\CodeObjects\Class.png" />
+    <Content Include="Resources\CodeObjects\ConstantValue.png" />
+    <Content Include="Resources\CodeObjects\Cube.png" />
+    <Content Include="Resources\CodeObjects\Global.png" />
+    <Content Include="Resources\CodeObjects\Keyword.png" />
+    <Content Include="Resources\CodeObjects\Library.png" />
+    <Content Include="Resources\CodeObjects\Namespace.png" />
+    <Content Include="Resources\CodeObjects\Tree.png" />
+    <Content Include="Resources\CodeObjects\Var.png" />
+    <Content Include="Resources\Console\Delete All.png" />
+    <Content Include="Resources\Console\SerialMonitor\Auto-Scroll.png" />
+    <Content Include="Resources\Console\tbErrors\Information.png" />
+    <Content Include="Resources\Console\tbErrors\Notice.png" />
+    <Content Include="Resources\Console\tbInspect\Add Inspection.png" />
+    <Content Include="Resources\Dlls\DruidaIDEAuxiliarControls.dll" />
+    <Content Include="Resources\Dlls\MyProtocols.dll" />
+    <None Include="Resources\Druida Light Theme.png" />
+    <None Include="Resources\Druida Dark Theme.png" />
+    <Content Include="Resources\ErrorsText\Errors.txt" />
+    <Content Include="Resources\ErrorsText\Errors_PT.txt" />
+    <Content Include="Resources\Explorer\Arduino.jpg" />
+    <Content Include="Resources\Explorer\Arduino.png" />
+    <Content Include="Resources\Explorer\cpp.png" />
+    <Content Include="Resources\Explorer\h.png" />
+    <Content Include="Resources\Explorer\copyDirectory.png" />
+    <Content Include="Resources\Explorer\png.png" />
+    <Content Include="Resources\Explorer\Refresh.png" />
+    <Content Include="Resources\Explorer\Rename.png" />
+    <Content Include="Resources\Explorer\txt.png" />
+    <Content Include="Resources\General\Folder.png" />
+    <Content Include="Resources\General\Delete.png" />
+    <Content Include="Resources\General\AddLibrary.png" />
+    <Content Include="Resources\General\OpenLibrary.png" />
+    <Content Include="Resources\Hardware Debugger\TesteDepurador\BqBusCmd.cpp" />
+    <Content Include="Resources\Hardware Debugger\TesteDepurador\BqBusCmd.h" />
+    <Content Include="Resources\Hardware Debugger\TesteDepurador\HardwareDebugger.cpp" />
+    <Content Include="Resources\Hardware Debugger\TesteDepurador\HardwareDebugger.h" />
+    <Content Include="Resources\HardwareMonitor\cfgInput.png" />
+    <Content Include="Resources\HardwareMonitor\cfgOutput.png" />
+    <Content Include="Resources\HardwareMonitor\forceOff.png" />
+    <Content Include="Resources\HardwareMonitor\forceOn.png" />
+    <Content Include="Resources\HardwareMonitor\plot.png" />
+    <Content Include="Resources\Explorer\firmware.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\CodeFolding.png" />
+    <Content Include="Resources\Icons\downloadLibs.ico" />
+    <Content Include="Resources\Icons\Examples.ico" />
+    <Content Include="Resources\Icons\Libs.ico" />
+    <Content Include="Resources\Icons\plot.ico" />
+    <Content Include="Resources\ImageViewer\FitToScreen.png" />
+    <Content Include="Resources\ImageViewer\ZoomIn.png" />
+    <Content Include="Resources\ImageViewer\ZoomOut.png" />
+    <Content Include="Resources\ImageViewer\ZoomToNormal.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Comment Selected.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Copy.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Cut.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Delete.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Find and Replace.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Find.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\GoTo.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Ident.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Paste.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Redo.png" />
+    <Content Include="Resources\Main Tool Bar\tbEdit\Undo.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Add File.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\DownloadLibraries.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Examples.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Export Html.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\File Config.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Save File As.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Import File.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Library.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Open IDE.png" />
+    <Content Include="Resources\Main Tool Bar\tbFiles\Save File.png" />
+    <Content Include="Resources\Main Tool Bar\tbHelp\Bug Report.png" />
+    <Content Include="Resources\Main Tool Bar\tbHelp\Help.png" />
+    <Content Include="Resources\Main Tool Bar\tbHelp\On-line Documents.png" />
+    <Content Include="Resources\Main Tool Bar\tbHelp\On-Line Support.png" />
+    <Content Include="Resources\Main Tool Bar\tbHelp\Suggestion.png" />
+    <Content Include="Resources\Main Tool Bar\tbHelp\Tutorial.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Arduino MEGA.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Arduino NANO.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Arduino UNO.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\DebuggerCfg.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Hardware.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Export.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\DebugDisable.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\DebugEnable.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\New File.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Open.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Quit.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Save As.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Save.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Upload.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\uploadDebuger.png" />
+    <Content Include="Resources\Main Tool Bar\tbProject\Verify.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Check Marks.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Compile.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\HardwareDebugger.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Interrupt.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Options.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Serial Monitor.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Var Monitor.png" />
+    <Content Include="Resources\Main Tool Bar\tbTools\Variables.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\Console.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\FilesList.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\DocumentMap.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\Fold.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\Unfold.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\ObjectsList.png" />
+    <Content Include="Resources\Settings\Favorite.png" />
+    <Content Include="Resources\ShoppingIcons\AnnounceStore.png" />
+    <Content Include="Resources\ShoppingIcons\HomePage.png" />
+    <Content Include="Resources\ShoppingIcons\Shopping.png" />
+    <Content Include="Resources\System\USB Off.png" />
+    <Content Include="Resources\System\USB On.png" />
+    <Content Include="Resources\Main Tool Bar\tbView\FullScreen.png" />
+    <Content Include="Resources\ShoppingIcons\siteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BqBusTester\MyProtocols\MyProtocols.vbproj">
+      <Project>{35a85778-ab6a-4b5d-8dc0-92970da98604}</Project>
+      <Name>MyProtocols</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code Editor For Arduino\Code Editor For Arduino\Code Editor For Arduino.vbproj">
+      <Project>{d6d6434c-e64a-4746-8c7b-81997e2ff5a0}</Project>
+      <Name>Code Editor For Arduino</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Recursos\FastColoredTextBox-master\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
+      <Name>FastColoredTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DruidaIDEAuxiliarControls\DruidaIDEAuxiliarControls.vbproj">
+      <Project>{f38ffedb-9564-434c-ab2b-78095da16a78}</Project>
+      <Name>DruidaIDEAuxiliarControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

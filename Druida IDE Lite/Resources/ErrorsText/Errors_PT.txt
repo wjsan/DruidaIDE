@@ -1,0 +1,78 @@
+Falha ao se conectar ao ESP32: Pressione o botão boot no momento do envio
+Comparações entre expressões signed e unsigned
+não é possível declarar uma função estática dentro de outra função
+o controle atingiu o final de uma função não vazia. Possível falha por retorno vazio pode ser gerada em tempo de execução.
+símbolos extras ao final da diretiva #ifdef
+não foi possível encontrar o operador literal numérico
+ISO C++11 requer um espaço em branco após o nome da macro
+os nomes de um macro precisam ser identificadores
+referencia nao definida para
+Arquivo, diretório, ou biblioteca não encontrada
+não tem este tipo de classe
+não é um membro estático de
+uso inválido do membro de uma função
+especificador puro inválido (somente '= 0' é permitido) antes de
+o valor vazio para o void, não foi ignorado como deveria ser
+você esqueceu os
+id retornou o valor 1 durante o seu encerramento
+na classe
+sobrecarga ambígua para o 'operador
+os tipos dos operandos são
+o tipo do operando é
+não possui um membro de nome
+nenhuma correspondência para o 'operador
+nenhuma função correspondente foi encontrada para
+não foi declarado neste escopo
+não é o nome de um tipo
+declarado como função ou membro na classe
+poucos argumentos para a função
+neste ponto do arquivo
+Verifique se existem parêntesis "()" na declaração da instância.  O membro requisitado
+não deriva de um tipo de classe
+conversão inválida de
+caracter " de terminação ausente
+Não é possível converter
+não utilizada
+incicializada como uma variavel
+uma definição de função
+O candidato provável é
+estreitamento na conversão de
+declarador abstrato
+usado com declaração
+Não foi encontrado um protótipo para
+ID não qualificado 
+uma definição de classe
+constante numérica
+não é permitida
+antes de
+no final da instrução
+variável ou campo
+declarado incorretamente
+expressão primária
+redefinição de
+no programa
+variável não utilizada
+parâmetro não utilizado
+ausente
+terminação
+caracter
+identifier
+antes de
+depois de
+esperado
+variavel
+função
+ inside
+ de 
+ para 
+ em 
+ ou 
+ e 
+ 
+ inicializador 
+ caracter inválido 
+não existe 
+ 'Ç'
+ 'á'
+ 'â'
+ 'ç'

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DruidaIDE", "DruidaIDE\DruidaIDE.csproj", "{92A416CC-046E-4FA6-81B4-285B7C96CE4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92A416CC-046E-4FA6-81B4-285B7C96CE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A416CC-046E-4FA6-81B4-285B7C96CE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A416CC-046E-4FA6-81B4-285B7C96CE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A416CC-046E-4FA6-81B4-285B7C96CE4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81259EB7-74CD-415C-B8C5-662C15DBE512}
+	EndGlobalSection
+EndGlobal

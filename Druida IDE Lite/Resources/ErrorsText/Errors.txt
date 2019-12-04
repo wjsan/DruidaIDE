@@ -1,0 +1,78 @@
+A fatal error occurred: Failed to connect to ESP32: Timed out waiting for packet header
+comparison between signed and unsigned integer expressions
+cannot declare static function inside another function
+control reaches end of non-void function
+extra tokens at end of #ifdef directive
+unable to find numeric literal operator
+ISO C++11 requires whitespace after the macro name
+macro names must be identifiers
+undefined reference to
+No such file or directory
+does not have class type
+is not a static data member of
+invalid pure specifier (only '= 0' is allowed) before
+invalid use of member function
+void value not ignored as it ought to be
+did you forget the
+ld returned 1 exit status
+does not match any in class
+ambiguous overload for 'operator
+operand types are
+operand type is
+has no member named
+no match for 'operator
+no matching function for call to
+was not declared in this scope
+does not name a type
+member function declared in class
+too few arguments to function
+at this point in file
+request for member
+which is of non-class type
+invalid conversion from
+missing terminating " character
+could not convert
+set but not used
+is initialized like a variable
+a function-definition
+candidate is
+narrowing conversion of
+abstract declarator
+used as declaration
+prototype for
+unqualified-id
+class definition
+numeric constant
+is not allowed
+here before
+at end of input
+variable or field
+declared void
+primary-expression
+redefinition of
+in program
+unused variable
+unused parameter
+missing
+terminating
+character
+identificador
+before
+after
+expected
+variable
+function
+ dentro de
+ from 
+ to 
+ in 
+ or 
+ and 
+ token
+ initializer 
+ stray 
+no 
+ '\307'
+ '\341'
+ '\342'
+ '\347'

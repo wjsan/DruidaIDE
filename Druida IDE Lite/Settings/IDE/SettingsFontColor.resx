@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;lbSyntax.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbBold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btOpen.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="cbBold.Text" xml:space="preserve">
+    <value>Negrito</value>
+  </data>
+  <data name="cbFontFamily.Items" xml:space="preserve">
+    <value>Consolas</value>
+  </data>
+  <data name="lbSyntax.Items8" xml:space="preserve">
+    <value>Strings</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 232</value>
+  </data>
+  <data name="&gt;&gt;btColor.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="lbSyntax.Items17" xml:space="preserve">
+    <value>Cor dos Números das Linhas</value>
+  </data>
+  <data name="lbSyntax.Items19" xml:space="preserve">
+    <value>Cor da Aba Ativa</value>
+  </data>
+  <data name="&gt;&gt;cbColor.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cbFontSize.Items10" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>SyntaxHighlighter</value>
+  </data>
+  <data name="cbFontSize.Items8" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="cbFontSize.Items9" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="cbFontFamily.Items2" xml:space="preserve">
+    <value>Lucida Console</value>
+  </data>
+  <data name="btSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cbFontSize.Items1" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbFontSize.Items2" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbFontSize.Items3" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cbFontSize.Items4" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cbFontSize.Items5" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cbFontSize.Items6" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="cbFontSize.Items7" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cbFontFamily.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbSyntax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;btOpen.Name" xml:space="preserve">
+    <value>btOpen</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Cor:</value>
+  </data>
+  <data name="&gt;&gt;lbSyntax.Name" xml:space="preserve">
+    <value>lbSyntax</value>
+  </data>
+  <data name="cbUnderlined.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btApply.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 26</value>
+  </data>
+  <data name="&gt;&gt;tbPreview.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 204</value>
+  </data>
+  <data name="lbSyntax.Items21" xml:space="preserve">
+    <value>Cor do Texto das Abas</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbBold.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbBold.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lbSyntax.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="btSaveAs.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="tbPreview.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbSyntax.Items11" xml:space="preserve">
+    <value>Classes Declaradas</value>
+  </data>
+  <data name="&gt;&gt;cbFontSize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbColor.Name" xml:space="preserve">
+    <value>cbColor</value>
+  </data>
+  <data name="btSaveAs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 27</value>
+  </data>
+  <data name="tbPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="cbUnderlined.Text" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="lbSyntax.Items1" xml:space="preserve">
+    <value>Palavras-Chave 2 (C++)</value>
+  </data>
+  <data name="tbPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;cbFontFamily.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbItalic.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbSyntax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;btSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbUnderlined.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 159</value>
+  </data>
+  <data name="&gt;&gt;btApply.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="lbSyntax.Items9" xml:space="preserve">
+    <value>Palavras Iguais</value>
+  </data>
+  <data name="btSaveAs.Text" xml:space="preserve">
+    <value>Salvar Como</value>
+  </data>
+  <data name="&gt;&gt;cbFontSize.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pbColor.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btOpen.Text" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="cbFontSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;cbFontSize.Name" xml:space="preserve">
+    <value>cbFontSize</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlined.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbSyntax.Items13" xml:space="preserve">
+    <value>Métodos autônomos</value>
+  </data>
+  <data name="&gt;&gt;tbPreview.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="cbColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 21</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="tbPreview.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbFontFamily.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 21</value>
+  </data>
+  <data name="&gt;&gt;btOpen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tbPreview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbSyntax.Items3" xml:space="preserve">
+    <value>Palavras-Chave 4 (Variáveis)</value>
+  </data>
+  <data name="Label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 66</value>
+  </data>
+  <data name="&gt;&gt;cbItalic.Name" xml:space="preserve">
+    <value>cbItalic</value>
+  </data>
+  <data name="btOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cbFontFamily.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 43</value>
+  </data>
+  <data name="cbFontFamily.Items1" xml:space="preserve">
+    <value>Courier New</value>
+  </data>
+  <data name="cbFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 43</value>
+  </data>
+  <data name="&gt;&gt;cbBold.Name" xml:space="preserve">
+    <value>cbBold</value>
+  </data>
+  <data name="btColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 61</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlined.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbFontSize.Items18" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;btApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;pbColor.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="btColor.Text" xml:space="preserve">
+    <value>Personalizar</value>
+  </data>
+  <data name="cbBold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 112</value>
+  </data>
+  <data name="pbColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 85</value>
+  </data>
+  <data name="lbSyntax.Items14" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="cbItalic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 24</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbColor.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;cbItalic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 359</value>
+  </data>
+  <data name="cbFontSize.Items19" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;btSaveAs.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="lbSyntax.Items10" xml:space="preserve">
+    <value>Instâncias Declaradas</value>
+  </data>
+  <data name="&gt;&gt;cbItalic.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btSaveAs.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btColor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;btColor.Name" xml:space="preserve">
+    <value>btColor</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlined.Name" xml:space="preserve">
+    <value>cbUnderlined</value>
+  </data>
+  <data name="Label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lbSyntax.Items5" xml:space="preserve">
+    <value>Números</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbItalic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 136</value>
+  </data>
+  <data name="cbFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cbUnderlined.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="lbSyntax.Items2" xml:space="preserve">
+    <value>Palavras-Chave 3 (Arduino)</value>
+  </data>
+  <data name="&gt;&gt;chooseColor.Name" xml:space="preserve">
+    <value>chooseColor</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbSyntax.Items16" xml:space="preserve">
+    <value>Cor dos Controles</value>
+  </data>
+  <data name="cbFontFamily.Items3" xml:space="preserve">
+    <value>MS Gothic</value>
+  </data>
+  <data name="&gt;&gt;pbColor.Name" xml:space="preserve">
+    <value>pbColor</value>
+  </data>
+  <data name="btColor.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="cbFontSize.Items" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SettingsFontColor</value>
+  </data>
+  <data name="&gt;&gt;cbFontFamily.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbFontSize.Items16" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="cbBold.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;cbFontFamily.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="&gt;&gt;cbItalic.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="cbBold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="&gt;&gt;btSaveAs.Name" xml:space="preserve">
+    <value>btSaveAs</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 186</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 21</value>
+  </data>
+  <data name="cbFontSize.Items15" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="cbItalic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="cbBold.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lbSyntax.Items20" xml:space="preserve">
+    <value>Cor da Faixa das Abas</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 76</value>
+  </data>
+  <data name="&gt;&gt;tbPreview.Name" xml:space="preserve">
+    <value>tbPreview</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbSyntax.Items7" xml:space="preserve">
+    <value>Constantes</value>
+  </data>
+  <data name="cbColor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;btApply.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbSyntax.Items4" xml:space="preserve">
+    <value>Palavras-Chave 5 (Compilador)</value>
+  </data>
+  <data name="btOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 27</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="cbUnderlined.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbFontSize.Items14" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbSyntax.Items18" xml:space="preserve">
+    <value>Cor de Fundo dos Números das Linhas</value>
+  </data>
+  <data name="&gt;&gt;pbColor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btApply.Text" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="cbFontFamily.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;cbFontFamily.Name" xml:space="preserve">
+    <value>cbFontFamily</value>
+  </data>
+  <data name="lbSyntax.Items" xml:space="preserve">
+    <value>Palavras-Chave 1 (Tipos de Objetos)</value>
+  </data>
+  <data name="cbItalic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="GroupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="cbFontSize.Items13" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="tbPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="&gt;&gt;chooseColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;cbBold.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="lbSyntax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 160</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Pré-Visualizar:</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 264</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="cbColor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tbPreview.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="btApply.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lbSyntax.Items12" xml:space="preserve">
+    <value>Métodos de Instâncias</value>
+  </data>
+  <data name="cbFontSize.Items12" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlined.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="btColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 23</value>
+  </data>
+  <data name="cbColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 85</value>
+  </data>
+  <data name="lbSyntax.Items15" xml:space="preserve">
+    <value>Cor de Fundo</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbFontSize.Items17" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lbSyntax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 62</value>
+  </data>
+  <data name="cbUnderlined.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pbColor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="cbItalic.Text" xml:space="preserve">
+    <value>Itálico</value>
+  </data>
+  <data name="cbFontSize.Items11" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btColor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbSyntax.Items6" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+  <data name="lbSyntax.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btApply.Name" xml:space="preserve">
+    <value>btApply</value>
+  </data>
+  <data name="&gt;&gt;btOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="chooseColor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
