@@ -1,2 +1,2 @@
 # DruidaIDE
-A new open source IDE, for Arduino Boards
+Software open-source para programação de placas Arduino
