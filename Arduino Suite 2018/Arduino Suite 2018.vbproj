@@ -1,0 +1,1157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A90BF4C3-3458-4AEC-A754-85397CB50E33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ArduinoSuite.My.MyApplication</StartupObject>
+    <RootNamespace>ArduinoSuite</RootNamespace>
+    <AssemblyName>Druida</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\packages\AForge\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\packages\AForge\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\packages\AForge\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SyntaxHighlighter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referencias Utilizadas\SyntaxHighlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCfg.vb" />
+    <Compile Include="Classes\SoftwareInterface.vb" />
+    <Compile Include="Controles\CircuitVisualizer.Designer.vb">
+      <DependentUpon>CircuitVisualizer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CircuitVisualizer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Hardware\GerenciamentoHardware.vb" />
+    <Compile Include="Controles\Hardware\hardwareMEGA.Designer.vb">
+      <DependentUpon>hardwareMEGA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Hardware\hardwareMEGA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Hardware\hardwareNANO.Designer.vb">
+      <DependentUpon>hardwareNANO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Hardware\hardwareNANO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Hardware\hardwareUNO.Designer.vb">
+      <DependentUpon>hardwareUNO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Hardware\hardwareUNO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Módulos\GlobalCodeEditor.vb" />
+    <Compile Include="Controles\NomePortas.Designer.vb">
+      <DependentUpon>NomePortas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NomePortas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AdquirirSoftware.Designer.vb">
+      <DependentUpon>AdquirirSoftware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AdquirirSoftware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\CriarGatilho.Designer.vb">
+      <DependentUpon>CriarGatilho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\CriarGatilho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\GenerateApp.Designer.vb">
+      <DependentUpon>GenerateApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\GenerateApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\OptionsGenerateApp.Designer.vb">
+      <DependentUpon>OptionsGenerateApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\OptionsGenerateApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Entrada\DialogNewCode.Designer.vb">
+      <DependentUpon>DialogNewCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Entrada\DialogNewCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Entrada\NovoProjetoFree.Designer.vb">
+      <DependentUpon>NovoProjetoFree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Entrada\NovoProjetoFree.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\AboutBinary.Designer.vb">
+      <DependentUpon>AboutBinary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\AboutBinary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Alarme.Designer.vb">
+      <DependentUpon>Alarme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Alarme.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\BotaoPersonalizado.Designer.vb">
+      <DependentUpon>BotaoPersonalizado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BotaoPersonalizado.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ControleInterface.Designer.vb">
+      <DependentUpon>ControleInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControleInterface.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ItemMenuInterativo.Designer.vb">
+      <DependentUpon>ItemMenuInterativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ItemMenuInterativo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\MenuInterativo.Designer.vb">
+      <DependentUpon>MenuInterativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\MenuInterativo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\TaskButton.Designer.vb">
+      <DependentUpon>TaskButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TaskButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Ícone.Designer.vb">
+      <DependentUpon>Ícone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Ícone.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Módulos\ProcedimentosGlobais.vb" />
+    <Compile Include="PopUps\BotaoAcao.Designer.vb">
+      <DependentUpon>BotaoAcao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\BotaoAcao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\ExibirAcoes.Designer.vb">
+      <DependentUpon>ExibirAcoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ExibirAcoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\NovaPasta.Designer.vb">
+      <DependentUpon>NovaPasta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\NovaPasta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\OpcoesDeUsuario.Designer.vb">
+      <DependentUpon>OpcoesDeUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\OpcoesDeUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\Rotulo.Designer.vb">
+      <DependentUpon>Rotulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\Rotulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\SalvarComo.Designer.vb">
+      <DependentUpon>SalvarComo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\SalvarComo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\ComboIcon.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ControleHardware.Designer.vb">
+      <DependentUpon>ControleHardware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControleHardware.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Entrada Analógica.Designer.vb">
+      <DependentUpon>Adicionar Entrada Analógica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Entrada Analógica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Saída Analógica.Designer.vb">
+      <DependentUpon>Adicionar Saída Analógica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Saída Analógica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Grafico.Designer.vb">
+      <DependentUpon>Grafico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Grafico.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Joystick Config\Joy.vb" />
+    <Compile Include="Módulos\Comunicacao.vb" />
+    <Compile Include="Controles\Módulos\EstruturaControleHardware.vb" />
+    <Compile Include="Controles\Módulos\GerenciamentoControles.vb" />
+    <Compile Include="Módulos\Estrutura Saída Digital Arduino\SaidaDigitalArduino.vb" />
+    <Compile Include="Módulos\FileVarSystem.vb" />
+    <Compile Include="Módulos\GerenciaFerramentasIOMonitor.vb" />
+    <Compile Include="Módulos\GerenciamentoComando.vb" />
+    <Compile Include="Controles\Módulos\OBJ_Resize.vb" />
+    <Compile Include="Controles\Dialogs\Adicionar Entrada.Designer.vb">
+      <DependentUpon>Adicionar Entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Saída.Designer.vb">
+      <DependentUpon>Adicionar Saída.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Adicionar Saída.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Módulos\VariaveisLadder.vb" />
+    <Compile Include="PopUps\AddCameraIP.Designer.vb">
+      <DependentUpon>AddCameraIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddCameraIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\AddGráfico.Designer.vb">
+      <DependentUpon>AddGráfico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddGráfico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\AddImagem.Designer.vb">
+      <DependentUpon>AddImagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddImagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\ConfiguraBluetooth.Designer.vb">
+      <DependentUpon>ConfiguraBluetooth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ConfiguraBluetooth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\Criar Tela de Comando.Designer.vb">
+      <DependentUpon>Criar Tela de Comando.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\Criar Tela de Comando.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Renomear.Designer.vb">
+      <DependentUpon>Renomear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialogs\Renomear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joystick Config\DS4.Designer.vb">
+      <DependentUpon>DS4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Joystick Config\DS4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joystick Config\G27.Designer.vb">
+      <DependentUpon>G27.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Joystick Config\G27.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joystick Config\X360.Designer.vb">
+      <DependentUpon>X360.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Joystick Config\X360.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Dialogs\CriarControleHardware.Designer.vb">
+      <DependentUpon>CriarControleHardware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialogs\CriarControleHardware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\AddEntrada32Bits.Designer.vb">
+      <DependentUpon>AddEntrada32Bits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\AddEntrada32Bits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\AddRegBit.Designer.vb">
+      <DependentUpon>AddRegBit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\AddRegBit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\AddSaída32Bits.Designer.vb">
+      <DependentUpon>AddSaída32Bits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\AddSaída32Bits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddBit.Designer.vb">
+      <DependentUpon>AddBit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddBit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddKeypad.Designer.vb">
+      <DependentUpon>AddKeypad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddKeypad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddL298N.Designer.vb">
+      <DependentUpon>AddL298N.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddL298N.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddServo.Designer.vb">
+      <DependentUpon>AddServo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddServo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddTimer.Designer.vb">
+      <DependentUpon>AddTimer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddTimer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddUltrasonic.Designer.vb">
+      <DependentUpon>AddUltrasonic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPouPups\InCode\AddUltrasonic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\Alarmes.Designer.vb">
+      <DependentUpon>Alarmes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\Alarmes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\Comando.Designer.vb">
+      <DependentUpon>Comando.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\Comando.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\ComandoAvancado.Designer.vb">
+      <DependentUpon>ComandoAvancado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\ComandoAvancado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\ConfigAlarmes.Designer.vb">
+      <DependentUpon>ConfigAlarmes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\ConfigAlarmes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\Configurações.Designer.vb">
+      <DependentUpon>Configurações.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\Configurações.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Entrada\Criar Novo Projeto.Designer.vb">
+      <DependentUpon>Criar Novo Projeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Entrada\Criar Novo Projeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\DruidaSuiteMain.Designer.vb">
+      <DependentUpon>DruidaSuiteMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\DruidaSuiteMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Módulos\GerenciamentoFirmware.vb" />
+    <Compile Include="PopUps\DialogUpload.Designer.vb">
+      <DependentUpon>DialogUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\DialogUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\DialogDownload.Designer.vb">
+      <DependentUpon>DialogDownload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\DialogDownload.vb" />
+    <Compile Include="PopUps\DialogUpdateFirmware.Designer.vb">
+      <DependentUpon>DialogUpdateFirmware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\DialogUpdateFirmware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Entrada\TelaDeLogon.Designer.vb">
+      <DependentUpon>TelaDeLogon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Entrada\TelaDeLogon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Entrada\TelaInicial.Designer.vb">
+      <DependentUpon>TelaInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Entrada\TelaInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Módulos\VariveisGlobais.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Telas de Entrada\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Entrada\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\ConfiguraçõesHardware.Designer.vb">
+      <DependentUpon>ConfiguraçõesHardware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\ConfiguraçõesHardware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\Ferramentas.Designer.vb">
+      <DependentUpon>Ferramentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\Ferramentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joystick Config\TesteJoytick.Designer.vb">
+      <DependentUpon>TesteJoytick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Joystick Config\TesteJoytick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Principais\TestarApp.Designer.vb">
+      <DependentUpon>TestarApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Principais\TestarApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\CircuitVisualizer.resx">
+      <DependentUpon>CircuitVisualizer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Hardware\hardwareMEGA.resx">
+      <DependentUpon>hardwareMEGA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Hardware\hardwareNANO.resx">
+      <DependentUpon>hardwareNANO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Hardware\hardwareUNO.resx">
+      <DependentUpon>hardwareUNO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\NomePortas.resx">
+      <DependentUpon>NomePortas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\AdquirirSoftware.resx">
+      <DependentUpon>AdquirirSoftware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\CriarGatilho.resx">
+      <DependentUpon>CriarGatilho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\GenerateApp.resx">
+      <DependentUpon>GenerateApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\OptionsGenerateApp.resx">
+      <DependentUpon>OptionsGenerateApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Entrada\DialogNewCode.resx">
+      <DependentUpon>DialogNewCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Entrada\NovoProjetoFree.resx">
+      <DependentUpon>NovoProjetoFree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\AboutBinary.resx">
+      <DependentUpon>AboutBinary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Alarme.resx">
+      <DependentUpon>Alarme.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\BotaoPersonalizado.resx">
+      <DependentUpon>BotaoPersonalizado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ControleInterface.resx">
+      <DependentUpon>ControleInterface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ItemMenuInterativo.resx">
+      <DependentUpon>ItemMenuInterativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\MenuInterativo.resx">
+      <DependentUpon>MenuInterativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\TaskButton.resx">
+      <DependentUpon>TaskButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Ícone.resx">
+      <DependentUpon>Ícone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\BotaoAcao.resx">
+      <DependentUpon>BotaoAcao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\ExibirAcoes.resx">
+      <DependentUpon>ExibirAcoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\NovaPasta.resx">
+      <DependentUpon>NovaPasta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\OpcoesDeUsuario.resx">
+      <DependentUpon>OpcoesDeUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\Rotulo.resx">
+      <DependentUpon>Rotulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\SalvarComo.resx">
+      <DependentUpon>SalvarComo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ComboIcon.resx">
+      <DependentUpon>ComboIcon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ControleHardware.resx">
+      <DependentUpon>ControleHardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Dialogs\Adicionar Entrada Analógica.resx">
+      <DependentUpon>Adicionar Entrada Analógica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Dialogs\Adicionar Saída Analógica.resx">
+      <DependentUpon>Adicionar Saída Analógica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Grafico.resx">
+      <DependentUpon>Grafico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Dialogs\Adicionar Entrada.resx">
+      <DependentUpon>Adicionar Entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Dialogs\Adicionar Saída.resx">
+      <DependentUpon>Adicionar Saída.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\AddCameraIP.resx">
+      <DependentUpon>AddCameraIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\AddGráfico.resx">
+      <DependentUpon>AddGráfico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\AddImagem.resx">
+      <DependentUpon>AddImagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\ConfiguraBluetooth.resx">
+      <DependentUpon>ConfiguraBluetooth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\Criar Tela de Comando.resx">
+      <DependentUpon>Criar Tela de Comando.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Dialogs\Renomear.resx">
+      <DependentUpon>Renomear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joystick Config\DS4.resx">
+      <DependentUpon>DS4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joystick Config\G27.resx">
+      <DependentUpon>G27.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joystick Config\X360.resx">
+      <DependentUpon>X360.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Dialogs\CriarControleHardware.resx">
+      <DependentUpon>CriarControleHardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\AddEntrada32Bits.resx">
+      <DependentUpon>AddEntrada32Bits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\AddRegBit.resx">
+      <DependentUpon>AddRegBit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\AddSaída32Bits.resx">
+      <DependentUpon>AddSaída32Bits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\InCode\AddBit.resx">
+      <DependentUpon>AddBit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\InCode\AddKeypad.resx">
+      <DependentUpon>AddKeypad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\InCode\AddL298N.resx">
+      <DependentUpon>AddL298N.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\InCode\AddServo.resx">
+      <DependentUpon>AddServo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\InCode\AddTimer.resx">
+      <DependentUpon>AddTimer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPouPups\InCode\AddUltrasonic.resx">
+      <DependentUpon>AddUltrasonic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\Alarmes.resx">
+      <DependentUpon>Alarmes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\Comando.resx">
+      <DependentUpon>Comando.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\ComandoAvancado.resx">
+      <DependentUpon>ComandoAvancado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\ConfigAlarmes.resx">
+      <DependentUpon>ConfigAlarmes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\Configurações.resx">
+      <DependentUpon>Configurações.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Entrada\Criar Novo Projeto.resx">
+      <DependentUpon>Criar Novo Projeto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\DruidaSuiteMain.resx">
+      <DependentUpon>DruidaSuiteMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\DialogDownload.resx">
+      <DependentUpon>DialogDownload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\DialogUpdateFirmware.resx">
+      <DependentUpon>DialogUpdateFirmware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\DialogUpload.resx">
+      <DependentUpon>DialogUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Entrada\TelaDeLogon.resx">
+      <DependentUpon>TelaDeLogon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Entrada\TelaInicial.resx">
+      <DependentUpon>TelaInicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Entrada\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\ConfiguraçõesHardware.resx">
+      <DependentUpon>ConfiguraçõesHardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\Ferramentas.resx">
+      <DependentUpon>Ferramentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joystick Config\TesteJoytick.resx">
+      <DependentUpon>TesteJoytick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Principais\TestarApp.resx">
+      <DependentUpon>TestarApp.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Adicionar_Entrada.datasource" />
+    <None Include="My Project\DataSources\Adicionar_Entrada_Analógica.datasource" />
+    <None Include="My Project\DataSources\Adicionar_Saída.datasource" />
+    <None Include="My Project\DataSources\Adicionar_Saída.JOYINFOEX.datasource" />
+    <None Include="My Project\DataSources\Alarmes.datasource" />
+    <None Include="My Project\DataSources\ArduinoSuite.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\ArduinoSuite.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\ArduinoSuiteMain.datasource" />
+    <None Include="My Project\DataSources\Comando.datasource" />
+    <None Include="My Project\DataSources\Comando.JOYINFOEX.datasource" />
+    <None Include="My Project\DataSources\Configurações.datasource" />
+    <None Include="My Project\DataSources\Criar_Novo_Projeto.datasource" />
+    <None Include="My Project\DataSources\Criar_Tela_de_Comando.datasource" />
+    <None Include="My Project\DataSources\DialogDownload.datasource" />
+    <None Include="My Project\DataSources\DialogUpdateFirmware.datasource" />
+    <None Include="My Project\DataSources\DialogUpload.datasource" />
+    <None Include="My Project\DataSources\Entrada.datasource" />
+    <None Include="My Project\DataSources\EntradaAnalogica.datasource" />
+    <None Include="My Project\DataSources\Ferramentas.datasource" />
+    <None Include="My Project\DataSources\Form1.datasource" />
+    <None Include="My Project\DataSources\Grafico.datasource" />
+    <None Include="My Project\DataSources\Renomear.datasource" />
+    <None Include="My Project\DataSources\Saida.datasource" />
+    <None Include="My Project\DataSources\SaidaAnalogica.datasource" />
+    <None Include="My Project\DataSources\SplashScreen.datasource" />
+    <None Include="My Project\DataSources\TelaDeLogon.datasource" />
+    <None Include="My Project\DataSources\TelaInicial.datasource" />
+    <None Include="My Project\DataSources\TesteJoystick.datasource" />
+    <None Include="My Project\DataSources\TesteJoystick.JOYINFOEX.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Logo 1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ativador Splash Screen 2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\Imagens\Context\Paste1.png" />
+    <None Include="bin\Debug\Imagens\Comando\YellowLedOn.png" />
+    <None Include="bin\Debug\Imagens\Comando\YellowLedOff.png" />
+    <Content Include="icon.ico" />
+    <Content Include="Resources\Anim\ampulheta.gif" />
+    <Content Include="Resources\Anim\Build.gif" />
+    <Content Include="Resources\Anim\loading.gif" />
+    <Content Include="Resources\Anim\uploadAnim.gif" />
+    <Content Include="Resources\CodeObjects\Class.png" />
+    <Content Include="Resources\CodeObjects\Cude.png" />
+    <Content Include="Resources\CodeObjects\Keyword.png" />
+    <Content Include="Resources\CodeObjects\Library.png" />
+    <Content Include="Resources\CodeObjects\Tree.png" />
+    <Content Include="Resources\Componentes\kb_4x3_.png" />
+    <Content Include="Resources\Componentes\kb_4x4_.png" />
+    <Content Include="Resources\Componentes\Keypad.png" />
+    <Content Include="Resources\Componentes\l298n.png" />
+    <Content Include="Resources\Componentes\Timer.png" />
+    <None Include="Resources\on1.png" />
+    <None Include="Resources\off1.png" />
+    <None Include="Resources\download4.png" />
+    <Content Include="Resources\Icon\home.png" />
+    <Content Include="Resources\Icon\icons8-add-folder-512.png" />
+    <Content Include="Resources\Icon\icons8-add-to-clipboard-512.png" />
+    <Content Include="Resources\Icon\main.png" />
+    <Content Include="Resources\Icon\web.png" />
+    <Content Include="Resources\Icon\www.png" />
+    <Content Include="Resources\Periféricos\Screen.png" />
+    <Content Include="Resources\Programmimg\Comentar Linhas.png" />
+    <Content Include="Resources\Programmimg\Descomentar.png" />
+    <Content Include="Resources\Programmimg\find.png" />
+    <Content Include="Resources\Programmimg\findAndReplace.png" />
+    <Content Include="Resources\Programmimg\Folder.png" />
+    <Content Include="Resources\Programmimg\icon.png" />
+    <Content Include="Resources\Programmimg\Ident.png" />
+    <Content Include="Resources\Programmimg\library.png" />
+    <Content Include="Resources\Programmimg\pause.png" />
+    <Content Include="Resources\Programmimg\Play.png" />
+    <Content Include="Resources\Programmimg\playLoop.png" />
+    <Content Include="Resources\Programmimg\stopButton.png" />
+    <Content Include="Resources\CodeObjects\var.png" />
+    <Content Include="Resources\Programmimg\windows.png" />
+    <Content Include="Resources\Programmimg\WindowsLogo.png" />
+    <Content Include="Resources\Programmimg\windowsSelected.png" />
+    <Content Include="Resources\Tools\audioOff.png" />
+    <Content Include="Resources\Tools\audioOn.png" />
+    <Content Include="Resources\Tools\bit.png" />
+    <Content Include="Resources\Tools\clear text box.jpg" />
+    <Content Include="Resources\Tools\hc-sr04.png" />
+    <Content Include="Resources\Tools\lupa.jpg" />
+    <Content Include="Resources\Tools\memoria.png" />
+    <Content Include="Resources\Tools\scriptScreen.png" />
+    <Content Include="Resources\Tools\SourceCodeSelect.png" />
+    <Content Include="Resources\toolWindows\Bar.png" />
+    <Content Include="Resources\Icon\icons8-trash-can-480.png" />
+    <Content Include="Resources\toolWindows\leftdocking.png" />
+    <Content Include="Resources\toolWindows\Maximize.png" />
+    <Content Include="Resources\toolWindows\Minimize.png" />
+    <Content Include="Resources\toolWindows\rightDocking.png" />
+    <Content Include="Sem título.ico" />
+    <None Include="Resources\BobinaPulso%28s%29.png" />
+    <None Include="Resources\ContatoNA%28s%29.png" />
+    <None Include="Resources\Bobina%28s%29.png" />
+    <None Include="Resources\ContatoNF%28s%29.png" />
+    <Content Include="Resources\Ladder\Digital\High\BobinaPls_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\High\BobinaR_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\High\BobinaS_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\High\Bobina_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\High\ContatoNA_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\High\ContatoNF_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\High\ContatoPls_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\LineDownBt.png" />
+    <Content Include="Resources\Ladder\Digital\LineUp.png" />
+    <Content Include="Resources\Ladder\Digital\LineUpBt.png" />
+    <Content Include="Resources\Ladder\Digital\LineUp_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\LineUp_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Line_HIGH.png" />
+    <Content Include="Resources\Ladder\Digital\Line_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\BobinaPls_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\BobinaR_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\BobinaS_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\Bobina_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\ContatoNA_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\ContatoNF_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Low\ContatoPls_LOW.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\Bobina.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\BobinaPls.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\BobinaR.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\BobinaS.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\ContatoNA.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\ContatoNF.png" />
+    <Content Include="Resources\Ladder\Digital\Norm\ContatoPls.png" />
+    <Content Include="Resources\Ladder\Digital\Line.png" />
+    <Content Include="Resources\Ladder\Tools\compile.png" />
+    <Content Include="Resources\Programmimg\Coil.gif" />
+    <Content Include="Resources\Programmimg\CoilM.gif" />
+    <Content Include="Resources\Programmimg\DAC.bmp" />
+    <Content Include="Resources\Programmimg\Input.gif" />
+    <Content Include="Resources\Programmimg\ADC.bmp" />
+    <Content Include="Resources\Programmimg\LAD.bmp" />
+    <Content Include="Resources\Programmimg\M.bmp" />
+    <Content Include="Resources\Programmimg\Servo.bmp" />
+    <Content Include="Resources\Programmimg\servoMotor.png" />
+    <Content Include="Resources\Tools\AddPicture.png" />
+    <Content Include="Resources\Tools\Alinhar Horizontal.png" />
+    <Content Include="Resources\Tools\Alinhar Vertical.png" />
+    <Content Include="Resources\Tools\arduinoIDE.png" />
+    <Content Include="Resources\Tools\Back.png" />
+    <Content Include="Resources\Tools\bluetooth.png" />
+    <Content Include="Resources\Tools\buttonLeft.png" />
+    <Content Include="Resources\Tools\buttonRight.png" />
+    <Content Include="Resources\Tools\CameraIP.jpg" />
+    <Content Include="Resources\Tools\chart.png" />
+    <Content Include="Resources\Tools\Componentes.png" />
+    <Content Include="Resources\Tools\ConfigAlarm.png" />
+    <Content Include="Resources\Tools\equal horizontal.png" />
+    <Content Include="Resources\Tools\equal vertical.png" />
+    <Content Include="Resources\Tools\Front.png" />
+    <Content Include="Resources\Tools\G27.png" />
+    <Content Include="Resources\Tools\MostraLista.png" />
+    <Content Include="Resources\Tools\refresh.png" />
+    <Content Include="Resources\Tools\SourceCode.png" />
+    <Content Include="Resources\Tools\Toolbox.png" />
+    <Content Include="Resources\Tools\ToolboxSelected.png" />
+    <None Include="Resources\Xone.png" />
+    <None Include="Resources\xOneController.png" />
+    <None Include="Resources\Teclado.png" />
+    <None Include="Resources\Keyboard.jpg" />
+    <None Include="Resources\Intertravamentos.png" />
+    <None Include="Resources\GreenLedOff.png" />
+    <None Include="Resources\Propriedades.png" />
+    <None Include="Resources\LedOn.png" />
+    <None Include="Resources\LedOff.png" />
+    <None Include="Resources\on.png" />
+    <None Include="Resources\off.png" />
+    <None Include="Resources\Upload3.png" />
+    <None Include="Resources\Upload2.png" />
+    <None Include="Resources\Porta Aberta1.png" />
+    <None Include="Resources\Porta Aberta.png" />
+    <None Include="Resources\Upload1.png" />
+    <None Include="Resources\Upload.png" />
+    <None Include="Resources\Download.png" />
+    <None Include="Resources\Download1.png" />
+    <None Include="Resources\Conectar1.png" />
+    <None Include="Resources\Conectar.png" />
+    <None Include="Resources\Download2.png" />
+    <None Include="Resources\Download3.png" />
+    <None Include="Resources\deletar.png" />
+    <None Include="Resources\DS4 Controller.png" />
+    <None Include="Resources\controle_ps4.jpg.png" />
+    <None Include="bin\Release\Imagens\Rename.png" />
+    <None Include="bin\Release\Imagens\Input.png" />
+    <None Include="bin\Release\Imagens\Output.png" />
+    <None Include="bin\Release\Imagens\AnalogInput.png" />
+    <None Include="bin\Release\Imagens\analogActuator.png" />
+    <None Include="bin\Release\Imagens\Enabled.png" />
+    <None Include="bin\Release\Imagens\Disabled.png" />
+    <None Include="bin\Release\Imagens\test.jpg" />
+    <None Include="bin\Release\Imagens\Switch.png" />
+    <None Include="bin\Release\Imagens\Lampada.png" />
+    <None Include="bin\Release\Imagens\Play.png" />
+    <None Include="bin\Release\Imagens\Alarm Ok.png" />
+    <None Include="bin\Release\Imagens\Stop.png" />
+    <None Include="bin\Release\Imagens\Comando\SinalAnalógico.png" />
+    <None Include="bin\Release\Imagens\Context\Undo.png" />
+    <None Include="bin\Release\Imagens\Context\copy.png" />
+    <None Include="bin\Release\Imagens\Context\Paste.png" />
+    <None Include="bin\Release\Imagens\Context\Recortar.jpg" />
+    <None Include="bin\Release\Imagens\Context\Scissors.png" />
+    <None Include="bin\Release\Imagens\Context\scissor-png-image-9297.png" />
+    <None Include="bin\Release\Imagens\Context\Front.png" />
+    <None Include="bin\Release\Imagens\Context\Back.png" />
+    <None Include="bin\Release\Imagens\Context\clearScreen.png" />
+    <None Include="bin\Release\Imagens\Context\unlock-553-847794.png" />
+    <None Include="bin\Release\Imagens\Context\lock-flat.png" />
+    <None Include="bin\Release\Imagens\Context\Redo.png" />
+    <None Include="bin\Release\Imagens\Context\undo All.png" />
+    <None Include="bin\Release\Imagens\Context\Undo_Rollback.png" />
+    <None Include="bin\Release\Imagens\Comando\SinalAnalógico Falha.png" />
+    <Content Include="Resources\exportar.png" />
+    <None Include="Resources\importar1.png" />
+    <None Include="Resources\exportar1.png" />
+    <None Include="Resources\importar.png" />
+    <None Include="Resources\Gradiente Azul2.png" />
+    <None Include="Resources\Gradiente Azul1.png" />
+    <None Include="Resources\Arduino UNO.png" />
+    <None Include="Resources\Arduino NANO.png" />
+    <None Include="Resources\Arduino MEGA.png" />
+    <None Include="Resources\Salvar1.png" />
+    <None Include="Resources\Salvar Como1.png" />
+    <None Include="Resources\Novo1.png" />
+    <None Include="Resources\Abrir1.png" />
+    <None Include="Resources\Salvar.png" />
+    <None Include="Resources\Salvar Como.png" />
+    <None Include="Resources\Novo.png" />
+    <None Include="Resources\Abrir.png" />
+    <None Include="Resources\spm-icon-2561.png" />
+    <None Include="Resources\2013-06-13-televizija-na-off-163771.png" />
+    <None Include="Resources\813df8d91.png" />
+    <None Include="Resources\392ae9cfa4b776ec2eac86fe92f7f3a6-ilustra--o-de-luz-de-alarme-de-bombeiro1.png" />
+    <None Include="Resources\images8PCHE2EJ.jpg" />
+    <None Include="Resources\spm-icon-256.png" />
+    <None Include="Resources\392ae9cfa4b776ec2eac86fe92f7f3a6-ilustra--o-de-luz-de-alarme-de-bombeiro.png" />
+    <None Include="Resources\813df8d9.png" />
+    <None Include="Resources\2013-06-13-televizija-na-off-16377.png" />
+    <None Include="Resources\logout_icon-icons.com_51025.png" />
+    <None Include="Resources\lock1.png" />
+    <None Include="Resources\advancedsettings1.png" />
+    <None Include="Resources\Setting-icon1.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\advancedsettings.png" />
+    <None Include="Resources\Setting-icon.png" />
+    <None Include="Resources\Gradiente Azul.png" />
+    <None Include="Resources\usuário.png" />
+    <None Include="Resources\1370401673665602820business_user_lock-1.png" />
+    <None Include="Resources\Key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{82c60a7e-0a87-43f0-96b2-2ee56bccf74a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Druida IDE Lite\Druida IDE Lite.vbproj">
+      <Project>{100c9073-9e73-4a8e-9575-9561542af575}</Project>
+      <Name>Druida IDE Lite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
