@@ -42,11 +42,7 @@ Public NotInheritable Class SplashScreen
             WBEmulator.SetBrowserEmulationVersion(WBEmulator.GetInternetExplorerMajorVersion)
         End If
 
-        If Mode = Gratuito Then
-            TelaInicial.WebBrowser1.Navigate("https://binary-quantum.com/publicidade/")
-        Else
-            TelaInicial.WebBrowser1.Navigate("https://binary-quantum.com/reportar-bug/")
-        End If
+        TelaInicial.WebBrowser1.Navigate("https://binary-quantum.com/reportar-bug/")
         TelaInicial.WebBrowser2.Navigate("https://binary-quantum.com/bem-vindo-ao-druida/")
     End Sub
 
