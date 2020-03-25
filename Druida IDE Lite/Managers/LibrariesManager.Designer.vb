@@ -37,8 +37,8 @@ Partial Class LibrariesManager
         Me.tstbSearch = New System.Windows.Forms.ToolStripTextBox()
         Me.tsbtSearch = New System.Windows.Forms.ToolStripButton()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Code = New Code_Editor_For_Arduino.CodeEditorForArduino()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Code = New Code_Editor_For_Arduino.CodeEditorForArduino()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -59,12 +59,10 @@ Partial Class LibrariesManager
         '
         'SplitContainer1.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer1.Panel1, "SplitContainer1.Panel1")
         Me.SplitContainer1.Panel1.Controls.Add(Me.tsLibsManager)
         '
         'SplitContainer1.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer1.Panel2, "SplitContainer1.Panel2")
         Me.SplitContainer1.Panel2.Controls.Add(Me.SplitContainer2)
         '
         'tsLibsManager
@@ -77,26 +75,26 @@ Partial Class LibrariesManager
         '
         'ToolStripButtonAbrirSketch
         '
-        resources.ApplyResources(Me.ToolStripButtonAbrirSketch, "ToolStripButtonAbrirSketch")
         Me.ToolStripButtonAbrirSketch.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Open
+        resources.ApplyResources(Me.ToolStripButtonAbrirSketch, "ToolStripButtonAbrirSketch")
         Me.ToolStripButtonAbrirSketch.Name = "ToolStripButtonAbrirSketch"
         '
         'ToolStripButtonImport
         '
-        resources.ApplyResources(Me.ToolStripButtonImport, "ToolStripButtonImport")
         Me.ToolStripButtonImport.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Import_File
+        resources.ApplyResources(Me.ToolStripButtonImport, "ToolStripButtonImport")
         Me.ToolStripButtonImport.Name = "ToolStripButtonImport"
         '
         'ToolStripButtonCopy
         '
-        resources.ApplyResources(Me.ToolStripButtonCopy, "ToolStripButtonCopy")
         Me.ToolStripButtonCopy.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Copy
+        resources.ApplyResources(Me.ToolStripButtonCopy, "ToolStripButtonCopy")
         Me.ToolStripButtonCopy.Name = "ToolStripButtonCopy"
         '
         'ToolStripButtonExit
         '
-        resources.ApplyResources(Me.ToolStripButtonExit, "ToolStripButtonExit")
         Me.ToolStripButtonExit.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Quit
+        resources.ApplyResources(Me.ToolStripButtonExit, "ToolStripButtonExit")
         Me.ToolStripButtonExit.Name = "ToolStripButtonExit"
         '
         'SplitContainer2
@@ -107,14 +105,12 @@ Partial Class LibrariesManager
         '
         'SplitContainer2.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer2.Panel1, "SplitContainer2.Panel1")
         Me.SplitContainer2.Panel1.Controls.Add(Me.libsExplorer)
         Me.SplitContainer2.Panel1.Controls.Add(Me.tsSearch)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Label1)
         '
         'SplitContainer2.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer2.Panel2, "SplitContainer2.Panel2")
         Me.SplitContainer2.Panel2.Controls.Add(Me.Code)
         Me.SplitContainer2.Panel2.Controls.Add(Me.Label4)
         '
@@ -139,8 +135,8 @@ Partial Class LibrariesManager
         '
         'tsSearch
         '
-        resources.ApplyResources(Me.tsSearch, "tsSearch")
         Me.tsSearch.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tstbSearch, Me.tsbtSearch})
+        resources.ApplyResources(Me.tsSearch, "tsSearch")
         Me.tsSearch.Name = "tsSearch"
         '
         'tstbSearch
@@ -150,22 +146,29 @@ Partial Class LibrariesManager
         '
         'tsbtSearch
         '
-        resources.ApplyResources(Me.tsbtSearch, "tsbtSearch")
         Me.tsbtSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtSearch.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Find
+        resources.ApplyResources(Me.tsbtSearch, "tsbtSearch")
         Me.tsbtSearch.Name = "tsbtSearch"
         '
         'Label1
         '
-        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.BackColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Name = "Label1"
         '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Name = "Label4"
+        '
         'Code
         '
-        resources.ApplyResources(Me.Code, "Code")
         Me.Code.AutoCompleteBracketsList = New Char() {Global.Microsoft.VisualBasic.ChrW(40), Global.Microsoft.VisualBasic.ChrW(41), Global.Microsoft.VisualBasic.ChrW(123), Global.Microsoft.VisualBasic.ChrW(125), Global.Microsoft.VisualBasic.ChrW(91), Global.Microsoft.VisualBasic.ChrW(93), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(39), Global.Microsoft.VisualBasic.ChrW(39)}
+        resources.ApplyResources(Me.Code, "Code")
         Me.Code.BackBrush = Nothing
         Me.Code.CharHeight = 14
         Me.Code.CharWidth = 8
@@ -177,13 +180,6 @@ Partial Class LibrariesManager
         Me.Code.SelectionColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Code.ServiceColors = CType(resources.GetObject("Code.ServiceColors"), FastColoredTextBoxNS.ServiceColors)
         Me.Code.Zoom = 100
-        '
-        'Label4
-        '
-        resources.ApplyResources(Me.Label4, "Label4")
-        Me.Label4.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Name = "Label4"
         '
         'LibrariesManager
         '
@@ -218,11 +214,11 @@ Partial Class LibrariesManager
     Friend WithEvents ToolStripButtonExit As ToolStripButton
     Friend WithEvents SplitContainer2 As SplitContainer
     Friend WithEvents libsExplorer As DruidaIDEAuxiliarControls.Explorer
-    Friend WithEvents Code As Code_Editor_For_Arduino.CodeEditorForArduino
     Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents ilLibsManager As ImageList
     Friend WithEvents tsSearch As ToolStrip
     Friend WithEvents tstbSearch As ToolStripTextBox
     Friend WithEvents tsbtSearch As ToolStripButton
+    Friend WithEvents Code As Code_Editor_For_Arduino.CodeEditorForArduino
 End Class

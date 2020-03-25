@@ -30,7 +30,6 @@ Partial Class ExamplesManager
         Me.pbSchematix = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
-        Me.Code = New Code_Editor_For_Arduino.CodeEditorForArduino()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SplitContainer5 = New System.Windows.Forms.SplitContainer()
         Me.tsExamplesManager = New System.Windows.Forms.ToolStrip()
@@ -49,6 +48,7 @@ Partial Class ExamplesManager
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbDescription = New System.Windows.Forms.TextBox()
+        Me.Code = New Code_Editor_For_Arduino.CodeEditorForArduino()
         CType(Me.SplitContainer4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer4.Panel1.SuspendLayout()
         Me.SplitContainer4.Panel2.SuspendLayout()
@@ -59,7 +59,6 @@ Partial Class ExamplesManager
         Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
-        CType(Me.Code, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainer5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer5.Panel1.SuspendLayout()
         Me.SplitContainer5.Panel2.SuspendLayout()
@@ -74,6 +73,7 @@ Partial Class ExamplesManager
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        CType(Me.Code, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SplitContainer4
@@ -83,13 +83,11 @@ Partial Class ExamplesManager
         '
         'SplitContainer4.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer4.Panel1, "SplitContainer4.Panel1")
         Me.SplitContainer4.Panel1.Controls.Add(Me.pbLayout)
         Me.SplitContainer4.Panel1.Controls.Add(Me.Label1)
         '
         'SplitContainer4.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer4.Panel2, "SplitContainer4.Panel2")
         Me.SplitContainer4.Panel2.Controls.Add(Me.pbSchematix)
         Me.SplitContainer4.Panel2.Controls.Add(Me.Label2)
         '
@@ -102,8 +100,8 @@ Partial Class ExamplesManager
         '
         'Label1
         '
-        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.BackColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Name = "Label1"
         '
@@ -116,8 +114,8 @@ Partial Class ExamplesManager
         '
         'Label2
         '
-        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.BackColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Name = "Label2"
         '
@@ -128,35 +126,17 @@ Partial Class ExamplesManager
         '
         'SplitContainer3.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer3.Panel1, "SplitContainer3.Panel1")
         Me.SplitContainer3.Panel1.Controls.Add(Me.SplitContainer4)
         '
         'SplitContainer3.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer3.Panel2, "SplitContainer3.Panel2")
         Me.SplitContainer3.Panel2.Controls.Add(Me.Code)
         Me.SplitContainer3.Panel2.Controls.Add(Me.Label4)
         '
-        'Code
-        '
-        resources.ApplyResources(Me.Code, "Code")
-        Me.Code.AutoCompleteBracketsList = New Char() {Global.Microsoft.VisualBasic.ChrW(40), Global.Microsoft.VisualBasic.ChrW(41), Global.Microsoft.VisualBasic.ChrW(123), Global.Microsoft.VisualBasic.ChrW(125), Global.Microsoft.VisualBasic.ChrW(91), Global.Microsoft.VisualBasic.ChrW(93), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(39), Global.Microsoft.VisualBasic.ChrW(39)}
-        Me.Code.BackBrush = Nothing
-        Me.Code.CharHeight = 14
-        Me.Code.CharWidth = 8
-        Me.Code.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Code.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.Code.IsReplaceMode = False
-        Me.Code.Name = "Code"
-        Me.Code.Paddings = New System.Windows.Forms.Padding(0)
-        Me.Code.SelectionColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Code.ServiceColors = CType(resources.GetObject("Code.ServiceColors"), FastColoredTextBoxNS.ServiceColors)
-        Me.Code.Zoom = 100
-        '
         'Label4
         '
-        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.BackColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Name = "Label4"
         '
@@ -168,12 +148,10 @@ Partial Class ExamplesManager
         '
         'SplitContainer5.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer5.Panel1, "SplitContainer5.Panel1")
         Me.SplitContainer5.Panel1.Controls.Add(Me.tsExamplesManager)
         '
         'SplitContainer5.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer5.Panel2, "SplitContainer5.Panel2")
         Me.SplitContainer5.Panel2.Controls.Add(Me.ExampleManager)
         Me.SplitContainer5.Panel2.Controls.Add(Me.tsSearch)
         Me.SplitContainer5.Panel2.Controls.Add(Me.Label3)
@@ -188,38 +166,38 @@ Partial Class ExamplesManager
         '
         'tsbtOpenInNewWindow
         '
-        resources.ApplyResources(Me.tsbtOpenInNewWindow, "tsbtOpenInNewWindow")
         Me.tsbtOpenInNewWindow.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Open
+        resources.ApplyResources(Me.tsbtOpenInNewWindow, "tsbtOpenInNewWindow")
         Me.tsbtOpenInNewWindow.Name = "tsbtOpenInNewWindow"
         '
         'ToolStripButtonAbrirSketch
         '
-        resources.ApplyResources(Me.ToolStripButtonAbrirSketch, "ToolStripButtonAbrirSketch")
         Me.ToolStripButtonAbrirSketch.Image = Global.Druida_IDE_Lite.My.Resources.Resources.FilesList
+        resources.ApplyResources(Me.ToolStripButtonAbrirSketch, "ToolStripButtonAbrirSketch")
         Me.ToolStripButtonAbrirSketch.Name = "ToolStripButtonAbrirSketch"
         '
         'ToolStripButtonImport
         '
-        resources.ApplyResources(Me.ToolStripButtonImport, "ToolStripButtonImport")
         Me.ToolStripButtonImport.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Import_File
+        resources.ApplyResources(Me.ToolStripButtonImport, "ToolStripButtonImport")
         Me.ToolStripButtonImport.Name = "ToolStripButtonImport"
         '
         'ToolStripButtonCopy
         '
-        resources.ApplyResources(Me.ToolStripButtonCopy, "ToolStripButtonCopy")
         Me.ToolStripButtonCopy.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Copy
+        resources.ApplyResources(Me.ToolStripButtonCopy, "ToolStripButtonCopy")
         Me.ToolStripButtonCopy.Name = "ToolStripButtonCopy"
         '
         'ToolStripButtonExit
         '
-        resources.ApplyResources(Me.ToolStripButtonExit, "ToolStripButtonExit")
         Me.ToolStripButtonExit.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Quit
+        resources.ApplyResources(Me.ToolStripButtonExit, "ToolStripButtonExit")
         Me.ToolStripButtonExit.Name = "ToolStripButtonExit"
         '
         'ExampleManager
         '
-        resources.ApplyResources(Me.ExampleManager, "ExampleManager")
         Me.ExampleManager.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.ExampleManager, "ExampleManager")
         Me.ExampleManager.Extensions = New String() {Nothing, ".ino", ".pde", Nothing}
         Me.ExampleManager.HideEmptyFolders = True
         Me.ExampleManager.ImageList = Me.ilExamples
@@ -237,8 +215,8 @@ Partial Class ExamplesManager
         '
         'tsSearch
         '
-        resources.ApplyResources(Me.tsSearch, "tsSearch")
         Me.tsSearch.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tstbSearch, Me.tsbtSearch})
+        resources.ApplyResources(Me.tsSearch, "tsSearch")
         Me.tsSearch.Name = "tsSearch"
         '
         'tstbSearch
@@ -248,15 +226,15 @@ Partial Class ExamplesManager
         '
         'tsbtSearch
         '
-        resources.ApplyResources(Me.tsbtSearch, "tsbtSearch")
         Me.tsbtSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtSearch.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Find
         Me.tsbtSearch.Name = "tsbtSearch"
+        resources.ApplyResources(Me.tsbtSearch, "tsbtSearch")
         '
         'Label3
         '
-        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.BackColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label3.Name = "Label3"
         '
@@ -268,12 +246,10 @@ Partial Class ExamplesManager
         '
         'SplitContainer2.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer2.Panel1, "SplitContainer2.Panel1")
         Me.SplitContainer2.Panel1.Controls.Add(Me.SplitContainer5)
         '
         'SplitContainer2.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer2.Panel2, "SplitContainer2.Panel2")
         Me.SplitContainer2.Panel2.Controls.Add(Me.SplitContainer3)
         '
         'SplitContainer1
@@ -283,12 +259,10 @@ Partial Class ExamplesManager
         '
         'SplitContainer1.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer1.Panel1, "SplitContainer1.Panel1")
         Me.SplitContainer1.Panel1.Controls.Add(Me.SplitContainer2)
         '
         'SplitContainer1.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer1.Panel2, "SplitContainer1.Panel2")
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label5)
         Me.SplitContainer1.Panel2.Controls.Add(Me.tbDescription)
         '
@@ -303,6 +277,22 @@ Partial Class ExamplesManager
         '
         resources.ApplyResources(Me.tbDescription, "tbDescription")
         Me.tbDescription.Name = "tbDescription"
+        '
+        'Code
+        '
+        Me.Code.AutoCompleteBracketsList = New Char() {Global.Microsoft.VisualBasic.ChrW(40), Global.Microsoft.VisualBasic.ChrW(41), Global.Microsoft.VisualBasic.ChrW(123), Global.Microsoft.VisualBasic.ChrW(125), Global.Microsoft.VisualBasic.ChrW(91), Global.Microsoft.VisualBasic.ChrW(93), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(39), Global.Microsoft.VisualBasic.ChrW(39)}
+        resources.ApplyResources(Me.Code, "Code")
+        Me.Code.BackBrush = Nothing
+        Me.Code.CharHeight = 14
+        Me.Code.CharWidth = 8
+        Me.Code.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Code.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer))
+        Me.Code.IsReplaceMode = False
+        Me.Code.Name = "Code"
+        Me.Code.Paddings = New System.Windows.Forms.Padding(0)
+        Me.Code.SelectionColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Code.ServiceColors = CType(resources.GetObject("Code.ServiceColors"), FastColoredTextBoxNS.ServiceColors)
+        Me.Code.Zoom = 100
         '
         'ExamplesManager
         '
@@ -320,7 +310,6 @@ Partial Class ExamplesManager
         Me.SplitContainer3.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer3.ResumeLayout(False)
-        CType(Me.Code, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer5.Panel1.ResumeLayout(False)
         Me.SplitContainer5.Panel1.PerformLayout()
         Me.SplitContainer5.Panel2.ResumeLayout(False)
@@ -340,12 +329,12 @@ Partial Class ExamplesManager
         Me.SplitContainer1.Panel2.PerformLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
+        CType(Me.Code, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents tbDescription As TextBox
-    Friend WithEvents Code As Code_Editor_For_Arduino.CodeEditorForArduino
     Friend WithEvents Label4 As Label
     Friend WithEvents pbSchematix As PictureBox
     Friend WithEvents Label2 As Label
@@ -369,4 +358,5 @@ Partial Class ExamplesManager
     Friend WithEvents tstbSearch As ToolStripTextBox
     Friend WithEvents tsbtSearch As ToolStripButton
     Friend WithEvents tsbtOpenInNewWindow As ToolStripButton
+    Friend WithEvents Code As Code_Editor_For_Arduino.CodeEditorForArduino
 End Class
