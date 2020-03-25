@@ -171,7 +171,8 @@ Public Class CultureManager
                          "Existe uma atualização disponível. Deseja realizar o download?",
                          "Descrição e configuração dos pinos",
                          "O arquivo não existe mais. Deseja criar um novo projeto com esse nome?",
-                         "O diretório do arquivo possui carcteres especiais."}
+                         "O diretório do arquivo possui carcteres especiais.",
+                         "Selecione uma biblioteca para importar para o código."}
 
     Private enTexts() = {"New Project",
                          "Open Project",
@@ -258,7 +259,8 @@ Public Class CultureManager
                          "A update for your software is available. Do you want to download now?",
                          "Definition of pins",
                          "This file doesn't exists. Do you want to create a file with this name?",
-                         "Current directory path contain ilegal characters."}
+                         "Current directory path contain ilegal characters.",
+                         "Select a library to import into the code"}
 
     Dim ptFiles() As String = {CodeInfo.HeaderFiles.DefaultHeader,
                                CodeInfo.ModelFiles.ArduinoDefault,

@@ -92,13 +92,20 @@ Public Class LibrariesManager
     End Sub
 
     Private Sub ToolStripButtonImport_Click(sender As Object, e As EventArgs) Handles ToolStripButtonImport.Click
+        Dim filePath As String = Code.myCodeFileManager.getFilePath()
         Dim cultureResx As New CultureManager
-        Dim fileInfo As New FileInfo(Code.myCodeFileManager.getFilePath)
-        If fileInfo.Name.Contains(".h") Then
-            CodeManager.Actions.IncludeLibrary(fileInfo.Name)
-            MessageBox.Show(cultureResx.translateText("O arquivo foi importado com sucesso."),
-                            "Info", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information)
+        If (filePath <> "") Then
+            Dim fileInfo As New FileInfo(filePath)
+            If fileInfo.Name.Contains(".h") Then
+                CodeManager.Actions.IncludeLibrary(fileInfo.Name)
+                MessageBox.Show(cultureResx.translateText("O arquivo foi importado com sucesso."),
+                                "Info", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information)
+            End If
+        Else
+            MessageBox.Show(cultureResx.translateText("Selecione uma biblioteca para importar para o código."),
+                                "Info", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information)
         End If
     End Sub
 
