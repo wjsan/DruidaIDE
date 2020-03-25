@@ -29,7 +29,7 @@
         Const premium = "premium"
     End Structure
 
-    Public Const language = "pt"
+    Public Const language = "en"
 
     Public Const license As String = LicenseTypes.premium
 

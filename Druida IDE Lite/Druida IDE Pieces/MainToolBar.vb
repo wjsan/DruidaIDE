@@ -188,15 +188,15 @@ Public Class MainToolBar
             currentPort = cbPort.SelectedItem
         End If
         If BoardsData.GetCurrentBoard Is Nothing Then
-            consoleErrors.AddItem(Type.msgAdvise, "A placa selecionada é inválida. Tente selecionar outro modelo.", "Druida.exe", "")
+            consoleErrors.AddItem(Type.msgAdvise, "Selected board is invalid. Try to select another.", "Druida.exe", "")
             Exit Sub
         End If
         If AppSystem.serialPort.GetAvailablePorts.Count <= 0 Then
-            consoleErrors.AddItem(Type.msgAdvise, "Não foram detectados dispositivos neste computador. Verifique as conexões.", "Druida.exe", "")
+            consoleErrors.AddItem(Type.msgAdvise, "No devices on usb ports. Check your connections.", "Druida.exe", "")
             Exit Sub
         End If
         If Not AppSystem.serialPort.GetAvailablePorts.Contains(currentPort) Then
-            consoleErrors.AddItem(Type.msgAdvise, "A porta selecionada não existe. Favor selecionar outra porta", "Druida.exe", "")
+            consoleErrors.AddItem(Type.msgAdvise, "Selected port doesn't exists. Please, select another port.", "Druida.exe", "")
             Exit Sub
         End If
         Try
@@ -215,15 +215,15 @@ Public Class MainToolBar
             currentPort = cbPort.SelectedItem
         End If
         If BoardsData.GetCurrentBoard Is Nothing Then
-            consoleErrors.AddItem(Type.msgAdvise, "A placa selecionada é inválida. Tente selecionar outro modelo.", "Druida.exe", "")
+            consoleErrors.AddItem(Type.msgAdvise, "Selected board is invalid. Try to select another.", "Druida.exe", "")
             Exit Sub
         End If
         If AppSystem.serialPort.GetAvailablePorts.Count <= 0 Then
-            consoleErrors.AddItem(Type.msgAdvise, "Não foram detectados dispositivos neste computador. Verifique as conexões.", "Druida.exe", "")
+            consoleErrors.AddItem(Type.msgAdvise, "No devices on usb ports. Check your connections.", "Druida.exe", "")
             Exit Sub
         End If
         If Not AppSystem.serialPort.GetAvailablePorts.Contains(currentPort) Then
-            consoleErrors.AddItem(Type.msgAdvise, "A porta selecionada não existe. Favor selecionar outra porta", "Druida.exe", "")
+            consoleErrors.AddItem(Type.msgAdvise, "Selected port doesn't exists. Please, select another port.", "Druida.exe", "")
             Exit Sub
         End If
         Try
@@ -256,7 +256,7 @@ Public Class MainToolBar
                 pbBoard.Image = SafeImageFromFile(GetCurrentBoard.GetImage)
             End If
         Catch ex As Exception
-            MessageBox.Show("Não foi possível recuperar dados da placa selecionada. Verifique as configurações de hardware.",
+            MessageBox.Show("Board data is invalid. Please, check your hardware settings.",
                             "Erro",
                              MessageBoxButtons.OK,
                              MessageBoxIcon.Error)

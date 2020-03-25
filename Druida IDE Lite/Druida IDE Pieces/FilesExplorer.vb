@@ -42,34 +42,36 @@ Public Class FilesExplorer
 
     Public Sub OpenFile(file As String)
         Dim fileInfo As New FileInfo(file)
-        If fileInfo.Exists Then
-            Select Case fileInfo.Extension
-                Case ".cfg"
-                    OpenCfgFile(file)
-                Case ".ino"
-                    OpenCodeFile(fileInfo.FullName)
-                Case ".h"
-                    OpenCodeFile(fileInfo.FullName)
-                Case ".cpp"
-                    OpenCodeFile(fileInfo.FullName)
-                Case ".c"
-                    OpenCodeFile(fileInfo.FullName)
-                Case ".txt"
-                    OpenCodeFile(fileInfo.FullName)
-                Case ".hex"
-                    OpenCodeFile(fileInfo.FullName)
-                Case ".png"
-                    OpenImageFile(fileInfo.FullName)
-                Case ".pdsprj"
-                    Try
-                        Process.Start(fileInfo.FullName)
-                    Catch ex As Exception
-                        MessageBox.Show(ex.Message)
-                    End Try
-                Case Else
-                    Dim cultureResx As New CultureManager
-                    cultureResx.ShowError("O formato de arquivo não pode ser aberto.")
-            End Select
+        If fileInfo IsNot Nothing Then
+            If fileInfo.Exists Then
+                Select Case fileInfo.Extension
+                    Case ".cfg"
+                        OpenCfgFile(file)
+                    Case ".ino"
+                        OpenCodeFile(fileInfo.FullName)
+                    Case ".h"
+                        OpenCodeFile(fileInfo.FullName)
+                    Case ".cpp"
+                        OpenCodeFile(fileInfo.FullName)
+                    Case ".c"
+                        OpenCodeFile(fileInfo.FullName)
+                    Case ".txt"
+                        OpenCodeFile(fileInfo.FullName)
+                    Case ".hex"
+                        OpenCodeFile(fileInfo.FullName)
+                    Case ".png"
+                        OpenImageFile(fileInfo.FullName)
+                    Case ".pdsprj"
+                        Try
+                            Process.Start(fileInfo.FullName)
+                        Catch ex As Exception
+                            MessageBox.Show(ex.Message)
+                        End Try
+                    Case Else
+                        Dim cultureResx As New CultureManager
+                        cultureResx.ShowError("O formato de arquivo não pode ser aberto.")
+                End Select
+            End If
         End If
     End Sub
 

@@ -488,6 +488,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.en.resx">
       <DependentUpon>FilesExplorer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.ig.resx">
+      <DependentUpon>FilesExplorer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.pt-BR.resx">
       <DependentUpon>FilesExplorer.vb</DependentUpon>
@@ -503,6 +507,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Druida IDE Pieces\HomePage.resx">
       <DependentUpon>HomePage.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Druida IDE Pieces\ImageViewer.resx">
       <DependentUpon>ImageViewer.vb</DependentUpon>
@@ -691,9 +696,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Druida IDE Pieces\Console.resx">
       <DependentUpon>Console.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Druida IDE Pieces\FilesExplorer.resx">
       <DependentUpon>FilesExplorer.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

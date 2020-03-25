@@ -5,10 +5,8 @@ Imports Druida_IDE_Lite.MessagesManager
 Imports Druida_IDE_Lite.ErrorsManager
 
 Public Class ArduinoCompiler
-    'Private buildPath As String = Application.StartupPath & "build"
     Private debugDir As String = AppInfo.Directories.arduinoCompiler & "\"
     Private debuggerCmdRequest As String = ""
-    'Private RequestAction As Action
     Private modeDebug = True
     Private compilerMessage As String = ""
 
@@ -18,26 +16,13 @@ Public Class ArduinoCompiler
     Private fileDebugDir = tempDir & CurrentProjectInfo.General.name & "\" & mainFileInfo.Name
     Private fileDir = """" & mainFileInfo.FullName & """"
 
-    'Private cmd As String = "arduino_debug"
-    'Private BoardName As String = " --board " & GetCurrentBoard.GetDirective
-    'Private BuildPath As String = " --pref build.path=" & tempDir & CurrentProjectInfo.General.name & "\" & "build"
-    'Private ComPort As String = CurrentProjectCfgs.values.hardware.COMport
-
-    Private RequestToCompile ' = cmd & BoardName & BuildPath & " --verify " & fileDir
-    Private RequestToUpload ' = cmd & BoardName & BuildPath & ComPort & " --upload " & fileDir
+    Private RequestToCompile
+    Private RequestToUpload
 
     Private BackgroundWorkerDebugger As New BackgroundWorker
     Private DebuggerErrors As String = ""
     Private DebuggerStatus As Status
 
-    'Public Structure Action
-    '    Shared None = 0
-    '    Shared Compile = 1
-    '    Shared Upload = 2
-    '    Shared ShowError = 3
-    'End Structure
-
-    'Public Enum Action
     Public None As UShort = 0
     Public Compile As UShort = 1
     Public Upload As UShort = 2
@@ -46,7 +31,6 @@ Public Class ArduinoCompiler
     Private cultureResx As New CultureManager
 
     Public Property SendDebugger As Boolean = False
-    'End Enum
 
     Enum Status
         Ok
@@ -116,7 +100,6 @@ Public Class ArduinoCompiler
                 UpdateIDEContent(My.Resources.Verify, My.Resources.Upload, compileText, "Upload", waitingText)
         End Select
         outputMessages.AppendMessage("<UpdateDebbugerOptions> " & message, Filter.Compiler)
-        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: " & message & vbCrLf)
     End Sub
 
     Private Sub RefreshErrorsList()
@@ -164,22 +147,16 @@ Public Class ArduinoCompiler
                         If line.Contains("error") Then
                             CodeManager.Actions.marker.MarkLineWithBrush(lineError - 1, Brushes.IndianRed)
                         End If
-                        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: <<Abrindo arquivo>> " & fileName & vbCrLf)
-                        'DruidaIDE.AbreArquivo(fileName)
-                        'DruidaIDE.myFCTB.myMarkersManager.markBackgroundLine(lineError - 1)
                     End If
                 End If
                 If (line.Contains("erro") Or line.Contains("Erro")) Then
                     erros &= vbCrLf & errorsTranslate.Translate(line)
                     Dim translatedError As String = errorsTranslate.Translate(line)
                     consoleErrors.AddItem(Type.msgError, translatedError, fileName, l)
-                    'DruidaIDE.ListBoxErros.Items.Add(line)
                 ElseIf (line.Contains("warning")) Then
-                    'erros &= vbCrLf & errorsTranslate.Translate(line)
                     Dim translatedError As String = errorsTranslate.Translate(line)
                     consoleErrors.AddItem(Type.msgAdvise, errorsTranslate.Translate(line), fileName, l)
                 ElseIf (line.Contains("info") Or line.Contains("AVISO")) Then
-                    'erros &= vbCrLf & errorsTranslate.Translate(line)
                     Dim translatedError As String = errorsTranslate.Translate(line)
                     consoleErrors.AddItem(Type.msgInfo, errorsTranslate.Translate(line), fileName, l)
                 End If
@@ -199,7 +176,6 @@ Public Class ArduinoCompiler
             End If
         End If
         controlConsole.tcConsole.SelectedIndex = 1
-        'DruidaIDE.TabControlConsole.SelectedIndex = 1
     End Sub
 
     Private Shared Sub UpdateIDEContent(VerifyImage As Image, UploadImage As Image, VerifyText As String, UploadText As String, Message As String)
@@ -208,7 +184,6 @@ Public Class ArduinoCompiler
         controlMainToolBar.tsbCompile.Text = VerifyText
         controlMainToolBar.tsbUpload.Text = UploadText
         outputMessages.AppendMessage("<UpdateIDEContent> " & Message, Filter.Compiler)
-        'MainToolBar.TextBoxInfo.AppendText("ArduinoCompilerv1.0: " & Message & vbCrLf)
     End Sub
 
     Private Sub VerifyDebugDir()
@@ -244,7 +219,6 @@ Public Class ArduinoCompiler
         Dim content As List(Of String) = File.ReadAllLines(fileDir).ToList
         content.Insert(0, "#define delay Debugger.delay")
         content.Insert(0, "#define delay Debugger.delay")
-        'content.Insert(0, "HardwareDebugger Debugger;")
         content.Insert(0, "#include ""HardwareDebugger.h""")
         For i1 = 0 To content.Count - 1
             Dim lin = content(i1)
@@ -308,10 +282,6 @@ Public Class ArduinoCompiler
         SW.WriteLine("cd " & debugDir)
         SW.WriteLine(debuggerCmdRequest)
         SW.Close()
-        'debuggerProcess.WaitForExit(20000)
-        'If Not debuggerProcess.HasExited Then
-        '    debuggerProcess.Kill()
-        'End If
         While Not debuggerProcess.HasExited
             Dim line As String = debuggerProcess.StandardError.ReadLine()
             outputMessages.myTextBox.Invoke(Sub()
@@ -336,9 +306,9 @@ Public Class ArduinoCompiler
         Else
             DebuggerStatus = Status.Ok
             If debuggerCmdRequest = RequestToCompile Then
-                MessageBox.Show(cultureResx.forcedTranslationText("Código compilado com sucesso!", "pt"))
+                MessageBox.Show(cultureResx.forcedTranslationText("Código compilado com sucesso!", AppInfo.language))
             ElseIf debuggerCmdRequest = RequestToUpload Then
-                MessageBox.Show(cultureResx.forcedTranslationText("Código enviado com sucesso!", "pt"))
+                MessageBox.Show(cultureResx.forcedTranslationText("Código enviado com sucesso!", AppInfo.language))
             End If
         End If
     End Sub
@@ -346,25 +316,24 @@ Public Class ArduinoCompiler
     Private Sub BackgroundWorkerDebugger_RunWorkerCompleted()
         Select Case DebuggerStatus
             Case Status.Ok
-                UpdateIDEContent(None, "O compilador executou a ação de forma bem sucedida.")
+                UpdateIDEContent(None, "Compiler works fine.")
                 Exit Select
             Case Else
                 If Not SendDebugger Then
                     UpdateIDEContent(ShowError, DebuggerErrors)
                 ElseIf DebuggerStatus = Status.Erro Then
-                    MessageBox.Show("Foram encontrados erros durante o envio do depurador. Compile seu código antes de enviar o depurador para verificar erros na sintaxe.",
-                                    "Erro ao enviar depurador",
+                    MessageBox.Show("Debugger problem. Compile your source code first.",
+                                    "Debugger Error",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error)
                 Else
-                    UpdateIDEContent(None, "O depurador foi enviado com sucesso para a placa.")
-                    MessageBox.Show("O depurador foi enviado com sucesso para a placa.")
+                    UpdateIDEContent(None, "Debugger downloaded to board with sucess.")
+                    MessageBox.Show("Debugger downloaded to board with sucess.")
                 End If
                 Exit Select
         End Select
         If modeDebug Then showSpecialInfo()
         DeleteTempFiles()
-        'DruidaIDE.TextBoxInfo.AppendText("Arduino Debbuger: " & DebuggerErrors)
     End Sub
 
     Private Sub showSpecialInfo()
@@ -372,11 +341,6 @@ Public Class ArduinoCompiler
         outputMessages.AppendMessage("<INFO:Dir> " & fileDir, Filter.Compiler)
         outputMessages.AppendMessage("<INFO:Name> " & GetCurrentBoard.GetName, Filter.Compiler)
         outputMessages.AppendMessage("<INFO:Directive> " & debuggerCmdRequest, Filter.Compiler)
-        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: <INFORMAÇÕES>" & vbCrLf)
-        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: Temp Dir: " & tempDir & vbCrLf)
-        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: Arquivo: " & fileDir & vbCrLf)
-        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: Placa: " & CompilerData.CompileOptions.boardName & vbCrLf)
-        'DruidaIDE.TextBoxInfo.AppendText("ArduinoCompilerv1.0: Request: " & debuggerCmdRequest & vbCrLf)
     End Sub
 
     '    
@@ -390,14 +354,8 @@ Public Class ArduinoCompiler
                 Directory.Delete(tempDir, True)
             Catch ex As Exception
                 outputMessages.AppendMessage("<DeleteTempFiles> " & ex.Message, Filter.Compiler)
-                'DruidaIDE.TextBoxInfo.Text &= vbCrLf & "ArduinoCompilerv1.0: <<Erro>> ao acessar disco rígido."
             End Try
         End If
-        'If Mode <> Completo Then
-        '    If Directory.Exists(applicationDirectory & "\CustomSourceCode\Main") Then
-        '        Directory.Delete(applicationDirectory & "\CustomSourceCode\Main", True)
-        '    End If
-        'End If
     End Sub
 
     Private Sub UpdateBuildFolder()

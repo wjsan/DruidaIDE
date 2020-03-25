@@ -117,198 +117,104 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="lHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 20</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lHeader.Text" xml:space="preserve">
-    <value>Arquivos</value>
-  </data>
-  <data name="lHeader.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;tsExplorer.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;lHeader.Name" xml:space="preserve">
     <value>lHeader</value>
   </data>
-  <data name="&gt;&gt;lHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tvExplorer.Name" xml:space="preserve">
+    <value>tvExplorer</value>
   </data>
-  <data name="&gt;&gt;lHeader.Parent" xml:space="preserve">
+  <data name="tvExplorer.PathsNames" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAJoBbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1u
+        ZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0sIG1zY29ybGliLCBWZXJzaW9u
+        PTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUB
+        AAAAMFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLlN0cmluZwMAAAAGX2l0
+        ZW1zBV9zaXplCF92ZXJzaW9uBgAACAgCAAAACQMAAAAAAAAAAAAAABEDAAAAAAAAAAs=
+</value>
+  </data>
+  <data name="&gt;&gt;tvExplorer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lHeader.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="tsExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="tsExplorer.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tsbtRefresh.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbtRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbtRefresh.Text" xml:space="preserve">
-    <value>Atualizar árvore</value>
-  </data>
-  <data name="tsbtNewFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbtNewFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
+  <data name="&gt;&gt;tsExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tsbtNewFile.Text" xml:space="preserve">
     <value>Criar novo arquivo</value>
   </data>
-  <data name="tsbtImportFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbtImportFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbtImportFile.Text" xml:space="preserve">
-    <value>Importar um arquivo existente</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tsbtOpenAllCodes.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="tsbtOpenAllCodes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
+  <data name="tsmiImportFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="&gt;&gt;tsbtOpenAllCodes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbtNewFile.Name" xml:space="preserve">
+    <value>tsbtNewFile</value>
+  </data>
+  <data name="&gt;&gt;AbrirPastaRecipienteToolStripMenuItem.Name" xml:space="preserve">
+    <value>AbrirPastaRecipienteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tsmiOpenAllCodes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lHeader.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="tsbtOpenAllCodes.Text" xml:space="preserve">
     <value>Abrir todos os códigos</value>
   </data>
-  <data name="tsExplorer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
+  <data name="&gt;&gt;RenomearToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tsExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 25</value>
+  <data name="&gt;&gt;tsbtNewFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tsExplorer.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="tsExplorer.Text" xml:space="preserve">
-    <value>ToolStrip1</value>
-  </data>
-  <data name="&gt;&gt;tsExplorer.Name" xml:space="preserve">
-    <value>tsExplorer</value>
-  </data>
-  <data name="&gt;&gt;tsExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsExplorer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tsExplorer.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="cmsFiles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>187, 14</value>
-  </metadata>
-  <data name="tsmiNewFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
-  </data>
-  <data name="tsmiNewFile.Text" xml:space="preserve">
-    <value>Novo Arquivo</value>
-  </data>
-  <data name="tsmiImportFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
-  </data>
-  <data name="tsmiImportFile.Text" xml:space="preserve">
-    <value>Arquivo Existente</value>
-  </data>
-  <data name="AdicionarToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="AdicionarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="AdicionarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="tsmiOpenAllCodes.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tsmiOpenAllCodes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="tsmiOpenAllCodes.Text" xml:space="preserve">
-    <value>Abrir Tudo</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="AbrirPastaRecipienteToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="AbrirPastaRecipienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
+  <data name="&gt;&gt;tsbtRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AbrirPastaRecipienteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Abrir pasta recipiente</value>
+  <data name="tsbtImportFile.Text" xml:space="preserve">
+    <value>Importar um arquivo existente</value>
   </data>
-  <data name="ExcluirToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="tsbtRefresh.Text" xml:space="preserve">
+    <value>Atualizar árvore</value>
+  </data>
+  <data name="&gt;&gt;tsmiNewFile.Name" xml:space="preserve">
+    <value>tsmiNewFile</value>
   </data>
   <data name="ExcluirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 22</value>
   </data>
-  <data name="ExcluirToolStripMenuItem.Text" xml:space="preserve">
-    <value>Excluir</value>
+  <data name="tsbtImportFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
   </data>
-  <data name="RenomearToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
-  <data name="RenomearToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
+  <data name="&gt;&gt;AbrirPastaRecipienteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="RenomearToolStripMenuItem.Text" xml:space="preserve">
-    <value>Renomear</value>
+  <data name="&gt;&gt;lHeader.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="tsbtCopyPath.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tsbtCopyPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="tsbtCopyPath.Text" xml:space="preserve">
-    <value>Copiar nome do diretório</value>
-  </data>
-  <data name="cmsFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 136</value>
-  </data>
-  <data name="&gt;&gt;cmsFiles.Name" xml:space="preserve">
-    <value>cmsFiles</value>
-  </data>
-  <data name="&gt;&gt;cmsFiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tvExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tvExplorer.ImageIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <metadata name="ilExtenxions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>334, 17</value>
-  </metadata>
   <data name="ilExtenxions.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABC
-        EQAAAk1TRnQBSQFMAgEBCwEAAVQBAAFUAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABE
+        EQAAAk1TRnQBSQFMAgEBCwEAAZgBAAGcAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAATADAAEBAQABCAYAAQwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -381,11 +287,86 @@
         AQ8BwAEBAv8B4AEDAeABAwHAAQEBwAEBAcABAQHAAQEBwAEBAcABAQHAAQEBwAEBAcABAQHAAQEBgAEA
         AYABAAHAAQEBwAEBAYABAAGAAQABwAEBAcABAAGAAQABgAEAAcABAQHABQABwAEBAcAFAAHAAQEBwAEB
         AYABAAGAAQABwAEBAcABAwGAAQABgAEAAcABAQHAAQMBgAEBAYABAQHAAQEBwQH/AcABAQHAAQEBwAED
-        Av8B4AEDAeABAwHAAQcC/wHwAQ8B8AEPAcABDwL/Af4BfwH+AX8BwAEfCw==
+        Av8B4AEDAeABAwHAAQcC/wHwAQ8B8AEPAcABDwL/Af4BfwH+AX8BwAEfFgAL
 </value>
   </data>
-  <data name="tvExplorer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
+  <data name="&gt;&gt;tsExplorer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;AdicionarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lHeader.Text" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="&gt;&gt;cmsFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvExplorer.Type" xml:space="preserve">
+    <value>DruidaIDEAuxiliarControls.Explorer, DruidaIDEAuxiliarControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="RenomearToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsbtCopyPath.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RenomearToolStripMenuItem.Text" xml:space="preserve">
+    <value>Renomear</value>
+  </data>
+  <data name="&gt;&gt;lClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="RenomearToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="&gt;&gt;tsbtRefresh.Name" xml:space="preserve">
+    <value>tsbtRefresh</value>
+  </data>
+  <data name="&gt;&gt;tsbtCopyPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbtOpenAllCodes.Name" xml:space="preserve">
+    <value>tsbtOpenAllCodes</value>
+  </data>
+  <data name="tsmiOpenAllCodes.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tsbtCopyPath.Name" xml:space="preserve">
+    <value>tsbtCopyPath</value>
+  </data>
+  <data name="&gt;&gt;lClose.Name" xml:space="preserve">
+    <value>lClose</value>
+  </data>
+  <data name="ExcluirToolStripMenuItem.Text" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="&gt;&gt;ilExtenxions.Name" xml:space="preserve">
+    <value>ilExtenxions</value>
+  </data>
+  <data name="lHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 20</value>
+  </data>
+  <data name="AbrirPastaRecipienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="tsmiImportFile.Text" xml:space="preserve">
+    <value>Arquivo Existente</value>
+  </data>
+  <data name="tsbtNewFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;tsbtImportFile.Name" xml:space="preserve">
+    <value>tsbtImportFile</value>
+  </data>
+  <data name="&gt;&gt;lHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="tvExplorer.Paths" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -396,131 +377,108 @@
         ZW1zBV9zaXplCF92ZXJzaW9uBgAACAgCAAAACQMAAAAAAAAAAAAAABEDAAAAAAAAAAs=
 </value>
   </data>
-  <data name="tvExplorer.PathsNames" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAJoBbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1u
-        ZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0sIG1zY29ybGliLCBWZXJzaW9u
-        PTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUB
-        AAAAMFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLlN0cmluZwMAAAAGX2l0
-        ZW1zBV9zaXplCF92ZXJzaW9uBgAACAgCAAAACQMAAAAAAAAAAAAAABEDAAAAAAAAAAs=
-</value>
+  <data name="tsbtCopyPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
   </data>
-  <data name="tvExplorer.SelectedImageIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tsmiNewFile.Text" xml:space="preserve">
+    <value>Novo Arquivo</value>
   </data>
-  <data name="tvExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 257</value>
+  <data name="tsbtCopyPath.Text" xml:space="preserve">
+    <value>Copiar nome do diretório</value>
   </data>
-  <data name="tvExplorer.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="AdicionarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
   </data>
-  <data name="&gt;&gt;tvExplorer.Name" xml:space="preserve">
-    <value>tvExplorer</value>
+  <data name="tsExplorer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;tvExplorer.Type" xml:space="preserve">
-    <value>DruidaIDEAuxiliarControls.Explorer, DruidaIDEAuxiliarControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="tsbtNewFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;tvExplorer.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="tsExplorer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;tvExplorer.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="tvExplorer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
   </data>
-  <data name="lClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="lClose.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tsmiOpenAllCodes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
   </data>
   <data name="lClose.Font" type="System.Drawing.Font, System.Drawing">
     <value>Webdings, 7.85pt</value>
   </data>
-  <data name="lClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 0</value>
-  </data>
-  <data name="lClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 17</value>
-  </data>
-  <data name="lClose.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="lClose.Text" xml:space="preserve">
-    <value>r</value>
-  </data>
-  <data name="&gt;&gt;lClose.Name" xml:space="preserve">
-    <value>lClose</value>
-  </data>
-  <data name="&gt;&gt;lClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lClose.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lClose.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 302</value>
-  </data>
-  <data name="&gt;&gt;tsbtRefresh.Name" xml:space="preserve">
-    <value>tsbtRefresh</value>
-  </data>
-  <data name="&gt;&gt;tsbtRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsbtNewFile.Name" xml:space="preserve">
-    <value>tsbtNewFile</value>
-  </data>
-  <data name="&gt;&gt;tsbtNewFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsbtImportFile.Name" xml:space="preserve">
-    <value>tsbtImportFile</value>
-  </data>
-  <data name="&gt;&gt;tsbtImportFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsbtOpenAllCodes.Name" xml:space="preserve">
-    <value>tsbtOpenAllCodes</value>
-  </data>
-  <data name="&gt;&gt;tsbtOpenAllCodes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;AdicionarToolStripMenuItem.Name" xml:space="preserve">
     <value>AdicionarToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;AdicionarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tsbtRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
   </data>
-  <data name="&gt;&gt;tsmiNewFile.Name" xml:space="preserve">
-    <value>tsmiNewFile</value>
+  <data name="tvExplorer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;tsmiNewFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ExcluirToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;tsmiImportFile.Name" xml:space="preserve">
-    <value>tsmiImportFile</value>
+  <data name="&gt;&gt;tsbtImportFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tsmiNewFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="tsExplorer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="&gt;&gt;lClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lClose.Text" xml:space="preserve">
+    <value>r</value>
+  </data>
+  <data name="lClose.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;tsmiImportFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tsExplorer.Text" xml:space="preserve">
+    <value>ToolStrip1</value>
+  </data>
+  <data name="cmsFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 136</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FilesExplorer</value>
+  </data>
+  <data name="tsbtOpenAllCodes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 302</value>
+  </data>
+  <data name="&gt;&gt;tsmiImportFile.Name" xml:space="preserve">
+    <value>tsmiImportFile</value>
+  </data>
   <data name="&gt;&gt;tsmiOpenAllCodes.Name" xml:space="preserve">
     <value>tsmiOpenAllCodes</value>
   </data>
-  <data name="&gt;&gt;tsmiOpenAllCodes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tsExplorer.Name" xml:space="preserve">
+    <value>tsExplorer</value>
   </data>
-  <data name="&gt;&gt;AbrirPastaRecipienteToolStripMenuItem.Name" xml:space="preserve">
-    <value>AbrirPastaRecipienteToolStripMenuItem</value>
+  <data name="AdicionarToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;AbrirPastaRecipienteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AbrirPastaRecipienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Abrir pasta recipiente</value>
+  </data>
+  <data name="tsExplorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 25</value>
   </data>
   <data name="&gt;&gt;ExcluirToolStripMenuItem.Name" xml:space="preserve">
     <value>ExcluirToolStripMenuItem</value>
@@ -528,28 +486,64 @@
   <data name="&gt;&gt;ExcluirToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tsbtRefresh.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tvExplorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 257</value>
+  </data>
+  <data name="AdicionarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="lHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tsbtImportFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;tsmiNewFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lClose.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tsmiOpenAllCodes.Text" xml:space="preserve">
+    <value>Abrir Tudo</value>
+  </data>
   <data name="&gt;&gt;RenomearToolStripMenuItem.Name" xml:space="preserve">
     <value>RenomearToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;RenomearToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tvExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;tsbtCopyPath.Name" xml:space="preserve">
-    <value>tsbtCopyPath</value>
+  <data name="lClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 0</value>
   </data>
-  <data name="&gt;&gt;tsbtCopyPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lClose.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;ilExtenxions.Name" xml:space="preserve">
-    <value>ilExtenxions</value>
+  <data name="&gt;&gt;tvExplorer.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;ilExtenxions.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FilesExplorer</value>
+  <data name="lClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 17</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cmsFiles.Name" xml:space="preserve">
+    <value>cmsFiles</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tsExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="ilExtenxions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>319, 17</value>
+  </metadata>
+  <metadata name="cmsFiles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>187, 14</value>
+  </metadata>
 </root>

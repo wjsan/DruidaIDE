@@ -14,7 +14,7 @@
     ''' </summary>
     Public Sub LoadFile()
         If (System.IO.File.Exists(filePath)) Then
-            myCodeEditor.OpenFile(filePath)
+            myCodeEditor.OpenFile(filePath, System.Text.Encoding.UTF8)
         Else
             MessageBox.Show("The source code file does not exist: " & filePath)
         End If
@@ -24,14 +24,14 @@
     ''' Save source code file modifications
     ''' </summary>
     Public Sub saveFile()
-        myCodeEditor.SaveToFile(filePath, System.Text.Encoding.Default)
+        myCodeEditor.SaveToFile(filePath, System.Text.Encoding.UTF8)
     End Sub
 
     ''' <summary>
     ''' Save source code copy file with modifications
     ''' </summary>
     Public Sub saveFileAs(path As String)
-        myCodeEditor.SaveToFile(path, System.Text.Encoding.Default)
+        myCodeEditor.SaveToFile(path, System.Text.Encoding.UTF8)
     End Sub
 
     ''' <summary>

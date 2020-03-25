@@ -40,16 +40,16 @@ Partial Class FilesExplorer
         Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RenomearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsbtCopyPath = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ilExtenxions = New System.Windows.Forms.ImageList(Me.components)
         Me.lClose = New System.Windows.Forms.Label()
+        Me.ilExtenxions = New System.Windows.Forms.ImageList(Me.components)
         Me.tsExplorer.SuspendLayout()
         Me.cmsFiles.SuspendLayout()
         Me.SuspendLayout()
         '
         'lHeader
         '
-        Me.lHeader.BackColor = System.Drawing.SystemColors.HotTrack
         resources.ApplyResources(Me.lHeader, "lHeader")
+        Me.lHeader.BackColor = System.Drawing.SystemColors.HotTrack
         Me.lHeader.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.lHeader.Name = "lHeader"
         '
@@ -61,36 +61,36 @@ Partial Class FilesExplorer
         '
         'tsbtRefresh
         '
+        resources.ApplyResources(Me.tsbtRefresh, "tsbtRefresh")
         Me.tsbtRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtRefresh.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Refresh
-        resources.ApplyResources(Me.tsbtRefresh, "tsbtRefresh")
         Me.tsbtRefresh.Name = "tsbtRefresh"
         '
         'tsbtNewFile
         '
+        resources.ApplyResources(Me.tsbtNewFile, "tsbtNewFile")
         Me.tsbtNewFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtNewFile.Image = Global.Druida_IDE_Lite.My.Resources.Resources.New_File
-        resources.ApplyResources(Me.tsbtNewFile, "tsbtNewFile")
         Me.tsbtNewFile.Name = "tsbtNewFile"
         '
         'tsbtImportFile
         '
+        resources.ApplyResources(Me.tsbtImportFile, "tsbtImportFile")
         Me.tsbtImportFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtImportFile.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Import_File
-        resources.ApplyResources(Me.tsbtImportFile, "tsbtImportFile")
         Me.tsbtImportFile.Name = "tsbtImportFile"
         '
         'tsbtOpenAllCodes
         '
+        resources.ApplyResources(Me.tsbtOpenAllCodes, "tsbtOpenAllCodes")
         Me.tsbtOpenAllCodes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtOpenAllCodes.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Folder
-        resources.ApplyResources(Me.tsbtOpenAllCodes, "tsbtOpenAllCodes")
         Me.tsbtOpenAllCodes.Name = "tsbtOpenAllCodes"
         '
         'tvExplorer
         '
-        Me.tvExplorer.ContextMenuStrip = Me.cmsFiles
         resources.ApplyResources(Me.tvExplorer, "tvExplorer")
+        Me.tvExplorer.ContextMenuStrip = Me.cmsFiles
         Me.tvExplorer.Extensions = New String() {Nothing, ".ino", ".pde", ".h", ".c", ".cpp", ".txt", ".png", ".cfg", ".hex", ".pdsprj"}
         Me.tvExplorer.HideEmptyFolders = False
         Me.tvExplorer.ImageList = Me.ilExtenxions
@@ -100,26 +100,26 @@ Partial Class FilesExplorer
         '
         'cmsFiles
         '
+        resources.ApplyResources(Me.cmsFiles, "cmsFiles")
         Me.cmsFiles.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdicionarToolStripMenuItem, Me.tsmiOpenAllCodes, Me.AbrirPastaRecipienteToolStripMenuItem, Me.ExcluirToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.tsbtCopyPath})
         Me.cmsFiles.Name = "cmsFiles"
-        resources.ApplyResources(Me.cmsFiles, "cmsFiles")
         '
         'AdicionarToolStripMenuItem
         '
-        Me.AdicionarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiNewFile, Me.tsmiImportFile})
         resources.ApplyResources(Me.AdicionarToolStripMenuItem, "AdicionarToolStripMenuItem")
+        Me.AdicionarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiNewFile, Me.tsmiImportFile})
         Me.AdicionarToolStripMenuItem.Image = Global.Druida_IDE_Lite.My.Resources.Resources.New_File
         Me.AdicionarToolStripMenuItem.Name = "AdicionarToolStripMenuItem"
         '
         'tsmiNewFile
         '
-        Me.tsmiNewFile.Name = "tsmiNewFile"
         resources.ApplyResources(Me.tsmiNewFile, "tsmiNewFile")
+        Me.tsmiNewFile.Name = "tsmiNewFile"
         '
         'tsmiImportFile
         '
-        Me.tsmiImportFile.Name = "tsmiImportFile"
         resources.ApplyResources(Me.tsmiImportFile, "tsmiImportFile")
+        Me.tsmiImportFile.Name = "tsmiImportFile"
         '
         'tsmiOpenAllCodes
         '
@@ -151,6 +151,13 @@ Partial Class FilesExplorer
         Me.tsbtCopyPath.Image = Global.Druida_IDE_Lite.My.Resources.Resources.copyDirectory
         Me.tsbtCopyPath.Name = "tsbtCopyPath"
         '
+        'lClose
+        '
+        resources.ApplyResources(Me.lClose, "lClose")
+        Me.lClose.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.lClose.ForeColor = System.Drawing.Color.Transparent
+        Me.lClose.Name = "lClose"
+        '
         'ilExtenxions
         '
         Me.ilExtenxions.ImageStream = CType(resources.GetObject("ilExtenxions.ImageStream"), System.Windows.Forms.ImageListStreamer)
@@ -166,13 +173,6 @@ Partial Class FilesExplorer
         Me.ilExtenxions.Images.SetKeyName(8, "Settings.png")
         Me.ilExtenxions.Images.SetKeyName(9, "firmware.png")
         Me.ilExtenxions.Images.SetKeyName(10, "proteus.png")
-        '
-        'lClose
-        '
-        resources.ApplyResources(Me.lClose, "lClose")
-        Me.lClose.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.lClose.ForeColor = System.Drawing.Color.Transparent
-        Me.lClose.Name = "lClose"
         '
         'FilesExplorer
         '
@@ -207,6 +207,6 @@ Partial Class FilesExplorer
     Friend WithEvents RenomearToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents tsmiOpenAllCodes As ToolStripMenuItem
     Friend WithEvents lClose As Label
-    Friend WithEvents ilExtenxions As ImageList
     Friend WithEvents tsbtCopyPath As ToolStripMenuItem
+    Friend WithEvents ilExtenxions As ImageList
 End Class

@@ -13,8 +13,12 @@ Public Class CodeInfo
         Shared Sub UpdateEscopo()
             If scope.Count - 1 >= selectedLine Then
                 selectedEscopoObject = scope(selectedLine)
-                selectedEscopoName = selectedEscopoObject.getName
-                mainAutoCompleteMenu.UpdateScope(selectedEscopoObject)
+                If (selectedEscopoObject IsNot Nothing) Then
+                    selectedEscopoName = selectedEscopoObject.getName()
+                    mainAutoCompleteMenu.UpdateScope(selectedEscopoObject)
+                Else
+                    consoleErrors.AddItem(ErrorsManager.Type.msgAdvise, "Error on intellisense scope scanner. Try create a empty line on start.", CodeManager.getCodeName(), selectedLine)
+                End If
             End If
         End Sub
     End Structure
