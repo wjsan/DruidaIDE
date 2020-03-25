@@ -22,7 +22,6 @@ Public NotInheritable Class SplashScreen
     End Sub
 
     Private Sub SplashScreen_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        'Label4.Visible = isShowCase
         'myCulture.setResxCulture("en")
         lVersion.Text = System.String.Format(lVersion.Text, My.Application.Info.Version.Major, My.Application.Info.Version.Minor)
         BoardsData.LoadDataBase()
