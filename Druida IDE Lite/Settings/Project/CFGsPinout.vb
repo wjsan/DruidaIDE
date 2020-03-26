@@ -88,7 +88,7 @@ Public Class CFGsPinout
     End Sub
 
     Private Sub moveUp(pin As Pinout)
-        If pin IsNot Pinout1 Then
+        If pin IsNot Pinout1 And pin IsNot myPins.data.First Then
             ClearPins(False)
             Dim index = myPins.data.IndexOf(pin) - 1
             myPins.data.Remove(pin)
