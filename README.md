@@ -1,2 +1,2 @@
 # DruidaIDE
-Open source modern IDE to Arduino boards.
+Open source modern IDE for Arduino boards.
