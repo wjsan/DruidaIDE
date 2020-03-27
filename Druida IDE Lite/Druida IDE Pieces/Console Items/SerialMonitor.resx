@@ -120,12 +120,9 @@
   <data name="&gt;&gt;tsbtSave.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsbtSettings.Name" xml:space="preserve">
-    <value>tsbtSettings</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>950, 165</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbSerialInput.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;tsbtClearSerial.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -133,21 +130,21 @@
   <data name="&gt;&gt;tslBaud.Name" xml:space="preserve">
     <value>tslBaud</value>
   </data>
-  <data name="&gt;&gt;tsbtAutoScroll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tscbPort.Name" xml:space="preserve">
     <value>tscbPort</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btSend.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tslFinalizer.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 22</value>
   </data>
-  <data name="&gt;&gt;tslFinalizer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tslPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
+  </data>
+  <data name="&gt;&gt;tbSerialMonitor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tsbtAutoScroll.Text" xml:space="preserve">
     <value>Auto-Scroll</value>
@@ -167,9 +164,6 @@
   <data name="&gt;&gt;tsSerialMonitor.Name" xml:space="preserve">
     <value>tsSerialMonitor</value>
   </data>
-  <data name="tscbFinalizer.Items3" xml:space="preserve">
-    <value>Ambos NL e CR</value>
-  </data>
   <data name="&gt;&gt;tbSerialInput.Name" xml:space="preserve">
     <value>tbSerialInput</value>
   </data>
@@ -177,11 +171,11 @@
   <data name="tbSerialMonitor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;tbSerialMonitor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tbSerialInput.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="tsbtConection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 22</value>
+  <data name="tscbFinalizer.Items3" xml:space="preserve">
+    <value>Ambos NL e CR</value>
   </data>
   <data name="tsbtAutoClear.Text" xml:space="preserve">
     <value>Auto-Clear</value>
@@ -195,8 +189,11 @@
   <data name="tsbtAutoClear.ToolTipText" xml:space="preserve">
     <value>Limpa a informação enviada na caixa de texto</value>
   </data>
-  <data name="&gt;&gt;tscbBaud.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbSerialMonitor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>944, 110</value>
   </data>
   <data name="&gt;&gt;btSend.Name" xml:space="preserve">
     <value>btSend</value>
@@ -204,20 +201,20 @@
   <data name="&gt;&gt;tsbtSave.Name" xml:space="preserve">
     <value>tsbtSave</value>
   </data>
+  <data name="&gt;&gt;tslPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tscbFinalizer.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tscbBaud.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
   </data>
-  <data name="&gt;&gt;tsbtClearSerial.Name" xml:space="preserve">
-    <value>tsbtClearSerial</value>
+  <data name="&gt;&gt;tslFinalizer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbSerialMonitor.Name" xml:space="preserve">
     <value>tbSerialMonitor</value>
-  </data>
-  <data name="tslFinalizer.Text" xml:space="preserve">
-    <value>Terminador:</value>
   </data>
   <data name="tsbtConection.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -225,17 +222,17 @@
   <data name="&gt;&gt;tbSerialMonitor.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tscbFinalizer.Items" xml:space="preserve">
-    <value>Nenhum</value>
-  </data>
   <data name="&gt;&gt;tbSerialInput.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="tbSerialMonitor.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 52</value>
   </data>
-  <data name="tsSerialMonitor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>950, 25</value>
+  <data name="btSend.Text" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="tsSerialMonitor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="tsbtSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
@@ -243,8 +240,8 @@
   <data name="&gt;&gt;btSend.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tscbFinalizer.Name" xml:space="preserve">
-    <value>tscbFinalizer</value>
+  <data name="tsbtAutoScroll.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
   </data>
   <data name="tbSerialInput.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 28</value>
@@ -258,11 +255,11 @@
   <data name="tbSerialMonitor.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="btSend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="btSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>895, 28</value>
   </data>
   <data name="tscbFinalizer.Items2" xml:space="preserve">
     <value>Retorno de Carro</value>
@@ -273,17 +270,23 @@
   <data name="tscbPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
   </data>
+  <data name="tsbtClearSerial.Text" xml:space="preserve">
+    <value>Limpar Tudo</value>
+  </data>
+  <data name="&gt;&gt;tbSerialInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tsbtSave.Text" xml:space="preserve">
+    <value>Exportar Dados</value>
+  </data>
   <data name="tsSerialMonitor.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="tslPort.Text" xml:space="preserve">
-    <value>Porta:</value>
+  <data name="tsSerialMonitor.Text" xml:space="preserve">
+    <value>ToolStrip3</value>
   </data>
-  <data name="&gt;&gt;tsbtConection.Name" xml:space="preserve">
-    <value>tsbtConection</value>
-  </data>
-  <data name="&gt;&gt;tbSerialInput.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;tsbtClearSerial.Name" xml:space="preserve">
+    <value>tsbtClearSerial</value>
   </data>
   <data name="btSend.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 22</value>
@@ -294,47 +297,44 @@
   <data name="&gt;&gt;btSend.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tsbtAutoClear.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsbtAutoClear.Name" xml:space="preserve">
+    <value>tsbtAutoClear</value>
+  </data>
+  <data name="&gt;&gt;tsbtAutoScroll.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsbtAutoScroll.Name" xml:space="preserve">
-    <value>tsbtAutoScroll</value>
-  </data>
-  <data name="&gt;&gt;tscbBaud.Name" xml:space="preserve">
-    <value>tscbBaud</value>
-  </data>
-  <data name="&gt;&gt;tslPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tsbtSettings.Text" xml:space="preserve">
     <value>Configurações</value>
   </data>
-  <data name="btSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>895, 28</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tsbtClearSerial.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
   </data>
-  <data name="&gt;&gt;tslPort.Name" xml:space="preserve">
-    <value>tslPort</value>
+  <data name="&gt;&gt;tsbtAutoClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbSerialMonitor.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;tslPort.Name" xml:space="preserve">
+    <value>tslPort</value>
+  </data>
   <data name="tsbtAutoClear.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>950, 165</value>
   </data>
-  <data name="tslBaud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 22</value>
+  <data name="tsSerialMonitor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>950, 25</value>
   </data>
-  <data name="btSend.Text" xml:space="preserve">
-    <value>Enviar</value>
+  <data name="tsbtConection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 22</value>
   </data>
-  <data name="tsbtSave.Text" xml:space="preserve">
-    <value>Exportar Dados</value>
+  <data name="&gt;&gt;tscbFinalizer.Name" xml:space="preserve">
+    <value>tscbFinalizer</value>
   </data>
   <data name="tbSerialInput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -342,8 +342,8 @@
   <data name="tslBaud.Text" xml:space="preserve">
     <value>Velocidade:</value>
   </data>
-  <data name="&gt;&gt;tslBaud.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tsSerialMonitor.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="tsbtSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
@@ -351,17 +351,17 @@
   <data name="tscbFinalizer.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
   </data>
-  <data name="tbSerialMonitor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>944, 110</value>
+  <data name="tslFinalizer.Text" xml:space="preserve">
+    <value>Terminador:</value>
   </data>
-  <data name="&gt;&gt;tsSerialMonitor.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="tslBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 22</value>
   </data>
-  <data name="tslPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 22</value>
+  <data name="&gt;&gt;tscbBaud.Name" xml:space="preserve">
+    <value>tscbBaud</value>
   </data>
-  <data name="tbSerialInput.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;tsbtAutoScroll.Name" xml:space="preserve">
+    <value>tsbtAutoScroll</value>
   </data>
   <data name="&gt;&gt;tsSerialMonitor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -378,40 +378,40 @@
   <data name="tbSerialMonitor.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="tsSerialMonitor.Text" xml:space="preserve">
-    <value>ToolStrip3</value>
+  <data name="&gt;&gt;tsbtSettings.Name" xml:space="preserve">
+    <value>tsbtSettings</value>
   </data>
   <data name="tsbtSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="tsSerialMonitor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="tscbFinalizer.Items" xml:space="preserve">
+    <value>Nenhum</value>
   </data>
-  <data name="&gt;&gt;tsbtAutoClear.Name" xml:space="preserve">
-    <value>tsbtAutoClear</value>
+  <data name="&gt;&gt;tsbtConection.Name" xml:space="preserve">
+    <value>tsbtConection</value>
   </data>
   <data name="&gt;&gt;tslFinalizer.Name" xml:space="preserve">
     <value>tslFinalizer</value>
   </data>
-  <data name="tsbtAutoScroll.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="tslPort.Text" xml:space="preserve">
+    <value>Porta:</value>
   </data>
   <data name="&gt;&gt;tsbtSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tsbtClearSerial.Text" xml:space="preserve">
-    <value>Limpar Tudo</value>
+  <data name="&gt;&gt;tslBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbSerialInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tscbBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="tsSerialMonitor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
   </metadata>
 </root>

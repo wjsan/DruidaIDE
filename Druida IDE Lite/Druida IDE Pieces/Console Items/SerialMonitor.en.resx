@@ -138,10 +138,22 @@
     <value>Baud:</value>
   </data>
   <data name="tslFinalizer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+    <value>67, 22</value>
   </data>
   <data name="tslFinalizer.Text" xml:space="preserve">
     <value>Terminator:</value>
+  </data>
+  <data name="tscbFinalizer.Items" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="tscbFinalizer.Items1" xml:space="preserve">
+    <value>New-Line</value>
+  </data>
+  <data name="tscbFinalizer.Items2" xml:space="preserve">
+    <value>Carriage Return</value>
+  </data>
+  <data name="tscbFinalizer.Items3" xml:space="preserve">
+    <value>Booth NL &amp; CR</value>
   </data>
   <data name="tsbtAutoClear.ToolTipText" xml:space="preserve">
     <value>Clear text box when send the information</value>
