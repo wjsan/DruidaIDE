@@ -7,6 +7,10 @@
   </a>
 </p>
 
+[Download](https://binquantum.wordpress.com/druida-ide-lite/) release english Lite version.
+[Download](https://binary-quantum.com/druida-ide-lite/) release portuguese Lite version.
+[Download](https://binary-quantum.com/druida-2/) release portuguese Pro version.
+
 ## Table of contents 
 
 - [Screenshot](#screenshot)
@@ -31,4 +35,4 @@
 2. Clone or download [Druida IDE Repo](https://github.com/binq-software/DruidaIDE)
 3. Extract release of Druida IDE to 'DruidaIDE\Druida IDE Lite\bin\Debug' or 'DruidaIDE\Druida IDE Lite\bin\Release'
 4. Open project with Visual Studio Community
-5. Select version (Debug/Release) and start!
+5. Select version (Debug/Release) and start
