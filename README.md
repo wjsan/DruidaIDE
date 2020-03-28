@@ -7,9 +7,9 @@
   </a>
 </p>
 
-[Download](https://binquantum.wordpress.com/druida-ide-lite/) release english Lite version.
-[Download](https://binary-quantum.com/druida-ide-lite/) release portuguese Lite version.
-[Download](https://binary-quantum.com/druida-2/) release portuguese Pro version.
+[Download](https://binquantum.wordpress.com/druida-ide-lite/) english Lite version.<br>
+[Download](https://binary-quantum.com/druida-ide-lite/) portuguese Lite version.<br>
+[Download](https://binary-quantum.com/druida-2/) portuguese Pro version.<br>
 
 ## Table of contents 
 
