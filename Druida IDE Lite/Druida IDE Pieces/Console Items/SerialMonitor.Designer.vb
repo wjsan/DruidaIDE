@@ -55,87 +55,87 @@ Partial Class SerialMonitor
         '
         'tsSerialMonitor
         '
-        resources.ApplyResources(Me.tsSerialMonitor, "tsSerialMonitor")
         Me.tsSerialMonitor.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tslPort, Me.tscbPort, Me.tslBaud, Me.tscbBaud, Me.tslFinalizer, Me.tscbFinalizer, Me.tsbtAutoClear, Me.tsbtAutoScroll, Me.tsbtConection, Me.tsbtSettings, Me.tsbtSave, Me.tsbtClearSerial})
+        resources.ApplyResources(Me.tsSerialMonitor, "tsSerialMonitor")
         Me.tsSerialMonitor.Name = "tsSerialMonitor"
         '
         'tslPort
         '
-        resources.ApplyResources(Me.tslPort, "tslPort")
         Me.tslPort.Name = "tslPort"
+        resources.ApplyResources(Me.tslPort, "tslPort")
         '
         'tscbPort
         '
-        resources.ApplyResources(Me.tscbPort, "tscbPort")
         Me.tscbPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.tscbPort.Name = "tscbPort"
+        resources.ApplyResources(Me.tscbPort, "tscbPort")
         '
         'tslBaud
         '
-        resources.ApplyResources(Me.tslBaud, "tslBaud")
         Me.tslBaud.Name = "tslBaud"
+        resources.ApplyResources(Me.tslBaud, "tslBaud")
         '
         'tscbBaud
         '
-        resources.ApplyResources(Me.tscbBaud, "tscbBaud")
         Me.tscbBaud.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.tscbBaud.Name = "tscbBaud"
+        resources.ApplyResources(Me.tscbBaud, "tscbBaud")
         '
         'tslFinalizer
         '
-        resources.ApplyResources(Me.tslFinalizer, "tslFinalizer")
         Me.tslFinalizer.Name = "tslFinalizer"
+        resources.ApplyResources(Me.tslFinalizer, "tslFinalizer")
         '
         'tscbFinalizer
         '
-        resources.ApplyResources(Me.tscbFinalizer, "tscbFinalizer")
         Me.tscbFinalizer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.tscbFinalizer.Items.AddRange(New Object() {resources.GetString("tscbFinalizer.Items"), resources.GetString("tscbFinalizer.Items1"), resources.GetString("tscbFinalizer.Items2"), resources.GetString("tscbFinalizer.Items3")})
         Me.tscbFinalizer.Name = "tscbFinalizer"
+        resources.ApplyResources(Me.tscbFinalizer, "tscbFinalizer")
         '
         'tsbtAutoClear
         '
-        resources.ApplyResources(Me.tsbtAutoClear, "tsbtAutoClear")
         Me.tsbtAutoClear.Checked = True
         Me.tsbtAutoClear.CheckOnClick = True
         Me.tsbtAutoClear.CheckState = System.Windows.Forms.CheckState.Checked
         Me.tsbtAutoClear.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Rename
+        resources.ApplyResources(Me.tsbtAutoClear, "tsbtAutoClear")
         Me.tsbtAutoClear.Name = "tsbtAutoClear"
         '
         'tsbtAutoScroll
         '
-        resources.ApplyResources(Me.tsbtAutoScroll, "tsbtAutoScroll")
         Me.tsbtAutoScroll.Checked = True
         Me.tsbtAutoScroll.CheckOnClick = True
         Me.tsbtAutoScroll.CheckState = System.Windows.Forms.CheckState.Checked
         Me.tsbtAutoScroll.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Auto_Scroll
+        resources.ApplyResources(Me.tsbtAutoScroll, "tsbtAutoScroll")
         Me.tsbtAutoScroll.Name = "tsbtAutoScroll"
         '
         'tsbtConection
         '
-        resources.ApplyResources(Me.tsbtConection, "tsbtConection")
         Me.tsbtConection.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Delete
+        resources.ApplyResources(Me.tsbtConection, "tsbtConection")
         Me.tsbtConection.Name = "tsbtConection"
         '
         'tsbtSettings
         '
-        resources.ApplyResources(Me.tsbtSettings, "tsbtSettings")
         Me.tsbtSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtSettings.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Options
+        resources.ApplyResources(Me.tsbtSettings, "tsbtSettings")
         Me.tsbtSettings.Name = "tsbtSettings"
         '
         'tsbtSave
         '
-        resources.ApplyResources(Me.tsbtSave, "tsbtSave")
         Me.tsbtSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtSave.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Save_File
+        resources.ApplyResources(Me.tsbtSave, "tsbtSave")
         Me.tsbtSave.Name = "tsbtSave"
         '
         'tsbtClearSerial
         '
-        resources.ApplyResources(Me.tsbtClearSerial, "tsbtClearSerial")
         Me.tsbtClearSerial.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.tsbtClearSerial.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Delete_All
+        resources.ApplyResources(Me.tsbtClearSerial, "tsbtClearSerial")
         Me.tsbtClearSerial.Name = "tsbtClearSerial"
         '
         'tbSerialMonitor
