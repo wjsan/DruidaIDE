@@ -165,7 +165,7 @@ Public Class CFGsPinout
 
     Private Function GetPinsConfiguratons()
         Dim text As String = vbCrLf
-        text &= "void pins_setup()" & vbCrLf & "{" & vbCrLf
+        text &= "void setupPins()" & vbCrLf & "{" & vbCrLf
         For Each pin As Pinout In myPins.data
             If pin.myData.pinName <> "" And pin.myData.pinNumber <> "" Then
                 text &= pin.myData.getPinSetup
@@ -178,7 +178,7 @@ Public Class CFGsPinout
     Private Sub ImportFile()
         ProjectActions.OpenFile.Open(CurrentProjectInfo.DirectoryPaths.mainCodeFile)
         If Not File.Exists(CurrentProjectInfo.DirectoryPaths.pinoutCodeFile) Then
-            CodeManager.Actions.AddSetup("    pins_setup();")
+            CodeManager.Actions.AddSetup("    setupPins();")
             CodeManager.Actions.IncludeLibrary("pins.h")
         End If
     End Sub

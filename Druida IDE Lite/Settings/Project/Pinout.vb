@@ -82,7 +82,7 @@ Public Class PinoutClass
     Public Function getPinSetup() As String
         Dim text As String = ""
         If pinType <> "Dados" And pinType <> "Data" Then
-            text = "    pinMode(" & pinNumber & ", " & pinType & ");" & vbCrLf
+            text = "    pinMode(" & pinName & ", " & pinType & ");" & vbCrLf
         End If
         Return text
     End Function
