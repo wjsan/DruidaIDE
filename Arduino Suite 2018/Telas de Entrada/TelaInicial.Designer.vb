@@ -33,48 +33,54 @@ Partial Class TelaInicial
         Me.LabelClose = New System.Windows.Forms.Label()
         Me.CabecalhoTelaInicial = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.WebBrowser2 = New System.Windows.Forms.WebBrowser()
+        Me.contextMenuStripAtivar = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.AdiquirirSoftwareToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AtivarSoftwareToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SolicitarChaveDeAtivaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÍconeHome = New ArduinoSuite.Ícone()
         Me.ÍconeSair = New ArduinoSuite.Ícone()
         Me.ÍconeAbrirPasta = New ArduinoSuite.Ícone()
         Me.ÍconeAlarmes = New ArduinoSuite.Ícone()
         Me.ÍconeProgramação = New ArduinoSuite.Ícone()
         Me.ÍconeComando = New ArduinoSuite.Ícone()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ÍconeAtivarDruida = New ArduinoSuite.Ícone()
         Me.ÍconeNovo = New ArduinoSuite.Ícone()
         Me.ÍconeAbrir = New ArduinoSuite.Ícone()
         Me.ÍconeSalvar = New ArduinoSuite.Ícone()
         Me.ÍconeSalvarComo = New ArduinoSuite.Ícone()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.WebBrowser2 = New System.Windows.Forms.WebBrowser()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.contextMenuStripAtivar.SuspendLayout()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AlterarLogoToolStripMenuItem, Me.SobreToolStripMenuItem, Me.SobreDruidaToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(214, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(213, 70)
         '
         'AlterarLogoToolStripMenuItem
         '
         Me.AlterarLogoToolStripMenuItem.Name = "AlterarLogoToolStripMenuItem"
-        Me.AlterarLogoToolStripMenuItem.Size = New System.Drawing.Size(213, 22)
+        Me.AlterarLogoToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
         Me.AlterarLogoToolStripMenuItem.Text = "Alterar Logo"
         '
         'SobreToolStripMenuItem
         '
         Me.SobreToolStripMenuItem.Name = "SobreToolStripMenuItem"
-        Me.SobreToolStripMenuItem.Size = New System.Drawing.Size(213, 22)
+        Me.SobreToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
         Me.SobreToolStripMenuItem.Text = "Sobre BINARY_QUANTUM"
         '
         'SobreDruidaToolStripMenuItem
         '
         Me.SobreDruidaToolStripMenuItem.Name = "SobreDruidaToolStripMenuItem"
-        Me.SobreDruidaToolStripMenuItem.Size = New System.Drawing.Size(213, 22)
+        Me.SobreDruidaToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
         Me.SobreDruidaToolStripMenuItem.Text = "Sobre Druida"
         '
         'LabelMin
@@ -150,6 +156,89 @@ Partial Class TelaInicial
         Me.Panel1.Size = New System.Drawing.Size(574, 111)
         Me.Panel1.TabIndex = 46
         '
+        'Panel2
+        '
+        Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImage = Global.ArduinoSuite.My.Resources.Resources.TaskBar
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.ÍconeAtivarDruida)
+        Me.Panel2.Controls.Add(Me.ÍconeNovo)
+        Me.Panel2.Controls.Add(Me.ÍconeAbrir)
+        Me.Panel2.Controls.Add(Me.ÍconeSalvar)
+        Me.Panel2.Controls.Add(Me.ÍconeSalvarComo)
+        Me.Panel2.Location = New System.Drawing.Point(301, 12)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(402, 110)
+        Me.Panel2.TabIndex = 47
+        '
+        'Panel3
+        '
+        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel3.BackgroundImage = Global.ArduinoSuite.My.Resources.Resources.TaskBar
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel3.Controls.Add(Me.LabelMaximize)
+        Me.Panel3.Controls.Add(Me.LabelClose)
+        Me.Panel3.Controls.Add(Me.LabelMin)
+        Me.Panel3.Controls.Add(Me.CabecalhoTelaInicial)
+        Me.Panel3.Location = New System.Drawing.Point(3, 3)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1002, 36)
+        Me.Panel3.TabIndex = 48
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.WebBrowser1.IsWebBrowserContextMenuEnabled = False
+        Me.WebBrowser1.Location = New System.Drawing.Point(3, 42)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.ScriptErrorsSuppressed = True
+        Me.WebBrowser1.Size = New System.Drawing.Size(402, 681)
+        Me.WebBrowser1.TabIndex = 49
+        Me.WebBrowser1.Url = New System.Uri("", System.UriKind.Relative)
+        '
+        'WebBrowser2
+        '
+        Me.WebBrowser2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WebBrowser2.IsWebBrowserContextMenuEnabled = False
+        Me.WebBrowser2.Location = New System.Drawing.Point(411, 107)
+        Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser2.Name = "WebBrowser2"
+        Me.WebBrowser2.ScriptErrorsSuppressed = True
+        Me.WebBrowser2.Size = New System.Drawing.Size(594, 617)
+        Me.WebBrowser2.TabIndex = 50
+        Me.WebBrowser2.Url = New System.Uri("", System.UriKind.Relative)
+        '
+        'contextMenuStripAtivar
+        '
+        Me.contextMenuStripAtivar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdiquirirSoftwareToolStripMenuItem, Me.SolicitarChaveDeAtivaçãoToolStripMenuItem, Me.AtivarSoftwareToolStripMenuItem})
+        Me.contextMenuStripAtivar.Name = "contextMenuStripAtivar"
+        Me.contextMenuStripAtivar.Size = New System.Drawing.Size(218, 92)
+        '
+        'AdiquirirSoftwareToolStripMenuItem
+        '
+        Me.AdiquirirSoftwareToolStripMenuItem.Name = "AdiquirirSoftwareToolStripMenuItem"
+        Me.AdiquirirSoftwareToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.AdiquirirSoftwareToolStripMenuItem.Text = "Adiquirir Software"
+        '
+        'AtivarSoftwareToolStripMenuItem
+        '
+        Me.AtivarSoftwareToolStripMenuItem.Name = "AtivarSoftwareToolStripMenuItem"
+        Me.AtivarSoftwareToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.AtivarSoftwareToolStripMenuItem.Text = "Ativar Software"
+        '
+        'SolicitarChaveDeAtivaçãoToolStripMenuItem
+        '
+        Me.SolicitarChaveDeAtivaçãoToolStripMenuItem.Name = "SolicitarChaveDeAtivaçãoToolStripMenuItem"
+        Me.SolicitarChaveDeAtivaçãoToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.SolicitarChaveDeAtivaçãoToolStripMenuItem.Text = "Solicitar Chave de Ativação"
+        '
         'ÍconeHome
         '
         Me.ÍconeHome.Anchor = System.Windows.Forms.AnchorStyles.Bottom
@@ -222,21 +311,17 @@ Partial Class TelaInicial
         Me.ÍconeComando.Size = New System.Drawing.Size(71, 88)
         Me.ÍconeComando.TabIndex = 4
         '
-        'Panel2
+        'ÍconeAtivarDruida
         '
-        Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.BackgroundImage = Global.ArduinoSuite.My.Resources.Resources.TaskBar
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.ÍconeNovo)
-        Me.Panel2.Controls.Add(Me.ÍconeAbrir)
-        Me.Panel2.Controls.Add(Me.ÍconeSalvar)
-        Me.Panel2.Controls.Add(Me.ÍconeSalvarComo)
-        Me.Panel2.Location = New System.Drawing.Point(301, 12)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(402, 110)
-        Me.Panel2.TabIndex = 47
+        Me.ÍconeAtivarDruida.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ÍconeAtivarDruida.BackColor = System.Drawing.Color.Transparent
+        Me.ÍconeAtivarDruida.ForeColor = System.Drawing.Color.White
+        Me.ÍconeAtivarDruida.Icon = CType(resources.GetObject("ÍconeAtivarDruida.Icon"), System.Drawing.Image)
+        Me.ÍconeAtivarDruida.LabelName = "Ativar Druida"
+        Me.ÍconeAtivarDruida.Location = New System.Drawing.Point(323, 28)
+        Me.ÍconeAtivarDruida.Name = "ÍconeAtivarDruida"
+        Me.ÍconeAtivarDruida.Size = New System.Drawing.Size(72, 80)
+        Me.ÍconeAtivarDruida.TabIndex = 7
         '
         'ÍconeNovo
         '
@@ -245,7 +330,7 @@ Partial Class TelaInicial
         Me.ÍconeNovo.ForeColor = System.Drawing.Color.White
         Me.ÍconeNovo.Icon = CType(resources.GetObject("ÍconeNovo.Icon"), System.Drawing.Image)
         Me.ÍconeNovo.LabelName = "Novo Projeto"
-        Me.ÍconeNovo.Location = New System.Drawing.Point(42, 29)
+        Me.ÍconeNovo.Location = New System.Drawing.Point(4, 29)
         Me.ÍconeNovo.Name = "ÍconeNovo"
         Me.ÍconeNovo.Size = New System.Drawing.Size(79, 78)
         Me.ÍconeNovo.TabIndex = 6
@@ -257,7 +342,7 @@ Partial Class TelaInicial
         Me.ÍconeAbrir.ForeColor = System.Drawing.Color.White
         Me.ÍconeAbrir.Icon = CType(resources.GetObject("ÍconeAbrir.Icon"), System.Drawing.Image)
         Me.ÍconeAbrir.LabelName = "Abrir Projeto"
-        Me.ÍconeAbrir.Location = New System.Drawing.Point(126, 27)
+        Me.ÍconeAbrir.Location = New System.Drawing.Point(90, 29)
         Me.ÍconeAbrir.Name = "ÍconeAbrir"
         Me.ÍconeAbrir.Size = New System.Drawing.Size(71, 78)
         Me.ÍconeAbrir.TabIndex = 4
@@ -269,7 +354,7 @@ Partial Class TelaInicial
         Me.ÍconeSalvar.ForeColor = System.Drawing.Color.White
         Me.ÍconeSalvar.Icon = CType(resources.GetObject("ÍconeSalvar.Icon"), System.Drawing.Image)
         Me.ÍconeSalvar.LabelName = "Salvar"
-        Me.ÍconeSalvar.Location = New System.Drawing.Point(203, 27)
+        Me.ÍconeSalvar.Location = New System.Drawing.Point(168, 29)
         Me.ÍconeSalvar.Name = "ÍconeSalvar"
         Me.ÍconeSalvar.Size = New System.Drawing.Size(70, 78)
         Me.ÍconeSalvar.TabIndex = 4
@@ -281,52 +366,10 @@ Partial Class TelaInicial
         Me.ÍconeSalvarComo.ForeColor = System.Drawing.Color.White
         Me.ÍconeSalvarComo.Icon = CType(resources.GetObject("ÍconeSalvarComo.Icon"), System.Drawing.Image)
         Me.ÍconeSalvarComo.LabelName = "Salvar Como"
-        Me.ÍconeSalvarComo.Location = New System.Drawing.Point(283, 27)
+        Me.ÍconeSalvarComo.Location = New System.Drawing.Point(245, 28)
         Me.ÍconeSalvarComo.Name = "ÍconeSalvarComo"
         Me.ÍconeSalvarComo.Size = New System.Drawing.Size(71, 80)
         Me.ÍconeSalvarComo.TabIndex = 4
-        '
-        'Panel3
-        '
-        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel3.BackgroundImage = Global.ArduinoSuite.My.Resources.Resources.TaskBar
-        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel3.Controls.Add(Me.LabelMaximize)
-        Me.Panel3.Controls.Add(Me.LabelClose)
-        Me.Panel3.Controls.Add(Me.LabelMin)
-        Me.Panel3.Controls.Add(Me.CabecalhoTelaInicial)
-        Me.Panel3.Location = New System.Drawing.Point(3, 3)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1002, 36)
-        Me.Panel3.TabIndex = 48
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.WebBrowser1.IsWebBrowserContextMenuEnabled = False
-        Me.WebBrowser1.Location = New System.Drawing.Point(3, 42)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(402, 681)
-        Me.WebBrowser1.TabIndex = 49
-        Me.WebBrowser1.Url = New System.Uri("", System.UriKind.Relative)
-        '
-        'WebBrowser2
-        '
-        Me.WebBrowser2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WebBrowser2.IsWebBrowserContextMenuEnabled = False
-        Me.WebBrowser2.Location = New System.Drawing.Point(411, 107)
-        Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser2.Name = "WebBrowser2"
-        Me.WebBrowser2.ScriptErrorsSuppressed = True
-        Me.WebBrowser2.Size = New System.Drawing.Size(594, 617)
-        Me.WebBrowser2.TabIndex = 50
-        Me.WebBrowser2.Url = New System.Uri("", System.UriKind.Relative)
         '
         'TelaInicial
         '
@@ -349,6 +392,7 @@ Partial Class TelaInicial
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
+        Me.contextMenuStripAtivar.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -379,4 +423,9 @@ Partial Class TelaInicial
     Private WithEvents ÍconeHome As Ícone
     Friend WithEvents WebBrowser1 As WebBrowser
     Friend WithEvents WebBrowser2 As WebBrowser
+    Friend WithEvents ÍconeAtivarDruida As Ícone
+    Friend WithEvents contextMenuStripAtivar As ContextMenuStrip
+    Friend WithEvents AdiquirirSoftwareToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SolicitarChaveDeAtivaçãoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AtivarSoftwareToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -2,6 +2,15 @@
 
 Public Class DruidaInterface
     Public Shared DruidaIDE As Druida_IDE = Druida_IDE
+
+    Public Shared callScadaAction As Action
+
+    Public Shared Sub CallScada()
+        If Not callScadaAction Is Nothing Then
+            callScadaAction()
+        End If
+    End Sub
+
     Public Shared Sub InitializeDruidaOnPath(path As String)
         Dim myCulture As New CultureManager
         HideButtons()
@@ -38,6 +47,7 @@ Public Class DruidaInterface
         controlMainToolBar.tsbOpen.Visible = False
         controlMainToolBar.tsbSaveAs.Visible = False
         controlMainToolBar.tsbtExit.Visible = False
+        controlMainToolBar.tsbtScada.Visible = True
     End Sub
 
     'Public Shared Sub AddErrorMsg(errorMsg As String)

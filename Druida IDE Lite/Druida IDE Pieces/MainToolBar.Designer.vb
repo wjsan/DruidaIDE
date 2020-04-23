@@ -41,7 +41,7 @@ Partial Class MainToolBar
         Me.tsbHardware = New System.Windows.Forms.ToolStripButton()
         Me.tsbCompile = New System.Windows.Forms.ToolStripButton()
         Me.tsbUpload = New System.Windows.Forms.ToolStripButton()
-        Me.tsbtDebugger = New System.Windows.Forms.ToolStripButton()
+        Me.tsbtScada = New System.Windows.Forms.ToolStripButton()
         Me.tsbSerialMonitor = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.tpFile = New System.Windows.Forms.TabPage()
@@ -211,7 +211,7 @@ Partial Class MainToolBar
         'tsProject
         '
         Me.tsProject.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.tsProject.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNewProject, Me.tsbOpen, Me.tsbSave, Me.tsbSaveAs, Me.tsbtExit, Me.ToolStripSeparator1, Me.tsbHardware, Me.tsbCompile, Me.tsbUpload, Me.tsbtDebugger, Me.tsbSerialMonitor, Me.ToolStripSeparator6})
+        Me.tsProject.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNewProject, Me.tsbOpen, Me.tsbSave, Me.tsbSaveAs, Me.tsbtExit, Me.ToolStripSeparator1, Me.tsbHardware, Me.tsbCompile, Me.tsbUpload, Me.tsbtScada, Me.tsbSerialMonitor, Me.ToolStripSeparator6})
         resources.ApplyResources(Me.tsProject, "tsProject")
         Me.tsProject.Name = "tsProject"
         Me.tsProject.ShowItemToolTips = False
@@ -270,11 +270,11 @@ Partial Class MainToolBar
         Me.tsbUpload.Image = Global.Druida_IDE_Lite.My.Resources.Resources.Upload
         Me.tsbUpload.Name = "tsbUpload"
         '
-        'tsbtDebugger
+        'tsbtScada
         '
-        resources.ApplyResources(Me.tsbtDebugger, "tsbtDebugger")
-        Me.tsbtDebugger.Image = Global.Druida_IDE_Lite.My.Resources.Resources.uploadDebuger
-        Me.tsbtDebugger.Name = "tsbtDebugger"
+        resources.ApplyResources(Me.tsbtScada, "tsbtScada")
+        Me.tsbtScada.Image = Global.Druida_IDE_Lite.My.Resources.Resources._813df8d9
+        Me.tsbtScada.Name = "tsbtScada"
         '
         'tsbSerialMonitor
         '
@@ -889,7 +889,7 @@ Partial Class MainToolBar
     Friend WithEvents lClose As Label
     Friend WithEvents tsbTutorial As ToolStripButton
     Friend WithEvents tsbtDocumentMap As ToolStripButton
-    Friend WithEvents tsbtDebugger As ToolStripButton
+    Friend WithEvents tsbtScada As ToolStripButton
     Friend WithEvents lMinimize As Label
     Friend WithEvents tsbtHardwareDebugger As ToolStripButton
     Friend WithEvents tsbtFold As ToolStripButton

@@ -1452,7 +1452,7 @@ Public Class ControleHardware
             Dim nome As String = engine.rotuloText.Replace(" ", "_").Replace("-", "_")
             nome = HttpUtility.UrlEncode(nome, Encoding.GetEncoding(28597)).Replace("+", " ")
             GetTextActionCall()
-            Dim linToAdd = DruidaInterface.Code.SearchAfterLine("Druida.updateRegs();", "}")
+            Dim linToAdd = DruidaInterface.Code.SearchAfterLine("Druida.comunicacao();", "}")
             DruidaInterface.Code.AddLine(linToAdd, textAction)
         End If
         If System.IO.File.Exists(filePath) Then
@@ -1512,7 +1512,7 @@ Public Class ControleHardware
             Dim nome As String = engine.rotuloText.Replace(" ", "_").Replace("-", "_")
             nome = HttpUtility.UrlEncode(nome, Encoding.GetEncoding(28597)).Replace("+", " ")
             GetTextActionLeituraBitCall()
-            Dim lineToAdd As UInt16 = DruidaInterface.Code.SearchAfterLine("Druida.updateRegs();", "}")
+            Dim lineToAdd As UInt16 = DruidaInterface.Code.SearchAfterLine("Druida.comunicacao();", "}")
             DruidaInterface.Code.AddLine(lineToAdd, textAction)
         End If
         If System.IO.File.Exists(filePath) Then
@@ -1580,7 +1580,7 @@ Public Class ControleHardware
             Dim nome As String = engine.rotuloText.Replace(" ", "_").Replace("-", "_")
             nome = HttpUtility.UrlEncode(nome, Encoding.GetEncoding(28597)).Replace("+", " ")
             GetTextActionCallInativo()
-            Dim lineToAdd As UInt16 = DruidaInterface.Code.SearchAfterLine("Druida.updateRegs();", "}")
+            Dim lineToAdd As UInt16 = DruidaInterface.Code.SearchAfterLine("Druida.comunicacao();", "}")
             DruidaInterface.Code.AddLine(lineToAdd, textAction)
         End If
         If System.IO.File.Exists(filePath) Then
@@ -1809,7 +1809,7 @@ Public Class ControleHardware
             Dim nome As String = engine.rotuloText.Replace(" ", "_").Replace("-", "_")
             nome = HttpUtility.UrlEncode(nome, Encoding.GetEncoding(28597)).Replace("+", " ")
             GetTextActionCallEscrita()
-            Dim lineToSel = DruidaInterface.Code.SearchAfterLine("Druida.updateRegs();", "}")
+            Dim lineToSel = DruidaInterface.Code.SearchAfterLine("Druida.comunicacao();", "}")
             DruidaInterface.Code.AddLine(lineToSel, textAction)
         End If
         If System.IO.File.Exists(filePath) Then

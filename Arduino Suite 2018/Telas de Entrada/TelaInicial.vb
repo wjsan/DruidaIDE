@@ -27,7 +27,6 @@ Public Class TelaInicial
         DelegDeskIcons()
         carregaVisualComponente(Panel1)
         carregaVisualComponente(Panel2)
-        'Gerenciador_de_Trechos_de_Código.CarregarCodigos()
     End Sub
 
     Private Sub DelegDeskIcons()
@@ -41,15 +40,13 @@ Public Class TelaInicial
         Deleg(ÍconeAbrir, AddressOf DruidaSuiteMain.PictureBoxAbrir_Click)
         Deleg(ÍconeSalvar, AddressOf DruidaSuiteMain.PictureBoxSalvar_Click)
         Deleg(ÍconeSalvarComo, AddressOf DruidaSuiteMain.PictureBox4_Click)
-        'Deleg(ÍconeDruidaIDE, AddressOf TestarNovaIDE)
+        Deleg(ÍconeAtivarDruida, AddressOf ÍconeAtivarDruida_Click)
     End Sub
 
     Private Sub SwitchProgrammingMethod()
         LabelMaximize.Visible = appProgrammingMethod = "Avançado"
         LabelMin.Visible = appProgrammingMethod = "Avançado"
         DruidaSuiteMain.PanelTaskBar.Visible = appProgrammingMethod = "Avançado"
-        'LabelInfo.Visible = appProgrammingMethod = "Avançado"
-        'Label.Visible = appProgrammingMethod = "Avançado"
         ÍconeAbrirPasta.Visible = appProgrammingMethod = "Avançado"
         ÍconeProgramação.Visible = appProgrammingMethod = "Avançado"
         ÍconeComando.Visible = appProgrammingMethod = "Avançado"
@@ -59,29 +56,9 @@ Public Class TelaInicial
         If appProgrammingMethod = "Avançado" Then
             checkNumRegs()
         End If
-        'If appProgrammingMethod = "Avançado" Then
-        '    'If Not My.Computer.FileSystem.DirectoryExists(applicationDirectory & "\CustomSourceCode") Then
-        '    '    SplashScreen.LabelStatusAbertura.Text = "Carregando Navegador..."
-        '    '    SplashScreen.TopMost = False
-        '    '    'If DialogNewCode.ShowDialog() = DialogResult.Cancel Then
-        '    '    'SplashScreen.TopMost = True
-        '    '    'Exit Sub
-        '    '    'End If
-        '    '    SplashScreen.LabelStatusAbertura.Text = "Carregando Interfaces..."
-        '    '    SplashScreen.TopMost = True
-        '    'End If
-        '    SplashScreen.LabelStatusAbertura.Text = "Carregando Interfaces..."
-        '    Cursor = Cursors.AppStarting
-        '    Cursor = Cursors.Arrow
-        'End If
     End Sub
 
     Private Sub LoadPictures()
-        If System.IO.File.Exists(applicationDirectory & "\Logo 1.png") Then
-            'PictureBoxLogo.Image = SafeImageFromFile(applicationDirectory & "\Logo 1.png")
-        Else
-            'PictureBoxLogo.Image = My.Resources.Logo_1
-        End If
         If System.IO.File.Exists(applicationDirectory & "\Wallpaper.png") Then
             BackgroundImage = Image.FromFile(applicationDirectory & "\Wallpaper.png")
         Else
@@ -118,18 +95,10 @@ Public Class TelaInicial
                 Exit Sub
             End If
         End If
-        'Cursor = Cursors.AppStarting
-        'OpenForm(DruidaIDE)
-        'Cursor = Cursors.Arrow
     End Sub
 
     Dim create As Boolean = True
-    Private Sub OpenProgram(sender As Object, e As EventArgs)
-        'If Not My.Computer.FileSystem.DirectoryExists(applicationDirectory & applicationCode & AppName) Then
-        '    If DialogNewCode.ShowDialog() = DialogResult.Cancel Then
-        '        Exit Sub
-        '    End If
-        'End If
+    Private Sub OpenProgram()
         OpenDruida()
     End Sub
 
@@ -137,6 +106,9 @@ Public Class TelaInicial
         If create Then
             DruidaInterface.Project.SetProjectName(AppName)
             DruidaInterface.InitializeDruidaOnPath(applicationDirectory & applicationCode & MainCodeName)
+            DruidaInterface.callScadaAction = Sub()
+                                                  DruidaSuiteMain.BringToFront()
+                                              End Sub
         End If
         DruidaInterface.DruidaIDE.Show()
         DruidaInterface.DruidaIDE.BringToFront()
@@ -175,10 +147,6 @@ Public Class TelaInicial
         OpenForm(Alarmes)
     End Sub
 
-    Private Sub OpenArduino(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub TelaInicial_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
         For Each icone In Controls
             If icone.GetType = GetType(Ícone) Then
@@ -190,22 +158,6 @@ Public Class TelaInicial
 
     Private Sub TelaInicial_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         e.Cancel = True
-    End Sub
-
-    Private Sub ÍconeAbrirPasta_Selected() Handles ÍconeAbrirPasta.Selected
-        'LabelInfo.Text = "Abrir a pasta onde o projeto está localizado."
-    End Sub
-
-    Private Sub ÍconeProgramação_Selected() Handles ÍconeProgramação.Selected
-        'LabelInfo.Text = "Abrir o Druida IDE, software de desenvolvimento dedicado para a programação de placas arduino, e derivadas."
-    End Sub
-
-    Private Sub ÍconeComando_Selected() Handles ÍconeComando.Selected
-        'LabelInfo.Text = "Abrir o Druida SCADA Editor, software para o desenvolvimento SCADA, capaz de projetar interfaces de controle e monitoramento compatíveis com placas arduino, e derivadas."
-    End Sub
-
-    Private Sub ÍconeAlarmes_Selected() Handles ÍconeAlarmes.Selected
-        'LabelInfo.Text = "Abrir o gerenciador de alarmes, software para criar uma fila de eventos a serem monitorados."
     End Sub
 
     Private Sub checkNumRegs()
@@ -277,7 +229,6 @@ Public Class TelaInicial
         }
         If (openImage.ShowDialog() = DialogResult.OK) Then
             System.IO.File.Copy(openImage.FileName, applicationDirectory & "\Logo 1.png", True)
-            'PictureBoxLogo.Image = SafeImageFromFile(applicationDirectory & "\Logo 1.png")
         End If
     End Sub
 
@@ -296,14 +247,24 @@ Public Class TelaInicial
         AboutBinary.Show()
     End Sub
 
-    'Private Sub WebViewAprendizado_ContentLoading(sender As Object, e As WebBrowserNavigatedEventArgs) Handles WebViewAprendizado.Navigated
-    '    If WebViewAprendizado.Url.ToString <> "https://binary-quantum.com/aprendizado/" Then
-    '        WebViewTelaPrincipal.Navigate(WebViewAprendizado.Url)
-    '        WebViewAprendizado.Navigate("https://binary-quantum.com/aprendizado/")
-    '    End If
-    'End Sub
+    Private Sub ÍconeAtivarDruida_Click()
+        If (Mode = Gratuito) Then
+            contextMenuStripAtivar.Show()
+            contextMenuStripAtivar.Location = MousePosition
+        Else
+            MessageBox.Show("O software já está ativado!")
+        End If
+    End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-        'carregaVisualComponente(Panel1)
+    Private Sub AdiquirirSoftwareToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdiquirirSoftwareToolStripMenuItem.Click
+        Process.Start("https://binary-quantum.com/loja-druida-tools-suite/")
+    End Sub
+
+    Private Sub SolicitarChaveDeAtivaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SolicitarChaveDeAtivaçãoToolStripMenuItem.Click
+        Process.Start("https://api.whatsapp.com/send?1=pt_BR&phone=553799034766")
+    End Sub
+
+    Private Sub AtivarSoftwareToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AtivarSoftwareToolStripMenuItem.Click
+        Process.Start(Application.StartupPath & "/" & "Druida Suite Ativador.exe")
     End Sub
 End Class

@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub SelecionarPorta(sender As Object, e As EventArgs)
-        'Conectar.ShowDialog()
+        SelectPort.Show()
     End Sub
 
     Private Sub Minimize(sender As Object, e As EventArgs)

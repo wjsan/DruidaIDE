@@ -396,8 +396,7 @@ Public Class ComandoAvancado
     Private Sub Componentes_DragDrop(sender As Object, e As DragEventArgs) Handles PanelComando.DragDrop
         Dim offSetMouse As Point = New Point(SplitContainer1.Panel2.Location.X + Me.Parent.Location.X, SplitContainer1.Location.Y + Me.Parent.Location.Y)
         Dim local As Point = MousePosition - offSetMouse
-        Druida_IDE_Lite.DruidaInterface.AddErrorMsg(Componentes.SelectedNode.FullPath & ",add," & local.ToString, Druida_IDE_Lite.ErrorsManager.Type.msgInfo
-                                                    )
+        'Druida_IDE_Lite.DruidaInterface.AddErrorMsg(Componentes.SelectedNode.FullPath & ",add," & local.ToString, Druida_IDE_Lite.ErrorsManager.Type.)
         If (Componentes.SelectedNode.FullPath = "Componentes\Câmera") Then
             addCamera(local)
             Exit Sub
@@ -1076,7 +1075,7 @@ Public Class ComandoAvancado
     End Sub
 
     Private Sub SelecionarPortaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SelecionarPortaToolStripMenuItem.Click
-        'Conectar.Show()
+        SelectPort.show()
     End Sub
 
     Private Sub ConectarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConectarToolStripMenuItem.Click, tsmiConnect.Click

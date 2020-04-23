@@ -237,6 +237,12 @@
     <Compile Include="PopUps\AdquirirSoftware.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PopUps\SelectPort.Designer.vb">
+      <DependentUpon>SelectPort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\SelectPort.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RegisterPouPups\CriarGatilho.Designer.vb">
       <DependentUpon>CriarGatilho.vb</DependentUpon>
     </Compile>
@@ -660,6 +666,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopUps\AdquirirSoftware.resx">
       <DependentUpon>AdquirirSoftware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\SelectPort.resx">
+      <DependentUpon>SelectPort.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterPouPups\CriarGatilho.resx">
       <DependentUpon>CriarGatilho.vb</DependentUpon>

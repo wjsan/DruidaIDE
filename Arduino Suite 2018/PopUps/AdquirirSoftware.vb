@@ -13,7 +13,7 @@ Public Class AdquirirSoftware
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        System.Diagnostics.Process.Start("https://binary-quantum.com/loja-druida-tools-suite/")
+        Process.Start("https://binary-quantum.com/loja-druida-tools-suite/")
         DruidaSuiteMain.FecharApp()
     End Sub
 

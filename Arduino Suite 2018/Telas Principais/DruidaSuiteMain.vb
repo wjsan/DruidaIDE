@@ -228,6 +228,10 @@ Public Class DruidaSuiteMain
     End Sub
     'Botão Controle
     Public Sub PictureBoxControle_Click(sender As Object, e As EventArgs) Handles PictureBoxControle.Click
+        OpenControle()
+    End Sub
+
+    Public Sub OpenControle()
         PlayBackgroundSoundFile("Click.wav")
         If (Application.OpenForms.OfType(Of Alarmes).Count > 0) Then
             Alarmes.Hide()

@@ -221,4 +221,10 @@ Public Class FilesExplorer
         Dim path As String = tvExplorer.SelectedNode.Tag
         Clipboard.SetText(path)
     End Sub
+
+    Private Sub ImportarParaOCódigoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarParaOCódigoToolStripMenuItem.Click
+        If tvExplorer.SelectedNode IsNot Nothing Then
+            CodeManager.Actions.IncludeLibrary(tvExplorer.SelectedNode.Text)
+        End If
+    End Sub
 End Class

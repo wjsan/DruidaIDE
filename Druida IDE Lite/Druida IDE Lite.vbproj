@@ -757,6 +757,7 @@
     <Content Include="icon_t9j_icon.ico" />
     <None Include="Resources\Arduino Dark Theme.png" />
     <None Include="Resources\Arduino Light Theme.png" />
+    <None Include="Resources\813df8d9.png" />
     <Content Include="Resources\ArduinoTool%27s\Upload.png" />
     <Content Include="Resources\ArduinoTool%27s\NewFileArduin.png" />
     <Content Include="Resources\ArduinoTool%27s\OpenFileArduino.png" />

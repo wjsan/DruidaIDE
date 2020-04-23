@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _813df8d9() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("813df8d9", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property _Class() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("_Class", resourceCulture)

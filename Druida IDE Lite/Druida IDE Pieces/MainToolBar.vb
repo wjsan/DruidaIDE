@@ -209,32 +209,33 @@ Public Class MainToolBar
         End Try
     End Sub
 
-    Private Sub tsbtDebugger_Click(sender As Object, e As EventArgs) Handles tsbtDebugger.Click
-        Dim currentPort As String = CurrentProjectCfgs.values.hardware.COMport
-        If Not AppSystem.serialPort.GetAvailablePorts.Contains(currentPort) And currentPort <> cbPort.SelectedItem Then
-            currentPort = cbPort.SelectedItem
-        End If
-        If BoardsData.GetCurrentBoard Is Nothing Then
-            consoleErrors.AddItem(Type.msgAdvise, "Selected board is invalid. Try to select another.", "Druida.exe", "")
-            Exit Sub
-        End If
-        If AppSystem.serialPort.GetAvailablePorts.Count <= 0 Then
-            consoleErrors.AddItem(Type.msgAdvise, "No devices on usb ports. Check your connections.", "Druida.exe", "")
-            Exit Sub
-        End If
-        If Not AppSystem.serialPort.GetAvailablePorts.Contains(currentPort) Then
-            consoleErrors.AddItem(Type.msgAdvise, "Selected port doesn't exists. Please, select another port.", "Druida.exe", "")
-            Exit Sub
-        End If
-        Try
-            Dim arduino As New ArduinoCompiler
-            arduino.SendDebugger = True
-            AppSystem.serialPort.Close()
-            'controlConsole.HardwareMonitorControl.CloseSerialPort()
-            arduino.startCompiler(arduino.Upload)
-        Catch ex As Exception
-            consoleErrors.AddItem(Type.msgError, ex.Message, "", "")
-        End Try
+    Private Sub tsbtScada_Click(sender As Object, e As EventArgs) Handles tsbtScada.Click
+        'Dim currentPort As String = CurrentProjectCfgs.values.hardware.COMport
+        'If Not AppSystem.serialPort.GetAvailablePorts.Contains(currentPort) And currentPort <> cbPort.SelectedItem Then
+        '    currentPort = cbPort.SelectedItem
+        'End If
+        'If BoardsData.GetCurrentBoard Is Nothing Then
+        '    consoleErrors.AddItem(Type.msgAdvise, "Selected board is invalid. Try to select another.", "Druida.exe", "")
+        '    Exit Sub
+        'End If
+        'If AppSystem.serialPort.GetAvailablePorts.Count <= 0 Then
+        '    consoleErrors.AddItem(Type.msgAdvise, "No devices on usb ports. Check your connections.", "Druida.exe", "")
+        '    Exit Sub
+        'End If
+        'If Not AppSystem.serialPort.GetAvailablePorts.Contains(currentPort) Then
+        '    consoleErrors.AddItem(Type.msgAdvise, "Selected port doesn't exists. Please, select another port.", "Druida.exe", "")
+        '    Exit Sub
+        'End If
+        'Try
+        '    Dim arduino As New ArduinoCompiler
+        '    arduino.SendDebugger = True
+        '    AppSystem.serialPort.Close()
+        '    'controlConsole.HardwareMonitorControl.CloseSerialPort()
+        '    arduino.startCompiler(arduino.Upload)
+        'Catch ex As Exception
+        '    consoleErrors.AddItem(Type.msgError, ex.Message, "", "")
+        'End Try
+        DruidaInterface.CallScada()
     End Sub
 
     Private Sub tsbHardware_Click(sender As Object, e As EventArgs) Handles tsbHardware.Click

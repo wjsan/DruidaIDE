@@ -117,348 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="tsProject.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>21, 15</value>
-  </metadata>
-  <data name="&gt;&gt;cbPort.Name" xml:space="preserve">
-    <value>cbPort</value>
-  </data>
-  <data name="&gt;&gt;cbPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbPort.Parent" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;cbPort.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
-  </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pbBoard.Name" xml:space="preserve">
-    <value>pbBoard</value>
-  </data>
-  <data name="&gt;&gt;pbBoard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbBoard.Parent" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;pbBoard.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
-  </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cbBoard.Name" xml:space="preserve">
-    <value>cbBoard</value>
-  </data>
-  <data name="&gt;&gt;cbBoard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbBoard.Parent" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;cbBoard.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tsProject.Name" xml:space="preserve">
-    <value>tsProject</value>
-  </data>
-  <data name="&gt;&gt;tsProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsProject.Parent" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;tsProject.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tpProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 20</value>
-  </data>
-  <data name="tpProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 57</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tpProject.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tpProject.Text" xml:space="preserve">
-    <value>Projeto</value>
-  </data>
-  <data name="&gt;&gt;tpProject.Name" xml:space="preserve">
-    <value>tpProject</value>
-  </data>
-  <data name="&gt;&gt;tpProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpProject.Parent" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tpProject.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="tsFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>134, 18</value>
-  </metadata>
-  <data name="tsFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tsFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 54</value>
-  </data>
-  <data name="tsFile.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tsFile.Text" xml:space="preserve">
-    <value>ToolStrip1</value>
-  </data>
-  <data name="&gt;&gt;tsFile.Name" xml:space="preserve">
-    <value>tsFile</value>
-  </data>
-  <data name="&gt;&gt;tsFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsFile.Parent" xml:space="preserve">
-    <value>tpFile</value>
-  </data>
-  <data name="&gt;&gt;tsFile.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 20</value>
-  </data>
-  <data name="tpFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 57</value>
-  </data>
-  <data name="tpFile.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tpFile.Text" xml:space="preserve">
-    <value>Arquivo</value>
-  </data>
-  <data name="&gt;&gt;tpFile.Name" xml:space="preserve">
-    <value>tpFile</value>
-  </data>
-  <data name="&gt;&gt;tpFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpFile.Parent" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tpFile.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="tsEdit.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>231, 17</value>
-  </metadata>
-  <data name="&gt;&gt;tsEdit.Name" xml:space="preserve">
-    <value>tsEdit</value>
-  </data>
-  <data name="&gt;&gt;tsEdit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsEdit.Parent" xml:space="preserve">
-    <value>tpEdit</value>
-  </data>
-  <data name="&gt;&gt;tsEdit.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 20</value>
-  </data>
-  <data name="tpEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 57</value>
-  </data>
-  <data name="tpEdit.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tpEdit.Text" xml:space="preserve">
-    <value>Editar</value>
-  </data>
-  <data name="&gt;&gt;tpEdit.Name" xml:space="preserve">
-    <value>tpEdit</value>
-  </data>
-  <data name="&gt;&gt;tpEdit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpEdit.Parent" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tpEdit.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="tsView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>310, 20</value>
-  </metadata>
-  <data name="&gt;&gt;tsView.Name" xml:space="preserve">
-    <value>tsView</value>
-  </data>
-  <data name="&gt;&gt;tsView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsView.Parent" xml:space="preserve">
-    <value>tpView</value>
-  </data>
-  <data name="&gt;&gt;tsView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 20</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tpView.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tpView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 57</value>
-  </data>
-  <data name="tpView.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tpView.Text" xml:space="preserve">
-    <value>Exibir</value>
-  </data>
-  <data name="&gt;&gt;tpView.Name" xml:space="preserve">
-    <value>tpView</value>
-  </data>
-  <data name="&gt;&gt;tpView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpView.Parent" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tpView.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="tsTools.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>393, 17</value>
-  </metadata>
-  <data name="&gt;&gt;tsTools.Name" xml:space="preserve">
-    <value>tsTools</value>
-  </data>
-  <data name="&gt;&gt;tsTools.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsTools.Parent" xml:space="preserve">
-    <value>tpTools</value>
-  </data>
-  <data name="&gt;&gt;tsTools.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpTools.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 20</value>
-  </data>
-  <data name="tpTools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 57</value>
-  </data>
-  <data name="tpTools.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tpTools.Text" xml:space="preserve">
-    <value>Ferramentas</value>
-  </data>
-  <data name="&gt;&gt;tpTools.Name" xml:space="preserve">
-    <value>tpTools</value>
-  </data>
-  <data name="&gt;&gt;tpTools.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpTools.Parent" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tpTools.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="tsHelp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>482, 22</value>
-  </metadata>
-  <data name="&gt;&gt;tsHelp.Name" xml:space="preserve">
-    <value>tsHelp</value>
-  </data>
-  <data name="&gt;&gt;tsHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsHelp.Parent" xml:space="preserve">
-    <value>tpHelp</value>
-  </data>
-  <data name="&gt;&gt;tsHelp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 20</value>
-  </data>
-  <data name="tpHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 57</value>
-  </data>
-  <data name="tpHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tpHelp.Text" xml:space="preserve">
-    <value>Ajuda</value>
-  </data>
-  <data name="&gt;&gt;tpHelp.Name" xml:space="preserve">
-    <value>tpHelp</value>
-  </data>
-  <data name="&gt;&gt;tpHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpHelp.Parent" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tpHelp.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tcMainToolBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tcMainToolBar.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>240, 16</value>
-  </data>
-  <data name="tcMainToolBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tcMainToolBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 81</value>
-  </data>
-  <data name="tcMainToolBar.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tcMainToolBar.Name" xml:space="preserve">
-    <value>tcMainToolBar</value>
-  </data>
-  <data name="&gt;&gt;tcMainToolBar.Type" xml:space="preserve">
-    <value>VisualStudioTabControl.VisualStudioTabControl, VisualStudioTabControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;tcMainToolBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tcMainToolBar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="cbPort.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cbPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>618, 26</value>
   </data>
@@ -483,6 +146,7 @@
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -598,7 +262,7 @@
     <value>0, 0</value>
   </data>
   <data name="tsProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 54</value>
+    <value>977, 54</value>
   </data>
   <data name="tsProject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -617,6 +281,255 @@
   </data>
   <data name="&gt;&gt;tsProject.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="tpProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 20</value>
+  </data>
+  <data name="tpProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 57</value>
+  </data>
+  <data name="tpProject.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpProject.Text" xml:space="preserve">
+    <value>Projeto</value>
+  </data>
+  <data name="&gt;&gt;tpProject.Name" xml:space="preserve">
+    <value>tpProject</value>
+  </data>
+  <data name="&gt;&gt;tpProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpProject.Parent" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tpProject.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="tsFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 18</value>
+  </metadata>
+  <data name="&gt;&gt;tsFile.Name" xml:space="preserve">
+    <value>tsFile</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Parent" xml:space="preserve">
+    <value>tpFile</value>
+  </data>
+  <data name="&gt;&gt;tsFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 20</value>
+  </data>
+  <data name="tpFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 57</value>
+  </data>
+  <data name="tpFile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpFile.Text" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="&gt;&gt;tpFile.Name" xml:space="preserve">
+    <value>tpFile</value>
+  </data>
+  <data name="&gt;&gt;tpFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpFile.Parent" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tpFile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="tsEdit.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>231, 17</value>
+  </metadata>
+  <data name="&gt;&gt;tsEdit.Name" xml:space="preserve">
+    <value>tsEdit</value>
+  </data>
+  <data name="&gt;&gt;tsEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsEdit.Parent" xml:space="preserve">
+    <value>tpEdit</value>
+  </data>
+  <data name="&gt;&gt;tsEdit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 20</value>
+  </data>
+  <data name="tpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 57</value>
+  </data>
+  <data name="tpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tpEdit.Text" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="&gt;&gt;tpEdit.Name" xml:space="preserve">
+    <value>tpEdit</value>
+  </data>
+  <data name="&gt;&gt;tpEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpEdit.Parent" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tpEdit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="tsView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>310, 20</value>
+  </metadata>
+  <data name="&gt;&gt;tsView.Name" xml:space="preserve">
+    <value>tsView</value>
+  </data>
+  <data name="&gt;&gt;tsView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsView.Parent" xml:space="preserve">
+    <value>tpView</value>
+  </data>
+  <data name="&gt;&gt;tsView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 20</value>
+  </data>
+  <data name="tpView.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 57</value>
+  </data>
+  <data name="tpView.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tpView.Text" xml:space="preserve">
+    <value>Exibir</value>
+  </data>
+  <data name="&gt;&gt;tpView.Name" xml:space="preserve">
+    <value>tpView</value>
+  </data>
+  <data name="&gt;&gt;tpView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpView.Parent" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tpView.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="tsTools.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>393, 17</value>
+  </metadata>
+  <data name="&gt;&gt;tsTools.Name" xml:space="preserve">
+    <value>tsTools</value>
+  </data>
+  <data name="&gt;&gt;tsTools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTools.Parent" xml:space="preserve">
+    <value>tpTools</value>
+  </data>
+  <data name="&gt;&gt;tsTools.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpTools.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 20</value>
+  </data>
+  <data name="tpTools.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 57</value>
+  </data>
+  <data name="tpTools.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tpTools.Text" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="&gt;&gt;tpTools.Name" xml:space="preserve">
+    <value>tpTools</value>
+  </data>
+  <data name="&gt;&gt;tpTools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpTools.Parent" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tpTools.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="tsHelp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>482, 22</value>
+  </metadata>
+  <data name="&gt;&gt;tsHelp.Name" xml:space="preserve">
+    <value>tsHelp</value>
+  </data>
+  <data name="&gt;&gt;tsHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsHelp.Parent" xml:space="preserve">
+    <value>tpHelp</value>
+  </data>
+  <data name="&gt;&gt;tsHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 20</value>
+  </data>
+  <data name="tpHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 57</value>
+  </data>
+  <data name="tpHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tpHelp.Text" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="&gt;&gt;tpHelp.Name" xml:space="preserve">
+    <value>tpHelp</value>
+  </data>
+  <data name="&gt;&gt;tpHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpHelp.Parent" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tpHelp.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tcMainToolBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcMainToolBar.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>240, 16</value>
+  </data>
+  <data name="tcMainToolBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tcMainToolBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>985, 81</value>
+  </data>
+  <data name="tcMainToolBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tcMainToolBar.Name" xml:space="preserve">
+    <value>tcMainToolBar</value>
+  </data>
+  <data name="&gt;&gt;tcMainToolBar.Type" xml:space="preserve">
+    <value>VisualStudioTabControl.VisualStudioTabControl, VisualStudioTabControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tcMainToolBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tcMainToolBar.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="tsbNewProject.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -759,22 +672,22 @@
   <data name="tsbUpload.ToolTipText" xml:space="preserve">
     <value>Envia o projeto atual, para a placa selecionada</value>
   </data>
-  <data name="tsbtDebugger.Enabled" type="System.Boolean, mscorlib">
+  <data name="tsbtScada.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="tsbtDebugger.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 51</value>
+  <data name="tsbtScada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 51</value>
   </data>
-  <data name="tsbtDebugger.Text" xml:space="preserve">
-    <value>Depurador</value>
+  <data name="tsbtScada.Text" xml:space="preserve">
+    <value>SCADA</value>
   </data>
-  <data name="tsbtDebugger.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="tsbtScada.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="tsbtDebugger.ToolTipText" xml:space="preserve">
+  <data name="tsbtScada.ToolTipText" xml:space="preserve">
     <value>Enviar código com depurador de hardware</value>
   </data>
-  <data name="tsbtDebugger.Visible" type="System.Boolean, mscorlib">
+  <data name="tsbtScada.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="tsbSerialMonitor.Enabled" type="System.Boolean, mscorlib">
@@ -797,6 +710,33 @@
   </data>
   <data name="ToolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 54</value>
+  </data>
+  <metadata name="tsFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 18</value>
+  </metadata>
+  <data name="tsFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>977, 54</value>
+  </data>
+  <data name="tsFile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsFile.Text" xml:space="preserve">
+    <value>ToolStrip1</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Name" xml:space="preserve">
+    <value>tsFile</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Parent" xml:space="preserve">
+    <value>tpFile</value>
+  </data>
+  <data name="&gt;&gt;tsFile.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tsbNewFile.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -982,7 +922,7 @@
     <value>0, 0</value>
   </data>
   <data name="tsEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 54</value>
+    <value>977, 54</value>
   </data>
   <data name="tsEdit.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1237,7 +1177,7 @@
     <value>3, 3</value>
   </data>
   <data name="tsView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 54</value>
+    <value>971, 54</value>
   </data>
   <data name="tsView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1402,7 +1342,7 @@
     <value>0, 0</value>
   </data>
   <data name="tsTools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 54</value>
+    <value>977, 54</value>
   </data>
   <data name="tsTools.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1558,7 +1498,7 @@
     <value>0, 0</value>
   </data>
   <data name="tsHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 54</value>
+    <value>977, 54</value>
   </data>
   <data name="tsHelp.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1822,7 +1762,7 @@
     <value>NoControl</value>
   </data>
   <data name="lClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>965, 0</value>
+    <value>966, 0</value>
   </data>
   <data name="lClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 17</value>
@@ -1861,7 +1801,7 @@
     <value>NoControl</value>
   </data>
   <data name="lMinimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 0</value>
+    <value>947, 0</value>
   </data>
   <data name="lMinimize.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 17</value>
@@ -1900,7 +1840,7 @@
     <value>True</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 81</value>
+    <value>985, 81</value>
   </data>
   <data name="&gt;&gt;tsbNewProject.Name" xml:space="preserve">
     <value>tsbNewProject</value>
@@ -1956,10 +1896,10 @@
   <data name="&gt;&gt;tsbUpload.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsbtDebugger.Name" xml:space="preserve">
-    <value>tsbtDebugger</value>
+  <data name="&gt;&gt;tsbtScada.Name" xml:space="preserve">
+    <value>tsbtScada</value>
   </data>
-  <data name="&gt;&gt;tsbtDebugger.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsbtScada.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tsbSerialMonitor.Name" xml:space="preserve">
